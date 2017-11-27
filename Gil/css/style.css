@@ -31,7 +31,7 @@ hr {
     height: 40px;
 }
 
-.menu-item {
+.horizontal-menu li {
     float: left;
 }
 
