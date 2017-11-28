@@ -1,0 +1,17 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "first attempt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jkenobi",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
