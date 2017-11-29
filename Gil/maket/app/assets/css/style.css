@@ -1,0 +1,61 @@
+body {
+    background-color: #222a38;
+    margin: 0;
+}
+
+.header {
+    font-family: 'FontAwesome', sans-serif;
+    color: #efefef;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 12%;
+    width: 400px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+    width: 400px;
+}
+
+.container {
+    padding: 20px;
+    padding-top: 40px;
+    position: relative;
+}
+
+.subheader {
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 12px;
+    position: relative;
+}
+
+.button {
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 14px;
+    color: #eeeeee;
+    border: 1px solid #ccc;
+    background: #222a38;
+    position: relative;
+    margin-left: 15%;
+}
+
+.main {
+    margin-left: 7%;
+    padding: 0;
+}
+
+.aqua {
+    height: 240px;
+    width: auto;
+}
+
+.tinted {
+    display: block;
+    transition: all .3s linear;
+}
+
+.tinted:hover {
+    background: none;
+}
