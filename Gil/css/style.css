@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+    width: 99%;
+}
+
+.horizontal-menu {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    background: #650000;
+    height: 40px;
+}
+
+.horizontal-menu li {
+    float: left;
+}
+
+.horizontal-menu a {
+    text-decoration: none;
+    background: #650000;
+    color: #fff;
+    padding: 0px 20px;
+    line-height: 40px;
+    font-size: 15px;
+    display: block;
+    border-left: 1px solid #000000;
+    -moz-transition: all 0.3s 0.01s ease;
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+}
+
+.horizontal-menu a:hover {
+    background: #8b0000;
+    text-decoration: none;
+    color: #fff;
+}
+
+.horizontal-menu .active {
+    background: #8b0000;
+}
+
+.container {
+    padding: 20px;
+    padding-top: 40px;
+    position: relative;
+}
+
+.text-block {
+    text-indent: 16px;
+    padding: 3px;
+    padding-left: 12px;
+    width: 60%;
+    position: relative;
+}
+
+.logo-img {
+    padding: 5px;
+    margin: 12px;
+}
+
+.logo-min {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.car-image {
+    padding: 5px;
+    margin: 12px;
+    border: dashed;
+    border-color: darkgray;
+    border-width: 0.5px;
+}
+
+.footer {
+    font-size: 11px;
+    text-align: center;
+    color: #777777;
+    background-color: transparent;
+    padding: 12px;
+    height: 20px;
+}
+
+.splash-img {
+    position: relative;
+    padding-top: 3%;
+}
