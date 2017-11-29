@@ -1,53 +1,71 @@
 body {
-    background-color: #222a38;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)), url('../../img/banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .header {
     color: #efefef;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     margin-left: 10%;
-    width: 420px;
+    width: 40%;
+}
+
+.top-header {
+    font-size: 76px;
 }
 
 hr {
     border: 0;
     border-bottom: 1px solid #ccc;
     background: #999;
-    width: 420px;
+    width: 100%;
 }
 
 .container {
-    padding: 20px;
-    padding-top: 40px;
+    padding: 15px;
+    padding-top: 30px;
     position: relative;
 }
 
 .subheader {
-    font-size: 12px;
+    font-size: 16px;
     position: relative;
 }
 
 .button {
-    font-size: 13px;
+    font-size: 16px;
     color: #eeeeee;
-    border: 1px solid #ccc;
-    background: #222a38;
+    border: 1px solid #aaa;
+    width: 140px;
+    height: 30px;
+    background: rgba(0,0,0,0.5);
     position: relative;
-    margin-left: 15%;
+    float: right;
+    margin-top: -3%;
+    cursor: pointer;
 }
 
 .main {
-    margin-left: 7%;
+    margin-left: 10%;
     padding: 0;
 }
 
-.image-text {
-    font-size: 32px;
+.menu-itm {
+    font-size: 42px;
     color: #ffffff;
-    margin-left: 20%;
+    text-align: center;
+    margin-top: 3.4em;
+}
+
+.menu-itm-subtext {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
 }
 
 .image-t1 {
@@ -107,6 +125,12 @@ hr {
     -o-transition: all 0.3s 0.01s ease;
     -webkit-transition: all 0.3s 0.01s ease;
     padding: 0;
+}
+
+.tinted hr {
+    width: 9em;
+    border-bottom: 3px solid #fff;
+
 }
 
 .red-tint {
