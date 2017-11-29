@@ -52,6 +52,7 @@ hr {
 
 .image-t1 {
     display: inline-block;
+    float: left;
     background-image: url("../../img/pic01.jpg");
     width: 576px;
     height: 409px;
@@ -59,7 +60,6 @@ hr {
 }
 
 .image-t2 {
-    margin-left: -5px;
     display: inline-block;
     background-image: url("../../img/pic02.jpg");
     width: 864px;
@@ -68,6 +68,7 @@ hr {
 }
 
 .image-t3 {
+    float: left;
     display: inline-block;
     background-image: url("../../img/pic03.jpg");
     width: 864px;
@@ -76,7 +77,6 @@ hr {
 }
 
 .image-t4 {
-    margin-left: -5px;
     display: inline-block;
     background-image: url("../../img/pic04.jpg");
     width: 576px;
@@ -85,6 +85,7 @@ hr {
 }
 
 .image-t5 {
+    float: left;
     display: inline-block;
     background-image: url("../../img/pic05.jpg");
     width: 576px;
@@ -93,7 +94,6 @@ hr {
 }
 
 .image-t6 {
-    margin-left: -5px;
     display: inline-block;
     background-image: url("../../img/pic06.jpg");
     width: 864px;
