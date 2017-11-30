@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Comfortaa', cursive;
+  src: url(../fonts); /* Путь к файлу со шрифтом */
+}
+
+* {
+  /*border: 1px solid #000000;*/
+  font-family: 'Comfortaa', cursive;
+}
+body {
+  background: url(../images/bgi.jpg)
+}
+
+#compressed {
+  letter-spacing: -5px;
+  font-weight: 900;
+  transition-property:  letter-spacing, font-weight, width, height, background-color, color;
+  transition-duration: 1s;
+  overflow: hidden;
+  width: 250px;
+  height: 30px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #942c09;
+  color: #942c09;
+  border-radius: 10px;
+  cursor: pointer;
+}
+input {
+  margin: 10px;
+}
+.main-menu {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 0;
+  opacity: 0.5;
+}
+.main-menu:hover {
+  opacity: 1;
+}
+.main-menu li {
+  list-style: none;
+  margin: 10px;
+  padding: 5px;
+  background-color: #F9FBE7;
+}
+.main-menu li a {
+  text-decoration: none;
+  color: #34495e;
+}
+
+.main-menu li a:hover {
+  color: #F44336;
+}
+.main-menu li a:active {
+  color: #2bc335 ;
+}
+
+.cheese-image {
+  width: 47px;
+  height: 67px;
+}
+
+.cheese-image:hover {
+  width: 141px;
+  height: 201px;
+}
+
+.maps {
+  width: 150px;
+  height: 50px;
+  overflow: scroll;
+}
+.maps:hover{
+  width: auto;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  width: 88%;
+}
+.flex-contant {
+  display: flex;
+}
+
+.gallery {
+  flex-wrap: wrap;
+}
+
+.gal-img  {
+  margin-bottom: 10px; 
+}
+
+.gal-img img {
+  width: 300px;
+  height: 300px;
+}
