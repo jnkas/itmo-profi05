@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)), url('../../img/banner.jpg');
     background-size: cover;
@@ -11,11 +12,11 @@ body {
     margin-top: 4%;
     margin-bottom: 4%;
     margin-left: 10%;
-    width: 40%;
+    width: 50%;
 }
 
 .top-header {
-    font-size: 76px;
+    font-size: 64px;
 }
 
 hr {
@@ -25,7 +26,7 @@ hr {
     width: 100%;
 }
 
-.container {
+.top-content {
     padding: 15px;
     padding-top: 30px;
     position: relative;
@@ -45,13 +46,12 @@ hr {
     background: rgba(0,0,0,0.5);
     position: relative;
     float: right;
-    margin-top: -3%;
     cursor: pointer;
 }
 
-.main {
-    margin-left: 10%;
+.main-menu {
     padding: 0;
+    width: 100%;
 }
 
 .menu-itm {
@@ -72,33 +72,38 @@ hr {
     display: inline-block;
     float: left;
     background-image: url("../../img/pic01.jpg");
-    width: 576px;
+    width: 40%;
     height: 409px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .image-t2 {
     display: inline-block;
     background-image: url("../../img/pic02.jpg");
-    width: 864px;
+    width: 60%;
     height: 409px;
     background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .image-t3 {
     float: left;
     display: inline-block;
     background-image: url("../../img/pic03.jpg");
-    width: 864px;
+    width: 60%;
     height: 410px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .image-t4 {
     display: inline-block;
     background-image: url("../../img/pic04.jpg");
-    width: 576px;
+    width: 40%;
     height: 410px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -106,21 +111,24 @@ hr {
     float: left;
     display: inline-block;
     background-image: url("../../img/pic05.jpg");
-    width: 576px;
+    width: 40%;
     height: 409px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .image-t6 {
     display: inline-block;
     background-image: url("../../img/pic06.jpg");
-    width: 864px;
+    width: 60%;
     height: 409px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .tinted {
     display: inline-block;
+    margin-bottom: 0;
     -moz-transition: all 0.3s 0.01s ease;
     -o-transition: all 0.3s 0.01s ease;
     -webkit-transition: all 0.3s 0.01s ease;
