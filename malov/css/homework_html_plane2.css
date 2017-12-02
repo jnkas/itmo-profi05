@@ -1,0 +1,21 @@
+img {
+    float: right;
+    margin: 7px 0 7px 7px;
+   }
+html {
+    color: black;
+    background-image:url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment:scroll;
+    background-size: 600px;
+    opacity: 0.9;
+        
+}
+ h2 {
+    margin-top: 3.5em; /* Отступ сверху */
+    margin-bottom: 0em; /* Отступ снизу */
+   }
+.bottom{
+   margin-bottom: 5em; 
+}
