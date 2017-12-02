@@ -12,9 +12,9 @@ body{
 
 /* navbar styles */
 #nav {
-    font-family: Century Gothic, Arial, Helvetica, sans-serif;
+    /* font-family: Courier New;
     font-size: 15px;
-    background-color: black;
+    background-color: green;
     padding: 5px;
     font-weight: bold;
     text-align: center;
@@ -73,7 +73,7 @@ body{
 /* footer styles */
 footer {
     font-size: 15px;
-    background-color: black;
+    background-color: green;
     font-weight: bold;
     height: 74px;
     position: relative }
@@ -107,7 +107,7 @@ td {
     padding: 30px;
     background-color: whitesmoke;
     font-size: 20px;
-    font-family: Century Gothic, Arial, Helvetica, sans-serif;
+    /* font-family: Courier New;
 }
 
 /* history.html styles */
@@ -138,5 +138,5 @@ p {
     font-kerning: normal;
 }
 p, h1, h2, h3 {
-    font-family: Century Gothic, Arial, Helvetica, sans-serif;
+    /* font-family: Courier New;
 }
