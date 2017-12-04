@@ -1,17 +1,27 @@
 {
-  "name": "website",
+  "name": "gulp_deploy",
   "version": "1.0.0",
-  "description": "first attempt",
+  "description": "dev folder",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jkenobi",
+  "author": "kes",
   "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "global": "^4.3.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-less": "^3.3.2",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "run-sequence": "^2.2.0",
+    "utils": "^0.3.1"
+  },
   "devDependencies": {
     "gulp": "^3.9.1"
-  },
-  "dependencies": {
-    "browser-sync": "^2.18.13"
   }
 }
