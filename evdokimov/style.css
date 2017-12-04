@@ -1,0 +1,117 @@
+div {
+	display: inline;
+}
+
+#main-page {
+	height: 95vh;
+	background: url(images/banner.jpg) no-repeat;
+	background-size: cover;
+
+
+}
+
+#second-row-left {
+	background: url(images/pic01.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	float: left;
+  display: block;
+	width: 40%;
+	height: 600px;
+}
+
+#second-row-right {
+	background: url(images/pic02.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	float: left;
+	display: block;
+	width: 60%;
+	height: 600px;
+}
+
+#third-row-left {
+	background: url(images/pic03.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	float: left;
+	display: block;
+	width: 60%px;
+	height: 600px;
+}
+
+#third-row-right {
+	background: url(images/pic04.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	float: left;
+	display: block;
+	width: 40%;
+	height: 600px;
+}
+
+#forth-row-left {
+	background: url(images/pic05.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	float: left;
+	display: block;
+	width: 40%;
+	height: 600px;
+}
+#forth-row-right {
+	background: url(images/pic06.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	float: left;
+	display: block;
+	width: 60%;
+	height: 600px;
+}
+
+
+
+
+h1 {
+    text-underline-position: right;
+    padding-bottom: 25px;
+    border-bottom: 1px solid white;
+		color: white;
+}
+p {
+    text-align: left;
+    padding-right: 80px;
+		color: white;
+	}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+    margin: 20;
+    font-family: Arial, sans-serif;
+}
+
+div {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		display:inline-block;
+    position:relative;
+	}
+.container {
+	display: inline-block;
+
+width: 100%;
+box-sizing: border-box;
+}
