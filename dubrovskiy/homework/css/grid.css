@@ -1,3 +1,6 @@
+*, *::before, *::after {
+	
+}
 .col-1,
 .col-2,
 .col-3,
@@ -55,7 +58,7 @@
 	clear: both;
 
 }
-.modal {
+./*modal {
 	/*background: #24634698;*/
 	/*position: fixed;*/
 	/*left: 45px;*/

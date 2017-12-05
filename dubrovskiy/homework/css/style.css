@@ -1,0 +1,43 @@
+*, *::before, *::after {
+
+}
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+header {
+	position: absolute;
+	padding: 15px 10px;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.menu {
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}
+.logo a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+.intro.intro-block {
+	width: 1000px;
+	margin: auto;
+	padding: 
+}
+.intro h1 {
+	border-bottom: 2px solid #fff;
+	padding-bottom: 20px;
+}
+.btn {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 5px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.fade {
+
+}
