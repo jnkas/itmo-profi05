@@ -1,0 +1,36 @@
+body > p {
+	color:red;
+	background: green;
+}
+.text-underline {
+	text-decoration: underline;
+}
+{
+	font-size: 10px;
+}
+
+.fade {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.modal {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50vh;
+	background: #fff;
+	padding: 15px;
+	transform: translate(0, -50%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+div {
+	outline: 1px solid green;
+}
+
