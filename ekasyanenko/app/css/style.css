@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    padding: 15px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.logo a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo span {
+    padding: 5px;
+    background: #fff;
+    color: #000;
+}
+
+.intro {
+    background: #000;
+    /*padding: 100px 0;*/
+    color: #fff;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+}
+.intro .intro-block {
+	width: 1000px;
+    margin: auto;
+    padding: 100px 0;
+}
+.fade {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.photo-text {
+	background-image: url("../images/pic01.jpg");
+	background-size: cover;
+}
+
+.intro h1 {
+	border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+}
+
+.btn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;		
+}
+
+.btn:hover {
+    color: #35e6e6;
+    border-color: #35e6e6;
+}
+
+
