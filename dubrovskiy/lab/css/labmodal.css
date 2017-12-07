@@ -1,0 +1,55 @@
+/*Скроем сам чекбокс, он нужен только для управления состоянием: */
+#tubmler {
+    display: none;
+}
+/*Скрываем содержимое модала:*/
+.modal-body {
+    display: none;
+}
+.show-hidden {
+    text-align: center;
+    font-style: italic;
+    color: red;
+    /*width: 13em;*/
+}
+/*Стилизуйте лейбл по своему усмотрению:*/
+/*.menu__item > */
+
+label {
+    padding: 0.5em 0.5em;
+    display: block;
+    cursor: pointer;
+    color: red;
+    /*text-align: right;*/
+}
+/*Настроим управление видимостью окна, испльзуя трюк с псевдоклассом:
+Когда #tubmler получит фокус мыши и соответственно псевдокласс :checked,  к его соседу .modal-body, применится правило {   display: block;} и он станет видимым.*/
+#tubmler:checked + .modal-body {
+    display: block;
+}
+/*Стилизуем модал:
+Зададим размеры, рамку и фон и спозиционируем фиксированно. При этом, если указать нулевые значения для всех сторон и margin: auto, окно будет спозиционировано по центру экрана.*/
+
+.modal-body {
+    position: fixed;
+    top: 2em;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    
+    width: 50%;
+    height: 40%;
+    background: rgba(64,128,128, 0.3);
+    border: 5px outset rgba(255,128,0);
+    padding: 10px;
+    font-family: 'Bookman Old Style', Georgia, Tahoma, Helvetica;
+    text-align: justify;
+    overflow-y: auto;
+}
+h1 {
+    color: rgba(80,40,40);
+}
+body {
+    background: rgba(234,255,255);
+}

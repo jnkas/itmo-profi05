@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="grid.css">
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <style>
+
+        body {
+            background-image: url("https://i.ytimg.com/vi/DbECGk-sFXY/maxresdefault.jpg");
+        }
+        #tubmler {
+            display: none;
+        }
+        .modal-body {
+            display: none;
+        }
+        label{
+            padding: 1em 1em;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        #tubmler:checked + .modal-body {
+            display: block;
+        }
+        .modal-body {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 50%;
+            height: 50%;
+            border: 1px solid black;
+            background: lightsteelblue;
+        }
+        .click {
+            position: absolute;
+            left: 600px;
+            top:400px;
+            font-size: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .close {
+            color: black;
+            font-size: 15px;
+            padding-right: 10px;
+        }
+        .modal-body h1 {
+            text-align: center;
+            padding-top: 100px;
+            color: #0000ee;
+        }
+    </style>
+</head>
+<body>
+<div class="fff">
+<div class="container">
+    <div class="row navbar">
+        <div>
+            <label for="tubmler"><span class="click">Click me</span></label>
+        </div>
+    </div>
+</div>
+<div class="modal">
+    <input id="tubmler" type="checkbox">
+    <div class="modal-body">
+        <label for="tubmler"><span class="close">Close</span></label>
+        <h1>It Is Just a Modal</h1>
+    </div>
+</div>
+    </div>
+</body>
+</html>
