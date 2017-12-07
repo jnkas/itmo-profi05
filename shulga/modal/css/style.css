@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	/*outline: 1px solid #000;*/
+}
+#tumbler {
+	display: none;
+}
+.modal-body {
+	display: none;
+}
+
+label {
+	cursor: pointer;
+	padding: 5px;
+	display: block;
+	border: 1px solid #000; 
+}
+
+#tumbler:checked + .modal-body {
+	display: block;
+}
+
+.modal-body {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+
+	width: 50%;
+	height: 50%;
+	background: #bada55;
+	border: 1px solid #000;
+}
