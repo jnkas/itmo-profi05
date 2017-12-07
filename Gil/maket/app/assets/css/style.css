@@ -240,8 +240,9 @@ hr {
 
 .right-menu {
     float: right;
-    margin-right: 30px;
+    margin-right: 20px;
     color: #fff;
+    margin-top: -10px;
 }
 
 .right-menu:hover {
@@ -354,10 +355,6 @@ hr {
     font-size: 11px;
     margin: 10px 10px;
     color: #4B4754;
-}
-
-.menu {
-
 }
 
 .level-2 {
