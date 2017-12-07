@@ -331,7 +331,8 @@ hr {
 .input-textarea {
     max-width: 97%;
     width: 97%;
-    height: 180px;
+    height: 190px;
+    min-width: 20%;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
