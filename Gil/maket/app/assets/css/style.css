@@ -85,7 +85,6 @@ hr {
     background-color: #2A2F4A;
 }
 
-
 .main-menu {
     padding: 0;
     width: 100%;
@@ -355,4 +354,44 @@ hr {
     font-size: 11px;
     margin: 10px 10px;
     color: #4B4754;
+}
+
+.menu {
+
+}
+
+.level-2 {
+    display: none;
+}
+
+.menu_item:hover > .level-2 {
+    display: block;
+}
+
+.level-2 .menu_item {
+    position: relative;
+    font-size: 12px;
+    margin: 8px;
+    padding: 3px;
+}
+
+.menu_item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu_item a:hover {
+    background: transparent;
+    color: #e0f0ff;
+}
+
+.level-1 {
+    list-style: none;
+}
+
+.level-2 {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 5px;
 }
