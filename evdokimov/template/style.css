@@ -10,7 +10,10 @@ p {
   text-transform: uppercase;
 
 }
-
+a {
+  color: white;
+  border-bottom: 2px dotted;
+}
 .menu {
   position: absolute;
   right: 10px;
@@ -26,6 +29,25 @@ header {
 
 }
 
+.cellar {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    border-top: 2px solid rgb(42,47,74);
+    background-color: rgb(36,41,67);
+}
+
+.cellar>span {
+    margin: 0 10px;
+
+}
+
+.cellar p {
+    font-size: 12px;
+    margin: 10px 10px;
+    color: white;
+}
 .logo a {
 	text-transform: uppercase;
 	text-decoration: none;
@@ -36,6 +58,12 @@ header {
 	padding: 5px;
 	background: white;
 	color: black;
+}
+
+.email,
+.phone,
+.address {
+  padding: 20px 20px;
 }
 
 .intro {
@@ -150,18 +178,22 @@ footer
   color: white;
   background-color: rgb(36,41,67);
   padding: 0.3em 0 0.3px 1.1em;
-  width:58.33 vw;
-  float:left;
+  width:100 vw;
+
 }
 
 
-.input-name textarea,
-.input-email textarea {
-  background: rgb(30,40,63);
+/*
+.input-name,
+.input-email {
+  background-color: rgb(30,40,63);
   height: 2.75em;
   border: none;
 
 }
+*/
+
+
 .input-message textarea {
     height:10em;
     min-width:87%;
