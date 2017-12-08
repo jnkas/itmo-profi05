@@ -95,4 +95,136 @@ header {
     border-color: #35e6e6;
 }
 
+ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
 
+.menu {
+    float: left;
+}
+
+.menu__item > a{
+    padding: 2em 2em;
+    display: block;
+}
+
+.navbar {
+    background: gray;
+}
+
+.level-1 > .menu__item {
+    display: block;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* скопировал стили с сайта Forty */
+
+#contact {
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+    overflow-x: hidden;
+}
+
+#contact > .inner {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    padding: 0 !important;
+}
+
+#contact > .inner > :nth-child(2n - 1) {
+    padding: 4em 3em 2em 0 ;
+    border-right: solid 1px rgba(212, 212, 255, 0.1);
+    width: 60%;
+}
+
+#contact > .inner > :nth-child(2n) {
+    padding-left: 3em;
+    width: 40%;
+}
+
+#contact > .inner > .split {
+    padding: 0;
+}
+
+#contact > .inner > .split > * {
+    padding: 3em 0 1em 3em ;
+    position: relative;
+}
+
+#contact > .inner > .split > *:before {
+    border-top: solid 1px rgba(212, 212, 255, 0.1);
+    content: '';
+    display: block;
+    margin-left: -3em;
+    position: absolute;
+    top: 0;
+    width: calc(100vw + 3em);
+}
+
+#contact > .inner > .split > :first-child:before {
+    display: none;
+}
+
+/* скопировал стили с сайта Forty
+
+@media screen and (max-width: 980px) {
+
+#contact > .inner {
+    display: block;
+}
+
+#contact > .inner > :nth-child(2n - 1) {
+    padding: 4em 0 2em 0 ;
+    border-right: 0;
+    width: 100%;
+}
+
+#contact > .inner > :nth-child(2n) {
+    padding-left: 0;
+    width: 100%;
+}
+
+#contact > .inner > .split > * {
+    padding: 3em 0 1em 0 ;
+}
+
+#contact > .inner > .split > :first-child:before {
+    display: block;
+}
+
+}
+
+@media screen and (max-width: 736px) {
+
+    #contact > .inner > :nth-child(2n - 1) {
+    padding: 3em 0 1em 0 ;
+}
+
+}
+
+скопировал стили с сайта Forty */
+
+
+@media (min-width: 320px) and (max-width: 900px) {
+    .intro .intro-block {
+    width: 100%;
+    color: red;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
