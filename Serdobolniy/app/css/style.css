@@ -51,6 +51,31 @@ header {
 	background-size: cover;
 }
 
+.photo-text-2 {
+    background-image: url("../images/pic02.jpg");
+    background-size: cover;
+}
+
+.photo-text-3 {
+    background-image: url("../images/pic03.jpg");
+    background-size: cover;
+}
+
+.photo-text-4 {
+    background-image: url("../images/pic04.jpg");
+    background-size: cover;
+}
+
+.photo-text-5 {
+    background-image: url("../images/pic05.jpg");
+    background-size: cover;
+}
+
+.photo-text-6 {
+    background-image: url("../images/pic06.jpg");
+    background-size: cover;
+}
+
 .intro h1 {
 	border-bottom: 2px solid #fff;
     padding-bottom: 20px;
@@ -68,15 +93,6 @@ header {
 .btn:hover {
     color: #35e6e6;
     border-color: #35e6e6;
-}
-
-@media (min-width: 320px) and (max-width: 900px) {
-	.intro .intro-block {
-	    width: 100%;
-	    color: red;
-        padding-left: 15px;
-    	padding-right: 15px;
-	}
 }
 
 
