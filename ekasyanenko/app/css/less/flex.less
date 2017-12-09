@@ -1,0 +1,30 @@
+
+.flex-item {
+	border:1px solid;
+	background: orange;
+	//max-width: 300px;
+	flex: 1 1 25%;
+
+	&:first-child {
+		//order: 2;
+	}
+	&:nth-child(2) {
+		//order: 1;
+		//flex: 5 1 100%;
+	}
+	&:nth-child(3) {
+		//order: 1;
+	}
+	&:nth-child(4) {
+		//order: 1;
+	}
+
+}
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	background: #9a27ad;
+	//flex-wrap: wrap;
+	//justify-content:space-around;
+	align-items: center;
+}
