@@ -1,0 +1,40 @@
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid red;
+    position: absolute;
+    
+}
+.main-menu a {
+    display: block;
+    margin-right: -1px;
+    padding: 8px 10px;
+    color: black;
+    text-decoration: none;
+    border-right: 1px solid red;
+
+}
+.main-menu > li {
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+} 
+.main-menu .sub-menu {
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+.main-menu a:hover {
+    background-color: greenyellow;
+}
+.main-menu > li:hover .sub-menu {
+    display: block;
+}
+.main-menu .sub-menu li {
+    padding: 10px;
+    border: 1px solid red;
+}
