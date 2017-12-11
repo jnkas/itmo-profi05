@@ -44,6 +44,9 @@ a{
     color:#fff;
 
 }
+a:hover{
+    color: #35e6e6;
+}
 header .menu{
     position: absolute;
     display: inline-block;
@@ -343,7 +346,7 @@ ul li:nth-child(2) input{
     padding: 0 26px;
     color: #fff;
 }
-ul li:first-child{
+ .contact ul li:first-child{
     padding-right: 18px;
 }
 
@@ -366,8 +369,8 @@ ul li:first-child{
 
 
 }
-.contact-method span::before{
-    content: '';
+.icon.alt::before{
+    /*content: '';*/
     background-color: #ffffff;
     border-radius: 100%;
     color: #242943;
@@ -416,4 +419,55 @@ ul{
     display: block;
     width: 174px;
     margin-left: 50px;
+}
+
+.fa-twitter::before{
+    content: "\f099";
+}
+.fa-facebook::before{
+    content: "\f09a";
+}
+.fa-instagram::before{
+    content: "\f16d"
+}
+.fa-github::before {
+    content: "\f09b";
+}
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+footer{
+    height: 15em;
+}
+footer .inner{
+    margin: 0 auto;
+    width: 90%;
+}
+footer .inner:first-child ul{
+    padding-top: 50px;
+    padding-left: 0px;
+}
+footer .inner:first-child ul li{
+    padding-right: 14px;
+}
+.copyright{
+    color: rgba(244, 244, 255, 0.2);
+    line-height: 1;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+.copyright a{
+    text-decoration: none;
+    color: rgba(244, 244, 255, 0.2);
+    border-bottom: 1px dashed rgba(244, 244, 255, 0.2);
+}
+.copyright li{
+    border-right: 1px solid rgba(244, 244, 255, 0.2);
+    margin-left: 5px;
+}
+footer .copyright li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
 }
