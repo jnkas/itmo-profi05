@@ -170,7 +170,7 @@ body {
 /* picture 1 */
 .pic-one {
     background-size: cover;
-    background: url("../images/pic01.jpg");
+    background-image: url("../images/pic01.jpg");
     height: 409px;
     position: relative;
     width: 576px;
@@ -181,15 +181,12 @@ body {
     height: 100%;
     background: #6fc3df;
     opacity: 0.75;
+    transition: opacity .3s linear;
 }
-.pic-one:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic01.jpg") no-repeat center;
+.img-overlay:hover, .img-overlay-two:hover, .img-overlay-three:hover, .img-overlay-four:hover, .img-overlay-five:hover, .img-overlay-six:hover {
+    opacity: 0;
+    transition: opacity .3s linear; /* can also try other values such as ease, ease-out etc. */
+    cursor: pointer;
 }
 
 /* picture 2 */
@@ -206,21 +203,13 @@ body {
     height: 100%;
     background: #8d82c4;;
     opacity: 0.75;
-}
-.pic-two:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic02.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* picture 3 */
 .pic-three {
     background-size: cover;
-    background: url("../images/pic03.jpg");
+    background-image: url("../images/pic03.jpg");
     height: 409px;
     width: 864px;
     position: relative;
@@ -231,15 +220,7 @@ body {
     height: 100%;
     background: #ec8d81;
     opacity: 0.75;
-}
-.pic-three:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic03.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* picture 4 */
@@ -256,21 +237,13 @@ body {
     height: 100%;
     background: #e7b788;;
     opacity: 0.75;
-}
-.pic-four:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic04.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* picture 5 */
 .pic-five {
     background-size: cover;
-    background: url("../images/pic05.jpg");
+    background-image: url("../images/pic05.jpg");
     height: 409px;
     position: relative;
     width: 576px;
@@ -281,15 +254,7 @@ body {
     height: 100%;
     background: #8ea9e8;
     opacity: 0.75;
-}
-.pic-five:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic05.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* picture 6 */
@@ -306,15 +271,7 @@ body {
     height: 100%;
     background: #87c5a4;
     opacity: 0.75;
-}
-.pic-six:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic06.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* "some_text" section */
