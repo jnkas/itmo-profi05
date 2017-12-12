@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>watch</title>
+	<style>
+		.watch {
+		    width: 300px;
+		    height: 300px;
+		    background: #b6e4c3;
+		    margin: 150px auto;
+		    border-radius: 50%;
+	        position: relative;		
+		}
+		.second,
+		.minute {
+		    width: 153px;
+		    height: 6px;
+		    background: #000;
+		    position: absolute;
+		    left: 50%;
+		    top: 50%;
+	        transform-origin: 3px 3px;	
+		}
+		.second {
+			animation: secondMove 60s linear 0s;
+			animation-iteration-count: infinite;
+		}
+		.minute {
+			animation: secondMove 3600s linear 0s;
+			animation-iteration-count: infinite;
+		}
+		body {
+			animation: disco 1s linear 0s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes secondMove {
+			from {
+				transform: rotate(270deg);
+			}
+			to {
+				transform: rotate(630deg);
+			}
+		}
+		@keyframes disco {
+			from {
+				filter: ue-rotate(0);
+			}
+			to {
+				filter: hue-rotate(360deg);
+			}
+		}  
+	</style>
+</head>
+<body>
+	<div class="watch">
+		<div class="minute"></div>
+		<div class="second"></div>		
+	</div>
+</body>
+</html>

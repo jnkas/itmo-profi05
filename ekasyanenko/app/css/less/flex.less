@@ -28,3 +28,47 @@
 	//justify-content:space-around;
 	align-items: center;
 }
+/*
+.box:focus,
+.box:active,
+.box:hover {
+	width:100px;
+	height:100px;
+	background: orange;
+}
+.box {
+
+	transition: all 2.5s linear 0s;	
+}
+*/
+
+
+.box {
+	width:100px;
+	height:100px;
+	background: red;
+	animation: move-and-rotate 5s linear 0s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes move-and-rotate {
+	0% {
+		transform:translate(0,0) rotate(0);
+		background: red;
+		border-radius: 0%;
+	}
+
+	50% {
+		background: green;
+		border-radius: 50%;
+		transform:translate(500px,0) rotate(400deg);
+
+	}
+
+	100% {
+		transform:translate(0,0) rotate(0);
+		background: red;
+		border-radius: 0%;
+	}
+}
+
