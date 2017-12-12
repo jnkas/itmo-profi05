@@ -1,3 +1,6 @@
+
+
+
 * {
     box-sizing: border-box;
 /*    outline: 1px solid #000;*/
@@ -18,6 +21,7 @@ header {
     color: #fff;
     font-weight: 600;
     letter-spacing: 0.25em;
+    z-index: 100;
 }
 
 label {
@@ -43,11 +47,11 @@ label {
 }
 
 .logo a:hover span {
-  background: aqua;
+    background: aqua;
 }
 
 .logo > a:hover {
-  color: aqua;
+    color: aqua;
 }
 
 .menu-icon {
@@ -90,8 +94,8 @@ nav.menu label {
   list-style: none;
 }
 
-.inner .btn {
-  display: block;
+ .btn {
+  display: inline-block;
 }
 .menu-item a {
   color: #fff;
@@ -99,14 +103,18 @@ nav.menu label {
 }
 
 .intro {
-    background: #000;
     background-image: url("../images/banner.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
 }
 .intro .intro-block {
     margin: auto;
+    height: 40vh;
 }
+
+
+
 .fade {
     padding: 4em 4em 2em 4em; 
 
@@ -114,10 +122,27 @@ nav.menu label {
 
 
 .intro-block h1 {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 20px;
     font-size: 3.25em;
 }
+
+h1::after {
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 0.325em 0 0.5em 0;
+}
+
+h2::after {
+    content: "";
+    background: #fff;
+    width: 30%;
+    height: 2px;
+    display: block;
+    margin: 0.325em 0 0.5em 0;
+}
+
 .intro-block p {
     display: inline-block;
 }
@@ -145,32 +170,146 @@ nav.menu label {
     color: #fff;
     padding: 4em 4em 2em 4em; 
     background-size: cover;
+    height: 40vh;
+    position: relative;
+    min-height: 23em;
 }
+
+[class^='elem']::before {
+    content: '';
+    background: #6fc3df;
+    
+}
+
 
 .elem-1  {
     background: url("../images/pic01.jpg");
     flex-basis: 40%;
 }
+
+.elem-1::before {
+    content: '';
+    background: #6fc3df;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    transition: opacity 500ms ease 0s;
+}
+
+.elem-1:hover::before {
+    opacity: 0;
+}
+
+
 .elem-2  {
     background: url("../images/pic02.jpg");
     flex-basis: 60%;
 }
+.elem-2::before {
+    content: '';
+    background: #8d82c4;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    transition: opacity 500ms ease 0s;
+}
+.elem-2:hover::before {
+    opacity: 0;
+}
+
+
 .elem-3  {
     background: url("../images/pic03.jpg");
     flex-basis: 60%;
 }
+.elem-3::before {
+    content: '';
+    background: #ec8d81;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    transition: opacity 500ms ease 0s;
+}
+.elem-3:hover::before {
+    opacity: 0;
+}
+
+
 .elem-4  {
     background: url("../images/pic04.jpg");
     flex-basis: 40%;
 }
+.elem-4::before {
+    content: '';
+    background: #e7b788;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    transition: opacity 500ms ease 0s;
+}
+.elem-4:hover::before {
+    opacity: 0;
+}
+
+
 .elem-5  {
     background: url("../images/pic05.jpg");
     flex-basis: 40%;
 }
+.elem-5::before {
+    content: '';
+    background: #8ea9e8;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    transition: opacity 500ms ease 0s;
+}
+.elem-5:hover::before {
+    opacity: 0;
+}
+
+
+
 .elem-6  {
     background: url("../images/pic06.jpg");
     flex-basis: 60%;
 }
+.elem-6::before {
+    content: '';
+    background: #87c5a4;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    transition: opacity 500ms ease 0s;
+}
+.elem-6:hover::before {
+    opacity: 0;
+}
+
 
 .photo-line {
     display: flex;
@@ -179,8 +318,12 @@ nav.menu label {
     align-content: stretch;
 }
 
-.photo-text {
-    margin: 0 auto;
+.photo-text a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 @media only screen and (max-width:550px){

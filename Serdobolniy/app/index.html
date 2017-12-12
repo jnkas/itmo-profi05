@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Forty template</title>
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,6 +15,7 @@
 		<div class="menu">
 			меню
 			<!-- //TODO расположим кнопку меню-->
+
 		</div>
 	</header>
 	<section class="intro">
@@ -25,6 +27,22 @@
 			</div>
 		</div>
 	</section>
+	<!-- Меню -->
+		<div class="container">
+			<div class="row navbar">
+				<div class="col-6 offset-6">
+					<nav class="menu">
+						<ul class="menu level level-1">
+							<li class="menu_item"><a href="#">Link</a></li>
+							<li class="menu_item"><a href="#">Link</a></li>
+							<li class="menu_item"><a href="#">Link</a></li>
+							<li class="menu_item"><a href="#">Link</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	<!-- Конец меню -->
 	<section class="photo-line">
 		<div class="row">
 			<div class="col-5">
@@ -65,5 +83,62 @@
 			</div>
 		</div>
 	</section>
-</body>
+	<!-- Форма обратной связи -->
+	<section id="contact">
+		<div class="inner">
+			<section>
+				<form method="post" action="#">
+					<div class="field half first">
+						<label for="name" >Name</label>
+						<input type="text" name="name" id="name">
+					</div>
+					<div class="field half">
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email">
+					</div>
+					<div class="field">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" rows="6"></textarea>
+					</div>
+					<ul class="actions">
+						<li>
+							<input type="submit" name="Send Message" class="special">
+						</li>
+						<li>
+							<input type="reset" value="Clear">
+						</li>
+					</ul>
+				</form>
+			</section>
+			<section class="split">
+				<section>	
+					<div class="contact-metod">
+						<span class="icon alt fa-envelope"></span>
+						<h3>Email</h3>
+						<a href="#">information@untitled.tld</a>
+					</div>
+				</section>
+				<section>
+					<div class="contact-metod">
+						<span class="icon alt fa-phone"></span>
+						<h3>Phone</h3>
+						<a href="#">(000) 000-0000 x12387</a>
+					</div>
+				</section>
+				<section>
+					<div class="contact-metod">
+						<span class="icon alt fa-home"></span>
+						<h3>Address</h3>
+						<span>
+							1234 Somewhere Road #5432 <br>
+							Nashville, TN 00000 <br>
+							United States of America
+						</span>
+					</div>
+				</section>
+			</section>
+		</div>
+	</section>
+	<!-- Конец формы обратной связи -->
+	</body>
 </html>
