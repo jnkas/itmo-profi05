@@ -15,6 +15,7 @@ body {
 }
 .logo:hover a span {
     background-color: #53e3fb;
+    transition: 1s;
 }
 /* почему не работает:
  .logo a span:hover? тогда при наведении на надпись "by html5 up" - горит только надпись, а фон "forty" не горит,
@@ -22,6 +23,7 @@ body {
  */
 .logo:hover a {
     color: #53e3fb;
+    transition: 1s;
 }
 .logo span {
     padding: 5px;
@@ -61,6 +63,11 @@ body {
 }
 .menu a:hover {
     color: #53e3fb;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 /* "intro" section */
@@ -110,6 +117,7 @@ body {
     margin-top: 15px;
 }
 .btn-get-started {
+
     color: white;
     border: 2px solid white;
     padding: 15px 30px;
@@ -119,6 +127,11 @@ body {
     font-size: 14px;
 }
 .btn-get-started:hover {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
     border-color: #53e3fb;
     color: #53e3fb;
 }
@@ -339,43 +352,59 @@ body {
     background-color: #242943;
     border-bottom: 1px solid #2e3450;
 }
+.box label, .text label {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 50.9px;
+    text-transform: uppercase;
+}
 .box input {
-    width: 200px;
-    padding: 15px 150px;
     display: inline;
     background: #2e3450;
-    border: 1px solid #2e3450;
     box-sizing: border-box;
     color: white;
 }
-.box div {
-    width: 200px;
+.name-input {
     display: inline-block;
-    padding-right: 240px;
     padding-top: 60px;
     padding-left: 100px;
 }
-.box label, .text label {
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 53.9px;
-    text-transform: uppercase;
+.email-input {
+    display: inline-block;
+    padding-top: 60px;
+    padding-left: 40px;
 }
-textarea {
-    padding: 12px 20px;
+
+input[type=text], input[type=email] {
+    width: 310px;
+    padding: 14px;
     box-sizing: border-box;
-    background-color: #2e3450;
-    border: 1px solid #2e3450;
-    font-size: 16px;
-    width: 646px;
-    height: 200px;
+    border: 2px solid #2e3450;
+    outline: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: 2px solid #53e3fb;
 }
 .text {
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-bottom: 43px;
+}
+textarea {
+    width: 665px;
+    height: 202px;
+    padding: 12px 20px;
+    background-color: #2e3450;
+    border: 2px solid #2e3450;
+    font-size: 17px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
 }
 .btn-send {
     font-weight: 600;
@@ -393,6 +422,11 @@ textarea {
 .btn-send:hover {
     background: #53e3fb;
     border: #53e3fb;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 .btn-clear {
     font-weight: 600;
@@ -411,6 +445,11 @@ textarea {
 .btn-clear:hover {
     border-color: #53e3fb;
     color: #53e3fb;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 /* "feedback" contacts */
@@ -466,6 +505,11 @@ footer {
     margin-bottom: 35px;
 }
  footer .fa-stack:hover{
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
     color: #6fc3df;
 }
 .fa-stack-1x {
@@ -493,6 +537,11 @@ footer {
 .footer-links a:hover, .contacts a:hover {
     color: #53e3fb;
     border: none;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 
