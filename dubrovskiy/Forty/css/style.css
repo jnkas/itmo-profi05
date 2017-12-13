@@ -67,16 +67,22 @@ h1 {
     width: calc(100% - 6em);
 }
 .intro-block p {
-    padding: 0;
+    padding: 0 1em 0 0;
     border: 0;
     display: inline-block;
 }
-.ul.get-started li {
+.get-started {
+    padding: 1em;
+    border: 0;
+    display: inline-block;
+    list-style: none;
+}
+/*.ul.get-started li {
     display: inline-block;
     padding: 0 1em 0 0;
     vertical-align: middle;
     border: 0;
-}
+}*/
 .intro p {
     text-transform: uppercase;
     font-size: 0.7em;
@@ -135,12 +141,12 @@ h1 {
     letter-spacing: 0.2em;      
 }
 
-.logo span:hover {
+.logo:hover  span{
     background: aqua;
     color: black;
 }
 
-.btn:hover, .logo *:hover, .menu *:hover {
+.btn:hover, .logo:hover a, .menu *:hover {
     color: aqua;
     border-color: aqua;
 }

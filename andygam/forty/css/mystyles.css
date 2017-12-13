@@ -145,6 +145,7 @@ body {
     width: 1440px;
 }
 /* photo-text styles */
+
 .photo-text {
     position: absolute;
     top: 120px;
@@ -168,6 +169,7 @@ body {
 }
 
 /* picture 1 */
+
 .pic-one {
     background-size: cover;
     background-image: url("../images/pic01.jpg");
@@ -183,12 +185,21 @@ body {
     opacity: 0.75;
     transition: opacity .3s linear;
 }
+.photo-text:hover{
+    cursor: pointer;
+}
 .img-overlay:hover, .img-overlay-two:hover, .img-overlay-three:hover, .img-overlay-four:hover, .img-overlay-five:hover, .img-overlay-six:hover {
     opacity: 0;
     transition: opacity .3s linear; /* can also try other values such as ease, ease-out etc. */
+}
+.pic-one:hover > .img-overlay, .pic-two:hover > .img-overlay-two, .pic-three:hover > .img-overlay-three, .pic-four:hover > .img-overlay-four,
+.pic-five:hover > .img-overlay-five, .pic-six:hover > .img-overlay-six {
+
+    transition: opacity .5s ease-in-out;
+    opacity: 0;
     cursor: pointer;
 }
-
+    
 /* picture 2 */
 .pic-two {
     background-size: cover;
