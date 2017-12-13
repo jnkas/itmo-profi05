@@ -118,10 +118,10 @@ h2 {
 
 
 .photo-text-1{
-	background-image: url(../../Alimov/app/img/pic01.jpg);
+	background-image: url(/images/pic01.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-<<<<<<< HEAD
+
  /* height:auto;
 	margin:0;
 	padding: 150px 0px 150px 50px; */
@@ -132,11 +132,11 @@ h2 {
     padding: 150px 0px 150px 50px;
     transition: all 1s ease 0s;
 }
-=======
+
   /*height:auto;*/
 /*	margin:0;
 	padding: 150px 0px 150px 50px;*/
->>>>>>> ae65575f5c73af7bc3661fac096b90476181b100
+
 
 .photo-text-1:hover div {
     background: rgba(0, 0, 0, 0);
