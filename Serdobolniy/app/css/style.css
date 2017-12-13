@@ -13,6 +13,12 @@ header {
     right: 0;
 }
 
+.subheader {
+    font-size: 16px;
+    position: relative;
+}
+
+
 .menu {
     position: absolute;
     right: 10px;
@@ -31,6 +37,30 @@ header {
     color: #000;
 }
 
+hr {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+    width: 90px;
+    margin-left: 10px;
+} 
+
+.menu-n {
+    font-size: 42px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 3.4em;
+    margin-left: 10px;
+}
+
+.menu-n-n {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 10px;
+}
+
 .intro {
     background: #000;
     /*padding: 100px 0;*/
@@ -46,34 +76,117 @@ header {
 .fade {
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .photo-text {
-	background-image: url("../images/pic01.jpg");
-	background-size: cover;
+	display: inline-block;
+    float: left;
+    background: url("../images/pic01.jpg") 50% 10% no-repeat;
+    width: 100%;
+    height: 410px;
+    background-size: cover;
+    
 }
 
 .photo-text-2 {
-    background-image: url("../images/pic02.jpg");
+    display: inline-block;
+    background: url("../images/pic02.jpg") 50% 10% no-repeat;
+    width: 100%;
+    height: 410px;
     background-size: cover;
 }
 
 .photo-text-3 {
-    background-image: url("../images/pic03.jpg");
+    float: left;
+    display: inline-block;
+    background: url("../images/pic03.jpg") 50% 10% no-repeat;
+    width: 100%;
+    height: 410px;
     background-size: cover;
 }
 
 .photo-text-4 {
-    background-image: url("../images/pic04.jpg");
+    display: inline-block;
+    background: url("../images/pic04.jpg") 50% 10% no-repeat;
+    width: 100%;
+    height: 410px;
     background-size: cover;
 }
 
 .photo-text-5 {
-    background-image: url("../images/pic05.jpg");
+    float: left;
+    display: inline-block;
+    background: url("../images/pic05.jpg") 50% 10% no-repeat;
+    width: 100%;
+    height: 410px;
     background-size: cover;
 }
 
 .photo-text-6 {
-    background-image: url("../images/pic06.jpg");
+    display: inline-block;
+    background: url("../images/pic06.jpg") 50% 10% no-repeat;
+    width: 100%;
+    height: 410px;
     background-size: cover;
+}
+
+.g {
+    width: 100%;
+    height: 100%;
+    background: rgba(111, 195, 223, 0.6);
+}
+
+.g:hover {
+    background: rgba(111, 195, 223, 0);
+}
+
+.f {
+    width: 100%;
+    height: 100%;
+    background: rgba(141, 130, 196, 0.6);
+}
+
+.f:hover {
+    background: rgba(141, 130, 196, 0);
+}
+
+.r {
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 141, 129, 0.6);
+}
+
+.r:hover {
+    background: rgba(236, 141, 129, 0);
+}
+
+.o {
+    width: 100%;
+    height: 100%;
+    background: rgba(231, 183, 136, 0.6);
+}
+
+.o:hover {
+    background: rgba(231, 183, 136, 0);
+}
+
+.s {
+    width: 100%;
+    height: 100%;
+    background: rgba(142, 169, 232, 0.6);
+}
+
+.s:hover {
+    background: rgba(142, 169, 232, 0);
+}
+
+.z {
+    width: 100%;
+    height: 100%;
+    background: rgba(135, 197, 164, 0.6);
+}
+
+.z:hover {
+    background: rgba(135, 197, 164, 0);
 }
 
 .intro h1 {
