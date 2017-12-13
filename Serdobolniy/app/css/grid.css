@@ -34,6 +34,7 @@
 }
 .col-6 {
 	width: 50%;
+	float: left;
 }
 .col-7 {
 	width: 58.33%;
@@ -59,4 +60,37 @@
 	display: block;
 	clear: both;
 	visibility: hidden; 
+}
+
+.contayner {
+	width: 1170px;
+	margin: auto;
+}
+
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.offset-6 {
+	margin-left: 50%;
+}
+
+
+@media (max-width: 900px) {
+	.col-1,
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5,
+	.col-6,
+	.col-7,
+	.col-8,
+	.col-9,
+	.col-10,
+	.col-11,
+	.col-12 {
+		width: 100%;
+			}
 }
