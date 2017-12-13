@@ -15,6 +15,7 @@ body {
 }
 .logo:hover a span {
     background-color: #53e3fb;
+    transition: 1s;
 }
 /* почему не работает:
  .logo a span:hover? тогда при наведении на надпись "by html5 up" - горит только надпись, а фон "forty" не горит,
@@ -22,6 +23,7 @@ body {
  */
 .logo:hover a {
     color: #53e3fb;
+    transition: 1s;
 }
 .logo span {
     padding: 5px;
@@ -61,6 +63,11 @@ body {
 }
 .menu a:hover {
     color: #53e3fb;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 /* "intro" section */
@@ -110,6 +117,7 @@ body {
     margin-top: 15px;
 }
 .btn-get-started {
+
     color: white;
     border: 2px solid white;
     padding: 15px 30px;
@@ -119,6 +127,11 @@ body {
     font-size: 14px;
 }
 .btn-get-started:hover {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
     border-color: #53e3fb;
     color: #53e3fb;
 }
@@ -132,6 +145,7 @@ body {
     width: 1440px;
 }
 /* photo-text styles */
+
 .photo-text {
     position: absolute;
     top: 120px;
@@ -155,9 +169,10 @@ body {
 }
 
 /* picture 1 */
+
 .pic-one {
     background-size: cover;
-    background: url("../images/pic01.jpg");
+    background-image: url("../images/pic01.jpg");
     height: 409px;
     position: relative;
     width: 576px;
@@ -168,17 +183,23 @@ body {
     height: 100%;
     background: #6fc3df;
     opacity: 0.75;
+    transition: opacity .3s linear;
 }
-.pic-one:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic01.jpg") no-repeat center;
+.photo-text:hover{
+    cursor: pointer;
 }
+.img-overlay:hover, .img-overlay-two:hover, .img-overlay-three:hover, .img-overlay-four:hover, .img-overlay-five:hover, .img-overlay-six:hover {
+    opacity: 0;
+    transition: opacity .3s linear; /* can also try other values such as ease, ease-out etc. */
+}
+.pic-one:hover > .img-overlay, .pic-two:hover > .img-overlay-two, .pic-three:hover > .img-overlay-three, .pic-four:hover > .img-overlay-four,
+.pic-five:hover > .img-overlay-five, .pic-six:hover > .img-overlay-six {
 
+    transition: opacity .5s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+}
+    
 /* picture 2 */
 .pic-two {
     background-size: cover;
@@ -193,21 +214,13 @@ body {
     height: 100%;
     background: #8d82c4;;
     opacity: 0.75;
-}
-.pic-two:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic02.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* picture 3 */
 .pic-three {
     background-size: cover;
-    background: url("../images/pic03.jpg");
+    background-image: url("../images/pic03.jpg");
     height: 409px;
     width: 864px;
     position: relative;
@@ -218,15 +231,7 @@ body {
     height: 100%;
     background: #ec8d81;
     opacity: 0.75;
-}
-.pic-three:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic03.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* picture 4 */
@@ -243,21 +248,13 @@ body {
     height: 100%;
     background: #e7b788;;
     opacity: 0.75;
-}
-.pic-four:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic04.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* picture 5 */
 .pic-five {
     background-size: cover;
-    background: url("../images/pic05.jpg");
+    background-image: url("../images/pic05.jpg");
     height: 409px;
     position: relative;
     width: 576px;
@@ -268,15 +265,7 @@ body {
     height: 100%;
     background: #8ea9e8;
     opacity: 0.75;
-}
-.pic-five:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic05.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* picture 6 */
@@ -293,15 +282,7 @@ body {
     height: 100%;
     background: #87c5a4;
     opacity: 0.75;
-}
-.pic-six:hover:after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: url("../images/pic06.jpg") no-repeat center;
+    transition: opacity .3s linear;
 }
 
 /* "some_text" section */
@@ -339,43 +320,59 @@ body {
     background-color: #242943;
     border-bottom: 1px solid #2e3450;
 }
+.box label, .text label {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 50.9px;
+    text-transform: uppercase;
+}
 .box input {
-    width: 200px;
-    padding: 15px 150px;
     display: inline;
     background: #2e3450;
-    border: 1px solid #2e3450;
     box-sizing: border-box;
     color: white;
 }
-.box div {
-    width: 200px;
+.name-input {
     display: inline-block;
-    padding-right: 240px;
     padding-top: 60px;
     padding-left: 100px;
 }
-.box label, .text label {
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 53.9px;
-    text-transform: uppercase;
+.email-input {
+    display: inline-block;
+    padding-top: 60px;
+    padding-left: 40px;
 }
-textarea {
-    padding: 12px 20px;
+
+input[type=text], input[type=email] {
+    width: 310px;
+    padding: 14px;
     box-sizing: border-box;
-    background-color: #2e3450;
-    border: 1px solid #2e3450;
-    font-size: 16px;
-    width: 646px;
-    height: 200px;
+    border: 2px solid #2e3450;
+    outline: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: 2px solid #53e3fb;
 }
 .text {
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-bottom: 43px;
+}
+textarea {
+    width: 665px;
+    height: 202px;
+    padding: 12px 20px;
+    background-color: #2e3450;
+    border: 2px solid #2e3450;
+    font-size: 17px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
 }
 .btn-send {
     font-weight: 600;
@@ -393,6 +390,11 @@ textarea {
 .btn-send:hover {
     background: #53e3fb;
     border: #53e3fb;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 .btn-clear {
     font-weight: 600;
@@ -411,6 +413,11 @@ textarea {
 .btn-clear:hover {
     border-color: #53e3fb;
     color: #53e3fb;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 /* "feedback" contacts */
@@ -466,6 +473,11 @@ footer {
     margin-bottom: 35px;
 }
  footer .fa-stack:hover{
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
     color: #6fc3df;
 }
 .fa-stack-1x {
@@ -493,6 +505,11 @@ footer {
 .footer-links a:hover, .contacts a:hover {
     color: #53e3fb;
     border: none;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 
