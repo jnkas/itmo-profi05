@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+*, *::before, *::after {box-sizing: border-box;
+}
+
+.clearfix::after { 
+	clear: both; 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	visibility: hidden; 
+}
+
+body {
+	margin:0;
+	font-family: "PT Sans", Arial;
+	}
+
+.logo{
+	display: inline-block;
+	width: 30%;
+}
+
+.menu{
+	position: absolute;
+	right:10px;
+	top:15px;
+	color: #fff;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left:0;
+	padding: 15px 10px;
+
+}
+
+.logo a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff
+}
+
+.logo span {
+	padding: 5px;
+	background: #ffffff;
+	color: #000000;
+}
+
+.intro {
+	background: #000;
+	color: #fff;
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	background: gray;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+}
+
+.flex-container div {
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	height: 40vh;
+}
+
+.flex-item {
+	background: lightgray;
+	height: 30vh;
+		}
+
+.intro1 {
+	width:40%;
+	
+}
+
+.intro2 {
+	width:60%;
+
+}
+
+.intro .intro-block {
+	width: 1000px;
+	margin: auto;
+	padding: 100px 20px;
+
+}
+
+.intro h1 {
+	border-bottom: 2px solid #fff;
+	padding-bottom: 15px;
+}
+
+.fade {
+	background-color: rgba(0,0,0,0.6);
+	}
+
+.fade-block1 {
+	height: 100%;
+	background-color: rgba(30,37,66,0.6);
+}
+
+.fade-block2 {
+	height: 100%;
+	background-color: rgba(123,192,215,0.6);
+		}
+
+.fade-block3 {
+	height: 100%;
+	background-color: rgba(228,146,138,0.6);
+		}
+.fade-block4 {
+	height: 100%;
+	background-color: rgba(223,182,143,0.6);
+		}
+
+.fade-block5 {
+	height: 100%;
+	background-color: rgba(126,151,206,0.6);
+		}
+
+.fade-block6 {
+	height: 100%;
+	background-color: rgba(129,188,162,0.6);
+		}
+
+
+
+.fade-block1:hover, 
+.fade-block3:hover, 
+.fade-block2:hover, 
+.fade-block4:hover, 
+.fade-block5:hover, 
+.fade-block6:hover   {
+	background-color: rgba(0,0,0,0);
+}
+
+.btn {
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 5px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+.btn1 {
+	color: rgb(36,41,67);
+	background: #fff;
+	border: 1px solid #fff;
+	padding: 5px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+
+.btn:hover {
+	color: #36e6e6;
+	border-color: #36e6e6;
+}
+
+.foto-text {
+padding: 75px 50px;
+margin: auto;
+position: relative;
+vertical-align: baseline;
+}
+
+form .field.half {
+    width: 50%;
+    float: left;
+    padding: 0 0 0 1em;
+}
+.inner {
+    padding: 4em 0 2em 0;
+    margin: 0 auto;
+    max-width: 65em;
+    width: calc(100% - 6em);
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.head-text h2::after {
+	content: '';
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    width: calc(60% - 10px);
+}
+
+.foto-text p {
+	font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.foto-line:hover {
+	background-color: rgba(0,0,0,0);
+}
+
+.intro-last {
+	padding: 4em 0 2em 0;
+    margin: 0 auto;
+    max-width: 65em;
+    width: calc(100% - 6em);
+}
+
+h2 {
+	color: #fff;
+	font-size: 24px;
+}
+
+input {
+	line-height: 40px;
+	background: rgb(42,47,74);
+	border: none;
+	padding:5px;
+	font-size: 20px;
+	color: #fff;
+}
+
+p, li, h3 {
+	color: #fff;
+}
+
+a {text-decoration: none; color: #fff;}
+
+.foot {
+	background-color: 
+}
+
+@media (min-width: 768px) and (max-width: 900px){
+	.intro .intro-block {
+	width: 100%;
+	padding: 100px 20px;
+	color: red;	
+
+}
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+	.intro .intro-block {
+	width: 100%;
+	padding: 100px 20px;
+	color: blue;	
+
+}
+}

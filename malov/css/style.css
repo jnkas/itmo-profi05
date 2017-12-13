@@ -1,72 +1,173 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-body {
-    margin: 0px;
-    font-family: "PT Sans";
+@media all and (min-width:320px) and (max-width:900px) {
+    .intro .intro-block{
+    width: 100%;
+    color: 
 }
-header {
+}
+
+body{
+    font-family: "PT Sans";
+    margin: auto;
+    
+}
+
+header{
     position: absolute;
     padding: 15px 10px;
-/*    background: black;*/
     top: 0;
     left: 0;
     right: 0;
-}
-span{
-    padding: 5px;
-    background: #fff;
-    color: #000;
-}
-.logo {
-    display: inline-block;
-    width: 30%;
-}
-.logo a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+/*    background: yellow;*/
         
 }
-.menu {
-    position: absolute;
-    right: 10px;
-    top: 15px;
-/*    color: #fff;*/
-}
-.intro {
-    background: black;
-/*    padding: 100px 0;*/
-    color: #fff;
-    background-image: url("../images/banner.jpg");
-    background-size: cover;
-}
-.intro .intro-block{
-    margin: auto;
-    width: 1000px;
-    padding: 100px 0;
-}
-.intro h1{
-    border-bottom: 2px solid #fff;
-    padding-bottom: 20px
-    
-}
-.btn{
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 5px 15px;
+.byhtml>a>span{
+    background: white;
+    color:blueviolet;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
-.btn:hover{
-    color: aquamarine;
+.byhtml>a{
+    color:white;
+    text-decoration: none;
+}
+.byhtml:hover,.intro-block>a:hover, .byhtml a:hover{
+    color:aquamarine;
     border-color: aquamarine;
 }
+.menu>a{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+/*    background: red;*/
+    text-decoration: none;
+    color: white;
+}
+.intro-block{
+    margin: ;
+    height: 500px;
+    width: 1050px;
+    padding: 100px;
+    color:white;
+    
+}
+.intro{
+    background-image: url(../images/banner.jpg);
+}
+.intro-block>h1{
+    border-bottom: 2px solid white;
+    padding-bottom: 12px;
+    font-size: 3.25em;
+}
+.intro-block>p{
+    display: inline-table;
+    float: left;
+    margin: auto;
+    word-spacing: 0.25em;
+    font-size: 0.7em;
+    letter-spacing: 0.25em;
+        
+}
+.intro-block>a{
+    border: 2px solid white;
+    padding: 7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: inline-table;
+    margin-left: 30px;
+      
+}
+.layer-intro-block{
+    background-color: rgba(42,47,74, 0.8);
+}
+
 /*
-.fade{
-    background-color: rgba(0,0,0, 0.4);
+.up-layer:hover{
+    background-color: rgba(0,0,0, 0.2);
 }
 */
-.photo-text {
-    background-image: url("../images/pic01.jpg")
+.photo-text{
+    padding-top:  157px;
+    padding-left: 80px;
+    width: 300px;
+    color: white;
+}
+.photo-text>h2{
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+    color: white;
+}
+.photo-text>p{
+    word-spacing: 0.25em;
+    font-size: 0.7em;
+    letter-spacing: 0.25em
+}
+.col-5{
+    background-image: url(../images/pic01.jpg);
+    height: 400px;
+}
+.col-7{
+    background-image: url(../images/pic02.jpg);
+    height: 400px;
+}
+
+.second-line>.col-7{
+    color:white;
+    background-image: url(../images/pic03.jpg);
+}
+.second-line>.col-5{
+    color:white;
+    background-image: url(../images/pic04.jpg);
+}
+.third-line>.col-5{
+    color: white;
+    background-image: url(../images/pic05.jpg);
+}
+.third-line>.col-7{
+    color: white;
+    background-image: url(../images/pic06.jpg);
+}
+.col-12{
+    background-color: #2a2f4a;
+    height: 380px;
+}
+.intro2-block{
+    padding-left: 40px;
+    margin-top: 100px;
+}
+.intro2-block>h2{
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 12px;
+    font-size: 1.75em;
+    width: 170px
+}
+.intro2-block>p{
+    display: block;
+    margin: auto;
+    font: "PT Sans";
+    word-spacing: 0.25em;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    color: white;
+    
+}
+.intro2-block>a{
+    border: 2px solid white;
+    padding: 7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.contacts>.col-7{
+    background-color:#242943; 
+    height: 500px;
 }

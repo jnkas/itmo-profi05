@@ -1,0 +1,88 @@
+$main-color = #2a2f4a
+$hover-color = #9bf1ff
+$main-font = "Source Sans Pro"
+
+body
+  font-family $main-font
+
+a
+  font-size 0.8em
+  color white
+  letter-spacing 4px
+  font-weight 600
+
+h1
+  font-size 3em
+  color white
+  border-bottom 2px solid white
+  padding-bottom 30px
+
+h2
+  font-size 2em
+  color white
+  border-bottom 2px solid white
+  padding-bottom 10px
+
+h3
+  color white
+  font-size 0.7em
+  font-weight 600
+  letter-spacing 0.25em
+  text-transform uppercase
+
+button
+  border 2px solid white
+  border-radius 0
+  padding 10px 20px
+  background-color transparent
+  color white
+  font-size 0.7em
+  font-weight 600
+  text-transform uppercase
+  letter-spacing 0.25em
+
+header
+  position fixed
+  width calc(100vw - 40px)
+  padding 20px
+  background-color transparent
+  color white
+  align-items center
+  span
+    display flex
+    justify-content space-between
+  a
+    display block
+    text-transform uppercase
+    padding 5px
+  b
+    padding 4px 2px 4px 6px
+    margin-right 10px
+    color $main-color
+    background-color white
+
+.banner
+  background-size cover
+  height 75vh
+  padding 0 50px
+  display flex
+  align-items center
+  .width
+    width 100%
+
+.bot
+  background-color $main-color
+
+.tiles
+  article
+    float right
+    height 40vh
+    background-size cover
+    display flex
+    align-items center
+    span
+      padding-left 50px
+  .sm
+    width 40vw
+  .big
+    width 60vw
