@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-*, *::before, *::after {
+/**, *::before, *::after {
     box-sizing: border-box;
-}
+}*/
 body {
     margin: 0;
     font-family: 'PT Sans',Arial,sans-serif;
@@ -13,19 +13,28 @@ body {
 
 header {
     padding: 15px 10px;
-    position: absolute;
+    position: fixed;
     top: 0;
+    min-height: 4em;
     left: 0;
     right: 0;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     cursor: default;
     vertical-align: baseline;
+    background-color: rgba(36, 41, 67, 0.85);
 }
 
 h1 {
     font-size: 3.25em;
 }
+
+/*.fixheader {
+  position: sticky;
+  top: 0;
+  min-height: 2em;
+  background: rgba(36, 41, 67, 0.85);
+}*/
 .menu {
     position: absolute;
     right: 10px;
@@ -83,8 +92,7 @@ h1 {
     vertical-align: middle;
     border: 0;
 }*/
-.intro p {
-    text-transform: uppercase;
+.intro p, .photo-line p {
     font-size: 0.7em;
     font-weight: 600;
     letter-spacing: 0.25em;
@@ -93,8 +101,22 @@ h1 {
 .fade {
     background-color: rgba(36, 41, 67, 0.85);
 }
+.content {
+    background-color: rgba(34, 33, 67, 1);
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.025em;
+}
+.text-content {
+    padding: 4em 2em 2em 0;
+    margin: 0 auto;
+    max-width: 65em;
+    width: calc(100% - 6em);
+}
 .photo-line {
  height: 100%;
+ color: white;
 }
 .photo-Aliquam {
     background-image: url("../images/pic01.jpg");
@@ -127,11 +149,29 @@ h1 {
     padding: 4em 3em 2em 3em;
 }
 
-.intro h1 {
+.blend-Aliquam {
+    background-color: rgba(111, 195, 223, 0.85);
+}
+.blend-Tempus {
+    background-color: rgba(141, 130, 196, 0.85);
+}
+.blend-Magna {
+    background-color: rgba(236, 141, 129, 0.85);
+}
+.blend-Ipsum {
+    background-color: rgba(231, 183, 136, 0.85);
+}
+.blend-Consequat {
+    background-color: rgba(142, 169, 232, 0.85);
+}
+.blend-Etiam {
+    background-color: rgba(135, 197, 164, 0.85);
+}
+
+.intro h1, h2, h3 {
     border-bottom: 2px solid #fff;
     padding-bottom: 20px;
 }
-
 .btn {
     color: #fff;
     border: 1px solid #fff;
@@ -140,7 +180,9 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2em;      
 }
-
+.blend-Aliquam:hover, .blend-Tempus:hover, .blend-Magna:hover, .blend-Ipsum:hover, .blend-Consequat:hover, .blend-Etiam:hover {
+    background: unset;
+}
 .logo:hover  span{
     background: aqua;
     color: black;
