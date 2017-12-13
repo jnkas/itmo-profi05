@@ -70,4 +70,13 @@ header {
     border-color: #35e6e6;
 }
 
+@media (min-width: 320px) and (max-width: 900px) {
+	.intro .intro-block {
+	    width: 100%;
+	    color: red;
+        padding-left: 15px;
+    	padding-right: 15px;
+	}
+}
+
 

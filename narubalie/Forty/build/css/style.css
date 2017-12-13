@@ -1,0 +1,91 @@
+body {
+  font-family: "Source Sans Pro";
+}
+a {
+  font-size: 0.8em;
+  color: #fff;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+h1 {
+  font-size: 3em;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 30px;
+}
+h2 {
+  font-size: 2em;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+h3 {
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+button {
+  border: 2px solid #fff;
+  border-radius: 0;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+header {
+  position: fixed;
+  width: calc(100vw - 40px);
+  padding: 20px;
+  background-color: transparent;
+  color: #fff;
+  align-items: center;
+}
+header span {
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  display: block;
+  text-transform: uppercase;
+  padding: 5px;
+}
+header b {
+  padding: 4px 2px 4px 6px;
+  margin-right: 10px;
+  color: #2a2f4a;
+  background-color: #fff;
+}
+.banner {
+  background-size: cover;
+  height: 75vh;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+}
+.banner .width {
+  width: 100%;
+}
+.bot {
+  background-color: #2a2f4a;
+}
+.tiles article {
+  float: right;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.tiles article span {
+  padding-left: 50px;
+}
+.tiles .sm {
+  width: 40vw;
+}
+.tiles .big {
+  width: 60vw;
+}
