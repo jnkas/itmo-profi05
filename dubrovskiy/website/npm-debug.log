@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--global',
+1 verbose cli   'gulp-cli' ]
+2 info using npm@1.4.21
+3 info using node@v4.6.1
+4 verbose cache add [ 'gulp-cli', null ]
+5 verbose cache add name=undefined spec="gulp-cli" args=["gulp-cli",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'gulp-cli',
+6 verbose parsed url   path: 'gulp-cli',
+6 verbose parsed url   href: 'gulp-cli' }
+7 silly lockFile e23a8be8-gulp-cli gulp-cli
+8 verbose lock gulp-cli /home/user/.npm/e23a8be8-gulp-cli.lock
+9 silly lockFile e23a8be8-gulp-cli gulp-cli
+10 silly lockFile e23a8be8-gulp-cli gulp-cli
+11 verbose addNamed [ 'gulp-cli', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile dd34a9c8-gulp-cli gulp-cli@
+14 verbose lock gulp-cli@ /home/user/.npm/dd34a9c8-gulp-cli.lock
+15 silly addNameRange { name: 'gulp-cli', range: '*', hasData: false }
+16 verbose request where is /gulp-cli
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 009abbab107d92a1
+19 verbose url raw /gulp-cli
+20 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-cli' ]
+21 verbose url resolved https://registry.npmjs.org/gulp-cli
+22 verbose request where is https://registry.npmjs.org/gulp-cli
+23 info trying registry request attempt 1 at 19:47:11
+24 http GET https://registry.npmjs.org/gulp-cli
+25 error TypeError: Request path contains unescaped characters.
+25 error     at new ClientRequest (_http_client.js:50:11)
+25 error     at TunnelingAgent.exports.request (http.js:31:10)
+25 error     at TunnelingAgent.createSocket (/usr/lib/nodejs/tunnel-agent/index.js:117:25)
+25 error     at TunnelingAgent.createSecureSocket [as createSocket] (/usr/lib/nodejs/tunnel-agent/index.js:184:41)
+25 error     at TunnelingAgent.addRequest (/usr/lib/nodejs/tunnel-agent/index.js:80:8)
+25 error     at new ClientRequest (_http_client.js:142:16)
+25 error     at Object.exports.request (http.js:31:10)
+25 error     at Object.socket.once.exports.request (https.js:182:15)
+25 error     at Request.start (/usr/lib/nodejs/request/index.js:607:30)
+25 error     at Request.end (/usr/lib/nodejs/request/index.js:1235:28)
+26 error If you need help, you may report this *entire* log,
+26 error including the npm and node versions, at:
+26 error     <http://github.com/npm/npm/issues>
+27 error System Linux 4.6.0-1-amd64
+28 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "--global" "gulp-cli"
+29 error cwd /home/user/project/website
+30 error node -v v4.6.1
+31 error npm -v 1.4.21
+32 verbose exit [ 1, true ]

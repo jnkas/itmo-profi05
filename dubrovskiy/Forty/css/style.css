@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'PT Sans',Arial,sans-serif;
+    font-size: 12pt;
+    font-weight: 300;
+    vertical-align: baseline;
+    cursor: default;
+}
+
+header {
+    padding: 15px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    cursor: default;
+    vertical-align: baseline;
+}
+
+h1 {
+    font-size: 3.25em;
+}
+.menu {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font: inherit;
+}
+
+.logo a, .menu a {
+    text-decoration: none;
+    color: #fff;
+    font: inherit;
+    border: 0;
+    display: inline-block;
+    font-size: 0.8em;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 1.5em;
+}
+
+.logo span {
+    padding: 5px;
+    background: white;
+    color: black;
+    font: inherit;
+}
+
+.intro {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+}
+.intro .intro-block {
+    padding: 100px 0;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.65;
+    margin-bottom: 0;
+    margin: 0 auto;
+    max-width: 65em;
+    width: calc(100% - 6em);
+}
+.intro-block p {
+    padding: 0 1em 0 0;
+    border: 0;
+    display: inline-block;
+}
+.get-started {
+    padding: 1em;
+    border: 0;
+    display: inline-block;
+    list-style: none;
+}
+/*.ul.get-started li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+    vertical-align: middle;
+    border: 0;
+}*/
+.intro p {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+.fade {
+    background-color: rgba(36, 41, 67, 0.85);
+}
+.photo-line {
+ height: 100%;
+}
+.photo-Aliquam {
+    background-image: url("../images/pic01.jpg");
+    background-size: cover;
+    padding: 4em 3em 2em 3em;
+}
+.photo-Tempus {
+    background-image: url("../images/pic02.jpg");
+    background-size: cover;
+    padding: 4em 3em 2em 3em;
+}
+.photo-Magna {
+    background-image: url("../images/pic03.jpg");
+    background-size: cover;
+    padding: 4em 3em 2em 3em;
+}
+.photo-Ipsum {
+    background-image: url("../images/pic04.jpg");
+    background-size: cover;
+    padding: 4em 3em 2em 3em;
+}
+.photo-Consequat {
+    background-image: url("../images/pic05.jpg");
+    background-size: cover;
+    padding: 4em 3em 2em 3em;
+}
+.photo-Etiam {
+    background-image: url("../images/pic06.jpg");
+    background-size: cover;
+    padding: 4em 3em 2em 3em;
+}
+
+.intro h1 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+}
+
+.btn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;      
+}
+
+.logo:hover  span{
+    background: aqua;
+    color: black;
+}
+
+.btn:hover, .logo:hover a, .menu *:hover {
+    color: aqua;
+    border-color: aqua;
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+    .intro .intro-block {
+        width: 100%;
+        color: red;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
