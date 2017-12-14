@@ -404,11 +404,6 @@ p {
   display: flex;
 }
 
-
-.contact {
-
-}
-
 .contacts {
 width: 100%;
 padding: 44px 0 20px 40px;
@@ -450,28 +445,37 @@ label {
 }
 
 input#name  {
-  border-color: aquamarine;
+  border-color:none;
   background-color: #2a2f4a;
   height:3em;
   width: 100%;
+  }
+
+  input#name:focus {
+    border-color: aquamarine;
   }
 
 input#email {
-  border-color: aquamarine;
   background-color: #2a2f4a;
   height:3em;
   width: 100%;
   }
 
-textarea#message {
+input#email:focus {
   border-color: aquamarine;
+}
+
+textarea#message {
   background-color: #2a2f4a;
   height:225px;
   width:90%;
   padding: 14px 19px 14px 19px;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!КОСТЫЛЬ С ПАДДИНГОМ!!!!!!!!!!!!!!!!!!!*/
+textarea#message:focus {
+  border-color: aquamarine;
+}
+
 
 .n-e-m {
   display: block;
