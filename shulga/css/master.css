@@ -94,7 +94,7 @@ nav.menu {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(36, 41, 67, 0.9);
+  background: rgba(36, 41, 67, 0.99);
 }
 nav.menu label {
   position: fixed;
@@ -103,14 +103,46 @@ nav.menu label {
   color: #fff;
 }
 .inner {
-  display: block;
-  position: absolute;
-  padding: 0;
-  margin: 0 auto;
-  width: 25%;
+    position: relative;
+    top: 20%;
+    padding: 0;
+    margin: 0 auto;
+    width: 25%;
 }
+
+
 .inner ul {
-  list-style: none;
+    padding: 0;
+    list-style: none;
+}
+.inner ul li {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.inner ul li::after {
+    content: "";
+    background: rgba(212, 212, 255, 0.1);
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin-top: 1em;
+}
+.inner ul li:last-child::after {
+    display: none;
+}
+
+.inner li:hover a {
+  color: aqua;
+}
+
+.inner > a {
+    width: 100%;
+    text-align: center;
+}
+
+.inner > a:first-of-type {
+    margin-bottom: 1.25em;
 }
 
 .menu-item a {
@@ -188,7 +220,7 @@ h2::after {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     display: inline-block;
-    font-weight: 500;
+    font-weight: 700;
     font-size: small;
 }
 
@@ -197,10 +229,27 @@ h2::after {
     border-color: aqua;
 }
 
+.white-btn {
+    background: #fff;
+    color: #242943;
+    border: 2px solid #fff;
+    padding: 15px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    display: inline-block;
+    font-weight: 700;
+    font-size: small;
+}
+
+.white-btn:hover {
+    background: aqua;
+    border-color: aqua;
+}
+
 [class^='elem'] {
     color: #fff;
     padding: 4em 4em 2em 4em; 
-    background-size: cover;
     height: 40vh;
     position: relative;
     min-height: 23em;
@@ -213,6 +262,9 @@ h2::after {
 
 .elem-1  {
     background: url("../images/pic01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
     flex-basis: 40%;
 }
 
@@ -236,6 +288,9 @@ h2::after {
 
 .elem-2  {
     background: url("../images/pic02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
     flex-basis: 60%;
 }
 .elem-2::before {
@@ -257,6 +312,9 @@ h2::after {
 
 .elem-3  {
     background: url("../images/pic03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
     flex-basis: 60%;
 }
 
@@ -279,6 +337,9 @@ h2::after {
 
 .elem-4  {
     background: url("../images/pic04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
     flex-basis: 40%;
 }
 .elem-4::before {
@@ -300,6 +361,9 @@ h2::after {
 
 .elem-5  {
     background: url("../images/pic05.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
     flex-basis: 40%;
 }
 .elem-5::before {
@@ -322,6 +386,9 @@ h2::after {
 
 .elem-6  {
     background: url("../images/pic06.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
     flex-basis: 60%;
 }
 .elem-6::before {
@@ -458,8 +525,8 @@ h2::after {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 120vw;
+    height: 150vh;
     background: #242943;
     opacity: 0.95;
 }
@@ -469,7 +536,7 @@ h2::after {
     text-align: center;
 }
 
-@media only screen and (max-width:365px){
+@media only screen and (max-width:355px){
     #modal-too-small{
         display: block;
         z-index: 10;
