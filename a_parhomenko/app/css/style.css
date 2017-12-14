@@ -41,8 +41,7 @@ header{
 }
 a{
     text-decoration: none;
-    color:#fff;
-
+    /* color:#fff; */
 }
 a:hover{
     color: #35e6e6;
@@ -62,8 +61,7 @@ header .menu{
 
 .logo a{
     text-transform: uppercase;
-    text-decoration: none;
-    color: white;
+    /* color: white; */
 }
 .logo span{
     padding: 3px;
@@ -74,7 +72,6 @@ header .menu{
     margin-left: 10px;
 }
 .intro{
-    /*padding: 100px 0;*/
     color: #fff;
     background-image: url(../images/banner.jpg);
     background-size: cover;
@@ -103,6 +100,9 @@ header .menu{
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 0.20em;
+}
+.photo-line a:hover{
+    color: #fff;
 }
 .btn{
     margin-left: 10px;
@@ -134,6 +134,12 @@ h2{
     border-bottom: 2px solid #fff ;
     width: 136px;
     padding-bottom: 10px;
+}
+.photo-header{
+    padding-top: 150px;
+    padding-left: 73px;
+    letter-spacing: 2px;
+    font-size: 18px
 }
 
 .fade-one{
@@ -315,8 +321,10 @@ textarea{
 .actions{
     padding-top: 46px;
     padding-left: 0;
-    padding-bottom: 65px
-
+    padding-bottom: 65px;
+}
+input[type="submit"], input[type="reset"]{
+    cursor: pointer;
 }
 li{
     display: inline-block;
@@ -350,27 +358,12 @@ ul li:nth-child(2) input{
     padding-right: 18px;
 }
 
-
-/*.icon .alt::before{
-    background-color: #fff;
-    border-radius: 100%;
-    color: #242943;
-    display: inline-block;
-    height: 30px;
-    line-height: 10px;
-    text-align: center;
-    width: 30px;
-    content: "\f0e0";
-}*/
 .contact-method{
     color: #fff;
     margin-left: 60px;
-    margin-top: 25x;
-
-
+    margin-top: 25px;
 }
 .icon.alt::before{
-    /*content: '';*/
     background-color: #ffffff;
     border-radius: 100%;
     color: #242943;
