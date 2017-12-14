@@ -1,59 +1,127 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
+/**, *::before, *::after {
+    box-sizing: border-box;
+}*/
 body {
     margin: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans',Arial,sans-serif;
+    font-size: 12pt;
+    font-weight: 300;
+    vertical-align: baseline;
+    cursor: default;
 }
 
 header {
     padding: 15px 10px;
-    position: absolute;
+    position: fixed;
     top: 0;
+    min-height: 4em;
     left: 0;
     right: 0;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    cursor: default;
+    vertical-align: baseline;
+    background-color: rgba(36, 41, 67, 0.85);
 }
 
+h1 {
+    font-size: 3.25em;
+}
+
+/*.fixheader {
+  position: sticky;
+  top: 0;
+  min-height: 2em;
+  background: rgba(36, 41, 67, 0.85);
+}*/
 .menu {
     position: absolute;
     right: 10px;
     top: 15px;
+    font: inherit;
 }
 
-.logo a {
-    text-transform: uppercase;
+.logo a, .menu a {
     text-decoration: none;
     color: #fff;
+    font: inherit;
+    border: 0;
+    display: inline-block;
+    font-size: 0.8em;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 1.5em;
 }
 
 .logo span {
     padding: 5px;
-    background: #fff;
-    color: #000;
+    background: white;
+    color: black;
+    font: inherit;
 }
 
 .intro {
-    background: #000;
-    /*padding: 100px 0;*/
-    color: #fff;
     background-image: url("../images/banner.jpg");
     background-size: cover;
 }
 .intro .intro-block {
-    width: 1000px;
-    margin: auto;
     padding: 100px 0;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.65;
+    margin-bottom: 0;
+    margin: 0 auto;
+    max-width: 65em;
+    width: calc(100% - 6em);
+}
+.intro-block p {
+    padding: 0 1em 0 0;
+    border: 0;
+    display: inline-block;
+}
+.get-started {
+    padding: 1em;
+    border: 0;
+    display: inline-block;
+    list-style: none;
+}
+/*.ul.get-started li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+    vertical-align: middle;
+    border: 0;
+}*/
+.intro p, .photo-line p {
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
 }
 .fade {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(36, 41, 67, 0.85);
+}
+.content, .contacts {
+    background-color: rgba(34, 33, 67, 1);
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.025em;
+}
+.text-content {
+    padding: 4em 2em 2em 0;
+    margin: 0 auto;
+    max-width: 65em;
+    width: calc(100% - 6em);
 }
 .photo-line {
  height: 100%;
+ color: white;
 }
 .photo-Aliquam {
     background-image: url("../images/pic01.jpg");
     background-size: cover;
     padding: 4em 3em 2em 3em;
-    vertical-align: baseline;
 }
 .photo-Tempus {
     background-image: url("../images/pic02.jpg");
@@ -81,11 +149,29 @@ header {
     padding: 4em 3em 2em 3em;
 }
 
-.intro h1 {
+.blend-Aliquam {
+    background-color: rgba(111, 195, 223, 0.85);
+}
+.blend-Tempus {
+    background-color: rgba(141, 130, 196, 0.85);
+}
+.blend-Magna {
+    background-color: rgba(236, 141, 129, 0.85);
+}
+.blend-Ipsum {
+    background-color: rgba(231, 183, 136, 0.85);
+}
+.blend-Consequat {
+    background-color: rgba(142, 169, 232, 0.85);
+}
+.blend-Etiam {
+    background-color: rgba(135, 197, 164, 0.85);
+}
+
+.intro h1, h2, h3 {
     border-bottom: 2px solid #fff;
     padding-bottom: 20px;
 }
-
 .btn {
     color: #fff;
     border: 1px solid #fff;
@@ -94,10 +180,96 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.2em;      
 }
+form {
+        margin: 0 0 2em 0;
+    }
 
-.btn:hover {
-    color: #35e6e6;
-    border-color: #35e6e6;
+        form .post-message {
+            margin: 0 0 2em 0;
+        }
+
+            form .post-email {
+                width: 50%;
+                float: left;
+                padding: 0 0 0 1em;
+            }
+
+                form .post-name {
+                    padding: 0 1em 0 0;
+                }
+
+        form > .actions {
+            margin: 2.5em 0 0 0 !important;
+        }
+label {
+    color: #ffffff;
+    display: block;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+select,
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: rgba(212, 212, 255, 0.035);
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+}
+
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="search"]:invalid,
+input[type="url"]:invalid,
+select:invalid,
+textarea:invalid {
+    box-shadow: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #9bf1ff;
+    box-shadow: 0 0 0 2px #9bf1ff;
+}
+
+
+
+
+.blend-Aliquam:hover, .blend-Tempus:hover, .blend-Magna:hover, .blend-Ipsum:hover, .blend-Consequat:hover, .blend-Etiam:hover {
+    background: unset;
+}
+.logo:hover  span{
+    background: aqua;
+    color: black;
+}
+
+.btn:hover, .logo:hover a, .menu *:hover {
+    color: aqua;
+    border-color: aqua;
 }
 
 @media (min-width: 320px) and (max-width: 900px) {

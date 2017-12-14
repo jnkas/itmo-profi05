@@ -12,14 +12,28 @@ p {
 }
 a {
   color: white;
-  border-bottom: 2px dotted;
-}
-.menu {
-  position: absolute;
-  right: 10px;
-  top: 15px;
+  border-bottom: 0px;
+  font: inherit
 }
 
+
+ .menu {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font: sans-serif;
+  border-bottom: 0px;
+  letter-spacing: 0.5px;
+}
+.menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+.menu:hover a {
+  color: aquamarine;
+  transition: all 1s ease 0s;
+}
 header {
 	position: absolute;
 	padding: 15px 10px;
@@ -48,6 +62,9 @@ header {
     margin: 10px 10px;
     color: white;
 }
+.logo {
+  font: inherit;
+}
 .logo a {
 	text-transform: uppercase;
 	text-decoration: none;
@@ -58,6 +75,15 @@ header {
 	padding: 5px;
 	background: white;
 	color: black;
+}
+
+.logo:hover a {
+  color: aquamarine;
+  transition: all 1s ease 0s;
+}
+.logo:hover span {
+  background: aquamarine;
+  transition: all 1s ease 0s;
 }
 
 .email,
@@ -76,12 +102,20 @@ header {
 }
 
 .intro .intro-block {
-	width: 1000 px;
+width: 1000 px;
 	margin: auto;
 	padding: 100px 0;
   padding-left: 100px;
-
+  background-color: #32355dd4;
 }
+
+/* .intro-block div {
+  width: 1000 px;
+  margin: auto;
+  padding: 100px 0;
+  padding-left: 100px;
+  background: red;
+} */
 
 .fade {
 	background-color: rgb(0, 0, 0, 0.4);
@@ -102,65 +136,99 @@ h2 {
 	background-image: url(/images/pic01.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
+ /* height:auto;
 	margin:0;
-	padding: 150px 0px 150px 50px;
-
+	padding: 150px 0px 150px 50px; */
+}
+.photo-text-1 div {
+    background: rgba(65, 158, 187, 0.77);
+    margin: 0;
+    padding: 150px 0px 150px 50px;
+    transition: all 1s ease 0s;
 }
 
-.photo-text-2{
+.photo-text-1:hover div {
+    background: rgba(0, 0, 0, 0);
+}
+
+.photo-text-2 {
 	background-image: url(/images/pic02.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
-
-
 }
+
+.photo-text-2 div {
+  background: rgba(153, 92, 177, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+
+.photo-text-2:hover div {
+    background: rgba(0, 0, 0, 0);
+}
+
 
 .photo-text-3{
 	background-image: url(/images/pic03.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
+}
 
+.photo-text-3 div {
+  background: rgba(177, 79, 56, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+.photo-text-3:hover div {
+    background: rgba(0, 0, 0, 0);
 }
 
 .photo-text-4{
 	background-image: url(/images/pic04.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
-
-
+}
+.photo-text-4 div {
+  background: rgba(214, 168, 62, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+.photo-text-4:hover div {
+    background: rgba(0, 0, 0, 0);
 }
 
-.photo-text-5{
+.photo-text-5 {
 	background-image: url(/images/pic05.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
-
-
-
+}
+.photo-text-5 div {
+  background: rgba(62, 120, 181, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+.photo-text-5:hover div {
+    background: rgba(0, 0, 0, 0);
 }
 
 .photo-text-6{
 	background-image: url(/images/pic06.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
+}
 
+.photo-text-6 div {
+  background: rgba(119, 175, 97, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+.photo-text-6:hover div {
+    background: rgba(0, 0, 0, 0);
 }
 
 .photo-text-7{
@@ -171,7 +239,6 @@ h2 {
   margin:0;
 	padding: 50px 0px 50px 50px;
 }
-
 
 footer
 {
@@ -192,14 +259,19 @@ footer
 
 }
 */
-
-
+.input-message input,
+.input-email input {
+  background: rgb(42,47,74);
+  border: 0px;
+  height: 40px;
+  width: 77%;
+}
 .input-message textarea {
     height:10em;
     min-width:87%;
     width:21em;
     border:none;
-	  background: rgb(30,40,63);
+	  background: rgb(42,47,74);
     font-size:12px;
     color:white;
     padding: 0.3em 0.5em;
@@ -222,12 +294,40 @@ footer
 .btn:hover {
 	color: aquamarine;
 	border-color: aquamarine;
+  transition: all 1s ease 0s;
+}
+
+button {
+  border: 2px solid #fff;
+  margin-top: 3em;
+  background-color: transparent;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 14em;
+  height: 5em;
+}
+
+.submit {
+  background: white;
+  color: rgb(36,41,67);
+}
+
+.submit:hover {
+  background: aquamarine;
+  transition: all 1s ease 0s;
+}
+.clear:hover {
+  border: 2px solid aquamarine;
+
 }
 
 @media (min-width: 320px) and (max-width: 900px) {
 	.intro .intro-block {
 	    width: 100%;
-	    color: red;
+
         padding-left: 15px;
     	padding-right: 15px;
 	}

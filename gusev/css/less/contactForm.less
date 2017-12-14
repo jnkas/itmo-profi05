@@ -1,0 +1,30 @@
+@borderWidth: 3px;
+@fontForInputs: 20px;
+
+.invalidFormInput() {
+    background: orange;
+    color: blue;
+    font-size: @fontForInputs;
+}
+
+input {
+    display: block;
+    &:focus {
+    .invalidFormInput();
+    }
+}
+.contact-form {
+    input {
+        border: @borderWidth solid #000;
+        background: gray;
+        &:first-child {
+        background: red;
+        }
+    }
+}
+
+ul {
+    li {
+        border-bottom: @borderWidth solid;
+    }
+}
