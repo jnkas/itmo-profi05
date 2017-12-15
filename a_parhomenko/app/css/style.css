@@ -20,8 +20,6 @@ font-style: normal;
 
 
 
-
-
 body{
 
     margin: 0 auto;
@@ -32,7 +30,7 @@ header{
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 4.6px;
-    position: absolute;
+    position: fixed;
     padding: 15px 10px;
     top:5px;
     left: 0;
@@ -61,7 +59,6 @@ header .menu{
 
 .logo a{
     text-transform: uppercase;
-    /* color: white; */
 }
 .logo span{
     padding: 3px;
@@ -72,13 +69,13 @@ header .menu{
     margin-left: 10px;
 }
 .intro{
-    color: #fff;
+    /* color: #fff; */
     background-image: url(../images/banner.jpg);
     background-size: cover;
 }
 .intro .intro-block {
-    width: 1100px;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     padding: 140px 0;
 }
 .intro-block-content{
@@ -148,7 +145,6 @@ h2{
 }
 
 .fade-one:hover{
-    transition: 1s;
     background-color: rgba(111, 195, 223, 0);
 }
 
@@ -347,12 +343,20 @@ ul li:first-child input{
     color: #242943;
 
 }
+ul li:first-child input:hover{
+    background-color: #6fc3df;
+
+}
 ul li:nth-child(2) input{
     border: 2px solid white;
     height: 50px;
     background-color: #242943;
     padding: 0 26px;
     color: #fff;
+}
+ul li:nth-child(2) input:hover{
+    border: 2px solid #6fc3df;
+    color: #6fc3df;
 }
  .contact ul li:first-child{
     padding-right: 18px;
@@ -463,4 +467,32 @@ footer .copyright li:first-child {
     border-left: 0;
     margin-left: 0;
     padding-left: 0;
+}
+
+
+@media (max-width: 900px) {
+    .photo-text-one{
+        height: 250px;
+    }
+    .photo-text-two{
+        height: 250px;
+    }
+    .photo-text-three{
+        height: 250px;
+    }
+    .photo-text-four{
+        height: 250px;
+    }
+    .photo-text-five{
+        height: 250px;
+    }
+    .photo-text-six{
+        height: 250px;
+    }
+    .photo-header{
+        padding-top: 100px;
+    }
+    .intro p{
+        width: 65%;
+    }
 }
