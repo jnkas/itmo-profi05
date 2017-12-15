@@ -20,8 +20,6 @@ font-style: normal;
 
 
 
-
-
 body{
 
     margin: 0 auto;
@@ -32,7 +30,7 @@ header{
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 4.6px;
-    position: absolute;
+    position: fixed;
     padding: 15px 10px;
     top:5px;
     left: 0;
@@ -41,8 +39,7 @@ header{
 }
 a{
     text-decoration: none;
-    color:#fff;
-
+    /* color:#fff; */
 }
 a:hover{
     color: #35e6e6;
@@ -62,8 +59,6 @@ header .menu{
 
 .logo a{
     text-transform: uppercase;
-    text-decoration: none;
-    color: white;
 }
 .logo span{
     padding: 3px;
@@ -74,14 +69,13 @@ header .menu{
     margin-left: 10px;
 }
 .intro{
-    /*padding: 100px 0;*/
-    color: #fff;
+    /* color: #fff; */
     background-image: url(../images/banner.jpg);
     background-size: cover;
 }
 .intro .intro-block {
-    width: 1100px;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     padding: 140px 0;
 }
 .intro-block-content{
@@ -103,6 +97,9 @@ header .menu{
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 0.20em;
+}
+.photo-line a:hover{
+    color: #fff;
 }
 .btn{
     margin-left: 10px;
@@ -135,6 +132,12 @@ h2{
     width: 136px;
     padding-bottom: 10px;
 }
+.photo-header{
+    padding-top: 150px;
+    padding-left: 73px;
+    letter-spacing: 2px;
+    font-size: 18px
+}
 
 .fade-one{
     height: 100%;
@@ -142,7 +145,6 @@ h2{
 }
 
 .fade-one:hover{
-    transition: 1s;
     background-color: rgba(111, 195, 223, 0);
 }
 
@@ -315,8 +317,10 @@ textarea{
 .actions{
     padding-top: 46px;
     padding-left: 0;
-    padding-bottom: 65px
-
+    padding-bottom: 65px;
+}
+input[type="submit"], input[type="reset"]{
+    cursor: pointer;
 }
 li{
     display: inline-block;
@@ -339,6 +343,10 @@ ul li:first-child input{
     color: #242943;
 
 }
+ul li:first-child input:hover{
+    background-color: #6fc3df;
+
+}
 ul li:nth-child(2) input{
     border: 2px solid white;
     height: 50px;
@@ -346,31 +354,20 @@ ul li:nth-child(2) input{
     padding: 0 26px;
     color: #fff;
 }
+ul li:nth-child(2) input:hover{
+    border: 2px solid #6fc3df;
+    color: #6fc3df;
+}
  .contact ul li:first-child{
     padding-right: 18px;
 }
 
-
-/*.icon .alt::before{
-    background-color: #fff;
-    border-radius: 100%;
-    color: #242943;
-    display: inline-block;
-    height: 30px;
-    line-height: 10px;
-    text-align: center;
-    width: 30px;
-    content: "\f0e0";
-}*/
 .contact-method{
     color: #fff;
     margin-left: 60px;
-    margin-top: 25x;
-
-
+    margin-top: 25px;
 }
 .icon.alt::before{
-    /*content: '';*/
     background-color: #ffffff;
     border-radius: 100%;
     color: #242943;
@@ -470,4 +467,32 @@ footer .copyright li:first-child {
     border-left: 0;
     margin-left: 0;
     padding-left: 0;
+}
+
+
+@media (max-width: 900px) {
+    .photo-text-one{
+        height: 250px;
+    }
+    .photo-text-two{
+        height: 250px;
+    }
+    .photo-text-three{
+        height: 250px;
+    }
+    .photo-text-four{
+        height: 250px;
+    }
+    .photo-text-five{
+        height: 250px;
+    }
+    .photo-text-six{
+        height: 250px;
+    }
+    .photo-header{
+        padding-top: 100px;
+    }
+    .intro p{
+        width: 65%;
+    }
 }

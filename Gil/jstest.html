@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/grid.css">
+    <script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+<body>
+
+<div style="border: 1px dashed #333; padding: 10px">
+    <h2>Минимальное значение</h2>
+    <form>
+        <input type="number" id="num1" value="" name="number3">
+        <input type="number" id="num2" value="" name="number3">
+        <input type="number" id="num3" value="" name="number3"><br>
+        Answer: <input type="text" id="result" disabled
+                       style="font-size: medium; font-weight: bold; border: 0; width: 50px; background: transparent"><br>
+        <input type="button" value="Findmin" onclick="findMin()">
+    </form>
+</div>
+
+<div style="border: 1px dashed #333; padding: 10px">
+    <h2>Описание числа</h2>
+    <form>
+        <input type="number" id="num" value="" name="number3" onkeyup="findDescrOfNum()"><br>
+        Answer: <input type="text" id="charvalue" disabled
+                       style="font-size: medium; width: 500px; border: 0; background: transparent"><br>
+    </form>
+</div>
+
+<div style="border: 1px dashed #333; padding: 10px; margin-top: 10px">
+    <h2>Название числа</h2>
+    <form>
+        <input type="number" id="numfrom3" value="" name="number3" onkeyup="getCharValue()"><br>
+        Answer: <input type="text" id="resultfrom3" disabled
+                       style="font-size: medium; width: 500px; border: 0; background: transparent"><br>
+    </form>
+</div>
+
+<div style="border: 1px dashed #333; padding: 10px; margin-top: 10px">
+    <h2>Оценка</h2>
+    <form>
+        <input type="number" id="numfrom4" value="" name="number4" onkeyup="getMark()"><br>
+        Answer: <input type="text" id="resultfrom4" disabled
+                       style="font-size: medium; width: 500px; border: 0; background: transparent"><br>
+    </form>
+</div>
+
+<div style="border: 1px dashed #333; padding: 10px; margin-top: 10px">
+    <h2>Равенство чисел</h2>
+    <form>
+        <input type="number" id="num01" value="" name="number01">
+        <input type="number" id="num02" value="" name="number02">
+        <input type="number" id="num03" value="" name="number03"><br>
+        Answer: <input type="text" id="resultfrom5" disabled
+                       style="font-size: medium; width: 500px; border: 0; background: transparent"><br>
+        <input type="button" value="Findmin" onclick="getSameValues()">
+    </form>
+</div>
+
+</body>
+</html>
