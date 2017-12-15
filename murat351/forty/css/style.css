@@ -1,0 +1,282 @@
+body {
+	margin: 0;
+
+}
+.banner{
+	background-image:url(../images/banner.jpg);
+	background-position:50%0%;
+	background-size: 100% auto;
+	height: 70vh;
+	color:#ffffff;
+}
+
+
+.banner>div{
+	background-color:rgba(60,60,80,.8);
+	height: 70vh;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.banner1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 5vh;
+	width: 98%;	
+    font-size: 3vh;
+}
+
+.banner2{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 35vh;
+	width: 99%;	
+    font-size: 7vh;
+}
+
+.line1{
+	justify-content: center;
+	height: 10vh;
+	width: 100%;	
+
+}
+.line2{
+	justify-content: center;
+	height: 20vh;
+	width: 100%;
+
+}
+.banner2>div:first-child{
+	width: 50%;
+}
+.banner2>div:nth-child(2){
+	background-color: #ffffff;
+		width: 50%;
+	height: 2px;	
+}
+
+a{    
+	text-decoration: none;
+	    color:#ffffff;
+}
+.banner3{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+	width: 50%;
+
+}
+
+.banner3>div{
+
+	    font-size: 2vh;
+}
+
+.banner3>div:nth-child(1){
+    	width: 70%;
+
+ }
+
+.banner3>div:nth-child(2){
+
+	font-size: 2vh;
+	border:solid;
+	width: 30%;
+	height: 4vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.block1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.block1>div:nth-child(1){
+	background-image:url(../images/pic01.jpg);
+	background-position:50%50%;
+	width: 40%;
+	height: 40vh;
+	color:#ffffff;
+}
+
+
+.block1>div:nth-child(1)>div{
+	background-color:rgba(200,200,230,.8);
+	height: 40vh;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+
+}
+.block1>div>div>div:nth-child(1){
+    font-size: 5vh;	
+}
+}
+.block1>div>div>div:nth-child(3){
+    font-size: 3vh;	
+}
+
+
+.block1>div>div>div:nth-child(2){
+	background-color: #ffffff;
+	width: 25vh;
+	height: 2px;	
+}
+
+
+.block1>div:nth-child(2){
+	background-image:url(../images/pic02.jpg);
+	background-position:50%0%;
+	width: 60%;
+	height: 40vh;
+	color:#ffffff;
+}
+
+
+.block1>div:nth-child(2)>div{
+	background-color:rgba(230,200,230,.8);
+	height: 40vh;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.block2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.block2>div:nth-child(1){
+	background-image:url(../images/pic03.jpg);
+	background-position:50%0%;
+	width: 60%;
+	height: 40vh;
+	color:#ffffff;
+}
+
+
+.block2>div:nth-child(1)>div{
+	background-color:rgba(260,200,200,.8);
+	height: 40vh;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+
+}
+.block2>div>div>div:nth-child(1){
+    font-size: 5vh;	
+}
+}
+.block2>div>div>div:nth-child(3){
+    font-size: 3vh;	
+}
+
+
+.block2>div>div>div:nth-child(2){
+	background-color: #ffffff;
+	width: 25vh;
+	height: 2px;	
+}
+
+
+.block2>div:nth-child(2){
+	background-image:url(../images/pic04.jpg);
+	background-position:50%0%;
+	width: 40%;
+	height: 40vh;
+	color:#ffffff;
+}
+
+
+.block2>div:nth-child(2)>div{
+	background-color:rgba(230,230,170,.8);
+	height: 40vh;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+
+.block3{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.block3>div:nth-child(1){
+	background-image:url(../images/pic05.jpg);
+	background-position:50%0%;
+	width: 40%;
+	height: 40vh;
+	color:#ffffff;
+}
+
+
+.block3>div:nth-child(1)>div{
+	background-color:rgba(200,200,260,.8);
+	height: 40vh;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+
+}
+.block3>div>div>div:nth-child(1){
+    font-size: 5vh;	
+}
+}
+.block3>div>div>div:nth-child(3){
+    font-size: 3vh;	
+}
+
+
+.block3>div>div>div:nth-child(2){
+	background-color: #ffffff;
+	width: 25vh;
+	height: 2px;	
+}
+
+
+.block3>div:nth-child(2){
+	background-image:url(../images/pic06.jpg);
+	background-position:50%0%;
+	width: 60%;
+	height: 40vh;
+	color:#ffffff;
+}
+
+
+.block3>div:nth-child(2)>div{
+	background-color:rgba(200,260,200,.8);
+	height: 40vh;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+
+}

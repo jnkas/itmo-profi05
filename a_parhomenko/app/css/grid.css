@@ -62,7 +62,7 @@
     visibility: hidden;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .col-1,
     .col-2,
     .col-3,

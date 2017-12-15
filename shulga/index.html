@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Forty by HTML5 UP</title>
+  <title>Forty by KIRILL</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/master.css">
@@ -28,7 +28,7 @@
             <li class="menu-item"><a href="generic.html">generic</a></li>
             <li class="menu-item"><a href="elements.html">elements</a></li>
           </ul>
-          <a href="#" class="btn">get started</a>
+          <a href="#" class="white-btn">get started</a>
           <a href="#" class="btn">log in</a>
         </div>
       </nav>
@@ -40,12 +40,12 @@
          <h1>Hi, my name is Forty</h1>
          <p class="uppercase">A responsive site template designed by HTML5 UP 
          <br>and released under the Creative Commons.</p>
-         <a href="#" class="btn">Get started</a>
+         <a href="#one" class="btn">Get started</a>
      </div>
     </section>
 
    
-    <section class="photo-line">
+    <section class="photo-line" id="one">
         <div class="elem-1">
             <div class="photo-text">
                 <h2>Aliquam</h2>
@@ -106,30 +106,46 @@
               <div class="col-6">
                   <label><p class="uppercase">NAME</p><br><input type="text"></label>
               </div>
-              <div class="col-6">
+              <div class="col-1">
+                  <div class="empty"></div>
+              </div>
+              <div class="col-5">
                   <label><p class="uppercase">EMAIL</p><br><input type="email"></label>
               </div>
               <div class="col-12">
                   <label><p class="uppercase">MESSAGE</p><br><textarea name="message" rows="14"></textarea></label>
               </div>
-              <div class="buttons">
-                  <div><input type="submit" value="SEND MESSAGE" class="btn"></div>
+              <div class="buttons col-12">
+                  <div><input type="submit" value="SEND MESSAGE" class="white-btn"></div>
                   <div><input type="reset" value="CLEAR" class="btn"></div>
               </div>
           </form>
       </div>
       <div class="form-column-2">
           <div class="row-1">
-              Email
+              <h3>Email</h3>
+              <p>information@utitled.tld</p>
           </div>
           <div class="row-2">
-              Phone
+              <h3>Phone</h3>
+              <p>(000) 000-0000 x12387</p>
           </div>
           <div  class="row-3">
-              Address
+              <h3>Address</h3>
+              <p>Somewhere Road #5432<br>
+                 Nashville, TN 00000<br>
+                 United States of America</p>
           </div>
       </div>
   </div>
   <footer></footer>
+  <div id="modal-too-small">
+     <div class="inner-modal">
+         <h1>ВАШ</h1>
+         <h1>ЭКРАН</h1>
+         <h1>СЛИШКОМ</h1>
+         <h1>МАЛЕНЬКИЙ</h1>
+     </div>
+  </div>
 </body>
 </html>

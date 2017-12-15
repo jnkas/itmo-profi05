@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Forty template</title>
-		<link rel="stylesheet" href="grid.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	 	<link rel="stylesheet" href="assets/fonts/fontawesome-webfont.eot">
 	 	<link rel="stylesheet" href="assets/fonts/fontawesome-webfont.svg">
@@ -12,15 +12,27 @@
 	 	<link rel="stylesheet" href="assets/fonts/fontawesome-webfont.woff">
 	 	<link rel="stylesheet" href="assets/fonts/fontawesome-webfont.woff2">
 	 	<link rel="stylesheet" href="assets/fonts/FontAwesome.otf">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 <body>
 		<header>
 			<div class="logo">
 				<a href=""><span>Forty</span> by HTML5 up</a>
 			</div>
-			<div class="menu">
-				меню
-				<!-- //todo menu button-->
+			<div class="icon">
+        <label for="tick">menu</label>
+      </div>
+      <input type="checkbox" id="tick">
+      <div class="menu">
+        <label for="tick">close</label>
+        <div class="inner-menu">
+          <ul>
+            <li class="menu-item"><a href="">home</a></li>
+            <li class="menu-item"><a href="">landing</a></li>
+            <li class="menu-item"><a href="">generic</a></li>
+            <li class="menu-item"><a href="">elements</a></li>
+          </ul>
+				</div>
 			</div>
 		</header>
 		<section class="intro">
@@ -29,31 +41,21 @@
 					<h1>Hi, my name is Forty</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur
 						adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. </p>
-					<a href="" class="btn">Get started</a>
-
-
-				</div/>
+						tempor incididunt ut labore et dolore magna aliqua. </p>
+						<a href="" class="btn">Get started</a>
+					</div/>
 				</div>
 			</div>
 		</section>
+
 	<!-- photo tiles-->
 		<section class="photo-line">
 			<div class="row">
 				<div class="col-5">
-
 						<div class="photo-text-1">
 						<div>
 							<h2>Aliquam</h2>
 						<p>Lorem ipsum dolor sit amet</p>
-
-					<div class="photo-text-1">
-					    <div>
-							<h2>Aliquam</h2>
-							<p>Lorem ipsum dolor sit amet</p>
-
-					    </div>
-
 					</div>
 					</div>
 					</div>
@@ -128,34 +130,37 @@
 
 <!-- сбор контактов-->
 	<footer>
-<div class="row">
-	<div class="col-7">
-
-<div class="input-message">
-
-				<p>
-				name
-			</p><input type="text" name="name">
-		</div>
-
-			<div class="input-email">
-
-<p>
-					email
-				</p>
-				<input type="text" name="email">
-			</div>
-
-<div class="input-message">
+		<div class="row">
+			<div class="col-7">
+				<div class="row">
+					<div class="col-6">
+						<div class="input-message">
+							<p>
+								name
+							</p>
+							<input type="text" name="name">
+						</div>
+					</div>
+					<div class="col-6">
+					<div class="input-email">
+						<p>
+							email
+						</p>
+							<input type="text" name="email">
+					</div>
+					</div>
+				</div>
+		<div class="input-message">
 				<p>
 					message
 				</p>
 				<textarea></textarea>
 			</div>
-			<!--<div class="message-buttons">
-				<button type="submit" name="send message"></button>
-				<button type="reset" name="clear"></button>
-			</div> -->
+
+		 <div class="message-buttons">
+				<button type="submit" name="send message" class="submit"> send message </button>
+				<button type="reset" name="clear" class="clear"> clear </button>
+			</div>
 		</div>
 		<div class="col-5">
 			<div class="email">
@@ -189,17 +194,5 @@
         </div>
     </div>
 </div>
-
 </body>
 </html>
-
-	</div>
-</div>
-
-
-
-	</body>
-
-
-
-	</html>

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+    margin: 0;
+    font-family: "PT Sans" ,sans-serif;
+}
+header {
+    position: absolute;
+    padding: 15px 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.menu {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+   
+}
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25em;
+    color: white;
+}
+.menu a:hover {
+    color: #74dff7;
+}
+.logo a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25em;
+    color: white;
+}
+.logo a:hover {
+    color: #74dff7;
+}
+.intro {
+    color: white;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+}
+.intro h1 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+}
+.intro .intro-block {
+    padding: 100px 0px;
+    width: 1050px;
+    margin: auto;
+    position: relative;
+    
+}
+.btn {
+    color: white;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 24px;
+    margin-bottom:  inherit;
+    display: inline-table;
+    
+}
+.btn:hover {
+    color: #74dff7;
+    border-color: #74dff7;
+}
+h2 {
+    color: white;
+}
+p {
+    margin: 0;
+    padding: 0;
+    border 0;
+    display: block;
+    text-transform: uppercase;
+    word-spacing: 0.25em;
+    font-size: 0.7em;
+    letter-spacing: 0.25em;
+    float:left;
+    color: white;
+}
+.inner {
+    padding: 4em 0 2em 0;
+    margin: auto;
+    height: 400px;
+    background-color: rgba(43, 48, 74, 1);
+}
+.photo-text{
+    padding-top: 157px;
+    padding-left: 80px;
+    width: 300px;  
+}
+.photo-text h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+.text-inner {
+    padding: 25px 30px;
+    width: 1000px;
+    margin: 0;
+}
+.text-inner h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    width: 170px;
+    font-size: 1.75em;
+}
+.text-inner a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+
