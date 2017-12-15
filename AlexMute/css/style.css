@@ -67,13 +67,14 @@ header {
 }
 
 .intro .intro-block {
-	width: 100%;
+	max-width: 65em;
   align-items: center;
-	padding: 180px 0 0 430px;
+	padding: 180px 0 0 0;
   height: 500px;
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
+  margin: auto;
 
 }
 
@@ -300,7 +301,6 @@ background-color: #7aae96;
 	border-bottom: 2px solid white;
 	padding-bottom: 20px;
   font-size: 4em;
-  width: 1000px;
 }
 
 .btn {
@@ -561,7 +561,6 @@ li {
 	border-bottom: 2px solid white;
 	padding-bottom: 20px;
   font-size: 4em;
-  width: 1000px;
 }
 
 .intro-2 p {
@@ -682,4 +681,10 @@ a:hover{
 
 .elements-lower a:hover {
   color: aqua;
+}
+
+@media only screen and (mi-width:320px) and (max-width:768px) {
+  .col {
+    width: 50%;
+  }
 }
