@@ -45,7 +45,7 @@ header .logo{
 .menu {
     position: absolute;
     right: 30px;
-    top: 18px;
+    top: 19px;
     float: left;
 }
 i.fa-bars{
@@ -76,7 +76,7 @@ h1{
 	text-transform: none;
 	border-bottom: 2px solid #fff;
     padding-bottom: 35px;
-    font-size: 65px;
+    font-size: 5vw;
     margin-right: 0;
 }
 .content p{
@@ -91,7 +91,6 @@ h1{
 	font-size: 15px;
 	font-weight: normal;
 	letter-spacing: 0.3em;
-	margin-left: 40px;
 }
 
 .btn .fa-long-arrow-right{
@@ -103,20 +102,20 @@ h1{
     color: #fff;
     background-image: url("images/banner.jpg");
     background-size: cover;
-	width: 100%;
     padding: 8em 0 8em 0;
     text-align: left;
     margin:auto;
 }
 .intro .text{
 	margin: auto;
-	width: 70em;
+	width: 87vw;
 }
 
 .text p{
 	font-size: 15px;
 	letter-spacing: 0.2em;
 	margin-top: 0;
+	padding-right: 40px;
 }	
 /*------------------------------------------------------------------------------------*/
 
@@ -131,8 +130,8 @@ section .text p{
 
 .text h2{
 	text-transform: none; 
-	border-bottom: 0.1em solid white;
-	width: 6.8em;
+	border-bottom: 2px solid white;
+	width: 212px;
 	margin-left: 5vw;
 	padding-bottom: 0.7em;
 	display: block;
@@ -242,7 +241,7 @@ section:hover .overlay:before {
 .massa .text{
 
 	margin: auto;
-	max-width: 75em;
+	max-width: 87vw;
 	
 }
 .massa .text h2{
@@ -263,21 +262,31 @@ section:hover .overlay:before {
 }
 
 /*-------------------------------------------------------------------------------------------------*/
+.footer-form{
+	height: 130vh;
+	background-color: #242943;
+
+}
 
 .form
 {
-	background-color: #242943;
 	padding-left: 5vw;
 	padding-top: 10vh;
 	width: 60%;
 	float: left;
+	background-color: #242943;
+
+}
+.form-tip{
+	margin:auto;
 }
 input {
-	width: 18vw;
+	width: 25vw;
 	height: 8vh;
 }
 label {
 	display: block;
+	padding-bottom: 3vh
 }
 .name{
 	float: left;
@@ -289,30 +298,132 @@ label {
 .message{
 	clear: both;
 	margin-top: 10vh;
-	margin-bottom: 26.5vh;
 }
 input, textarea{
 	background: rgba(42, 47, 74, 1);
 	border: none;
 }
+input[type="submit"]{
+	background: white;
+    color: #242943;
+    width: 260px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    float: left;
+
+}
+input[type="reset"]{
+	display: block;
+    color: white;
+    width: 160px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    border: 2px solid white;
+    margin-left: 20vw;
+}
+.buttons{
+	padding-top: 4vh;
+	padding-bottom: 9vh;
+}
+
+
+
+
 /*------------------------------------------------------------------------------------------------------*/
 .left-form{
 	width: 40%;
+	border-left: 2px solid rgba(52, 57, 84, 1);
+	position: relative;
 	background-color: #242943;
-	border-left: 1px solid rgba(42, 47, 74, 1);
+}
+.left-form a{
+	border-bottom: 1px dotted white;
 
 }
 .emm{
 	margin-left:0;
-	margin-top: 10vh;
+	margin-top: 4vh;
 	text-transform: none;
-	border-bottom: 1px solid rgba(42, 47, 74, 1);
-	padding-bottom: 5vh;
+	border-bottom: 2px solid rgba(52, 57, 84, 1);
+	padding-bottom: 7vh;
 }
 	
-.emm p, .emm h2{
-	margin-left: 10vh;
+.emm h2{
+	margin-left: 10vw;
+	margin-top: 0;
 }
-.add{
-	/*padding-bottom: 10vh;*/
+.emm p {
+	margin-left: 10vw;
+	font-size: 17px;
 }
+.fa-circle:before {
+    content: "\f111";
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 7px;
+}
+.fa-envelope:before{
+	position: absolute;
+    margin-left: 77.5px;
+    margin-top: 15px;
+    color: black;
+}
+.fa-phone:before{
+	position: absolute;
+	color: black;
+	 margin-left: 80.5px;
+    margin-top: 17px;  
+}
+.fa-home:before{
+	position: absolute;
+	color: black;
+	 margin-left: 78px;
+    margin-top: 16px;
+  
+}
+
+@media (max-width: 1024px) {
+	header, .logo a, .logo a span,.intro,.aliquam, .tempus, .magna, .ipsum, .consequat, .etiam, .massa,.form,.left-form,.footer-form,
+	.col-12, .row{
+	    width: 100%;
+	    
+	}
+	.fa-circle{
+		margin-left:150px;
+	}
+	input[type="submit"]{
+		margin-bottom: 5vh;
+		margin-right: 5vw
+	}
+	input[type="reset"]{
+	margin-left: 0;
+	}
+	textarea{
+		width: 90%;
+	}
+
+	.intro{
+			padding: 4em 0 4em 0;
+		}
+
+	@media (max-width: 425px){
+		h1{
+			font-size: 40px;
+		}
+	}
+
+	@media (max-width: 375px){
+
+	h1{
+		font-size: 31px;
+	}
+	.menu, .logo a{
+		color: transparent;
+	}
+	i{
+		color: white;
+	}
+
+}
+
+	}
