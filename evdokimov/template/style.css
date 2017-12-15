@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-body {
+body, html {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
   color: white;
+  width: 100%;
+  height: 100%;
+  overflow-x:hidden;
 }
 
-p {
-  text-transform: uppercase;
 
+div p {
+  text-transform: uppercase;
+  overflow: auto;
+  margin-right: 6em;
 }
 a {
   color: white;
@@ -17,31 +22,98 @@ a {
 }
 
 
- .menu {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  font: sans-serif;
-  border-bottom: 0px;
-  letter-spacing: 0.5px;
+.icon {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    text-transform: uppercase;
+
 }
-.menu a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-}
-.menu:hover a {
+.icon:hover {
   color: aquamarine;
   transition: all 1s ease 0s;
 }
+
+
+.icon {
+    color: white;
+}
+
+#tick {
+  display: none;
+}
+#tick + .menu {
+  display: none;
+}
+#tick:checked + .menu {
+  display: block;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(36,41,67, 0.99);
+  text-transform: uppercase;
+}
+
+.menu label:hover {
+  color: aquamarine;
+  transition: all 1s ease 0s;
+}
+.menu label {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  color: white;
+}
+.inner-menu{
+    position: relative;
+    top: 20%;
+    padding: 0;
+    margin: 0 auto;
+    width: 25%;
+}
+
+
+.inner-menu ul {
+    padding: 0;
+    list-style: none;
+}
+.inner-menu ul li {
+    text-align: center;
+    padding: 15px 15px;
+    text-transform: uppercase;
+}
+
+
+.inner-menu li:hover a {
+  color: aquamarine;
+  transition: all 1s ease 0s;
+}
+
+.inner-menu > a {
+    width: 100%;
+}
+.menu-item a {
+  color: white;
+  text-decoration: none;
+}
+
+
 header {
 	position: absolute;
-	padding: 15px 10px;
-	top: 0;
-	left: 0;
-	right: 0;
-
+  padding: 15px 10px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
+
+
 
 .cellar {
     height: 100px;
@@ -102,20 +174,12 @@ header {
 }
 
 .intro .intro-block {
-width: 1000 px;
+  width: 100%;
 	margin: auto;
 	padding: 100px 0;
-  padding-left: 100px;
+  padding-left: 2em;
   background-color: #32355dd4;
 }
-
-/* .intro-block div {
-  width: 1000 px;
-  margin: auto;
-  padding: 100px 0;
-  padding-left: 100px;
-  background: red;
-} */
 
 .fade {
 	background-color: rgb(0, 0, 0, 0.4);
@@ -136,9 +200,6 @@ h2 {
 	background-image: url(/images/pic01.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
- /* height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px; */
 }
 .photo-text-1 div {
     background: rgba(65, 158, 187, 0.77);
@@ -249,16 +310,6 @@ footer
 
 }
 
-
-/*
-.input-name,
-.input-email {
-  background-color: rgb(30,40,63);
-  height: 2.75em;
-  border: none;
-
-}
-*/
 .input-message input,
 .input-email input {
   background: rgb(42,47,74);
@@ -280,6 +331,7 @@ footer
 .intro h1 {
 	border-bottom: 2px solid white;
 	padding-bottom: 20px;
+  width: 80%;;
 }
 
 .btn {
@@ -324,10 +376,9 @@ button {
 
 }
 
-@media (min-width: 320px) and (max-width: 900px) {
+@media all (min-width: 320px) and (max-width: 900px) {
 	.intro .intro-block {
-	    width: 100%;
-
-        padding-left: 15px;
+      width: 100%;
+      padding-left: 15px;
     	padding-right: 15px;
-	}
+}
