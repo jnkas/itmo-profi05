@@ -2,14 +2,35 @@
 <html lang="RU">
 	<meta charset="UTF-8">
 <head>
-    <title>подключение JavaScript</title>
+    <title>Programming on the JavaScript</title>
     <script src="js/script.js"></script>   
 </head>
 <body>
-	<p>начало страницы</p>
+<!-- 	<p>начало страницы</p>
 	<script type="text/javascript">
 		// alert("Привет мир!!!");
 	</script>
-	<p>конец страницы</p>
+	<p>конец страницы</p> -->
+	<script type="text/javascript">
+			var o = +prompt("Ваш оклад", 10000);
+			var r = +prompt("Раб дней в месяце", 24);
+			var s = +prompt("Отработанных дней", 12);
+
+			var result = o/r*s*0.87;
+			result = parseFloat(result.toFixed(2));
+			alert("Твоя з/п " + result);
+
+			var = menu prompt("Выберите язык меню:" +
+			"\n1 - Русский;\n2 - Английский;" +
+			"\n3 - Немецкий.");
+			switch(menu){
+				case '1':
+					alert ('Привет');
+					break;
+				default
+
+			}
+
+	</script>
 </body>
 </html>
