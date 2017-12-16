@@ -1,33 +1,119 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-body {
+body, html {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
   color: white;
+  width: 100%;
+  height: 100%;
+  overflow-x:hidden;
 }
 
-p {
-  text-transform: uppercase;
 
+div p {
+  text-transform: uppercase;
+  overflow: auto;
+  margin-right: 6em;
 }
 a {
   color: white;
-  border-bottom: 2px dotted;
+  border-bottom: 0px;
+  font: inherit
+}
+
+
+.icon {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    text-transform: uppercase;
+
+}
+.icon:hover {
+  color: aquamarine;
+  transition: all 1s ease 0s;
+}
+
+
+.icon {
+    color: white;
+}
+
+#tick {
+  display: none;
+}
+#tick + .menu {
+  display: none;
+}
+#tick:checked + .menu {
+  display: block;
 }
 .menu {
-  position: absolute;
-  right: 10px;
-  top: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(36,41,67, 0.99);
+  text-transform: uppercase;
 }
+
+.menu label:hover {
+  color: aquamarine;
+  transition: all 1s ease 0s;
+}
+.menu label {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  color: white;
+}
+.inner-menu{
+    position: relative;
+    top: 20%;
+    padding: 0;
+    margin: 0 auto;
+    width: 25%;
+}
+
+
+.inner-menu ul {
+    padding: 0;
+    list-style: none;
+}
+.inner-menu ul li {
+    text-align: center;
+    padding: 15px 15px;
+    text-transform: uppercase;
+}
+
+
+.inner-menu li:hover a {
+  color: aquamarine;
+  transition: all 1s ease 0s;
+}
+
+.inner-menu > a {
+    width: 100%;
+}
+.menu-item a {
+  color: white;
+  text-decoration: none;
+}
+
 
 header {
 	position: absolute;
-	padding: 15px 10px;
-	top: 0;
-	left: 0;
-	right: 0;
-
+  padding: 15px 10px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
+
+
 
 .cellar {
     height: 100px;
@@ -48,6 +134,9 @@ header {
     margin: 10px 10px;
     color: white;
 }
+.logo {
+  font: inherit;
+}
 .logo a {
 	text-transform: uppercase;
 	text-decoration: none;
@@ -58,6 +147,15 @@ header {
 	padding: 5px;
 	background: white;
 	color: black;
+}
+
+.logo:hover a {
+  color: aquamarine;
+  transition: all 1s ease 0s;
+}
+.logo:hover span {
+  background: aquamarine;
+  transition: all 1s ease 0s;
 }
 
 .email,
@@ -76,11 +174,11 @@ header {
 }
 
 .intro .intro-block {
-	width: 1000 px;
+  width: 100%;
 	margin: auto;
 	padding: 100px 0;
-  padding-left: 100px;
-
+  padding-left: 2em;
+  background-color: #32355dd4;
 }
 
 .fade {
@@ -102,65 +200,96 @@ h2 {
 	background-image: url(/images/pic01.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
-
+}
+.photo-text-1 div {
+    background: rgba(65, 158, 187, 0.77);
+    margin: 0;
+    padding: 150px 0px 150px 50px;
+    transition: all 1s ease 0s;
 }
 
-.photo-text-2{
+.photo-text-1:hover div {
+    background: rgba(0, 0, 0, 0);
+}
+
+.photo-text-2 {
 	background-image: url(/images/pic02.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
-
-
 }
+
+.photo-text-2 div {
+  background: rgba(153, 92, 177, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+
+.photo-text-2:hover div {
+    background: rgba(0, 0, 0, 0);
+}
+
 
 .photo-text-3{
 	background-image: url(/images/pic03.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
+}
 
+.photo-text-3 div {
+  background: rgba(177, 79, 56, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+.photo-text-3:hover div {
+    background: rgba(0, 0, 0, 0);
 }
 
 .photo-text-4{
 	background-image: url(/images/pic04.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
-
-
+}
+.photo-text-4 div {
+  background: rgba(214, 168, 62, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+.photo-text-4:hover div {
+    background: rgba(0, 0, 0, 0);
 }
 
-.photo-text-5{
+.photo-text-5 {
 	background-image: url(/images/pic05.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
-
-
-
+}
+.photo-text-5 div {
+  background: rgba(62, 120, 181, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+.photo-text-5:hover div {
+    background: rgba(0, 0, 0, 0);
 }
 
 .photo-text-6{
 	background-image: url(/images/pic06.jpg);
   background-repeat: no-repeat;
 	background-size: cover;
-  height:auto;
-	margin:0;
-	padding: 150px 0px 150px 50px;
+}
 
+.photo-text-6 div {
+  background: rgba(119, 175, 97, 0.77);
+  margin: 0;
+  padding: 150px 0px 150px 50px;
+  transition: all 1s ease 0s;
+}
+.photo-text-6:hover div {
+    background: rgba(0, 0, 0, 0);
 }
 
 .photo-text-7{
@@ -172,7 +301,6 @@ h2 {
 	padding: 50px 0px 50px 50px;
 }
 
-
 footer
 {
   color: white;
@@ -182,24 +310,19 @@ footer
 
 }
 
-
-/*
-.input-name,
-.input-email {
-  background-color: rgb(30,40,63);
-  height: 2.75em;
-  border: none;
-
+.input-message input,
+.input-email input {
+  background: rgb(42,47,74);
+  border: 0px;
+  height: 40px;
+  width: 77%;
 }
-*/
-
-
 .input-message textarea {
     height:10em;
     min-width:87%;
     width:21em;
     border:none;
-	  background: rgb(30,40,63);
+	  background: rgb(42,47,74);
     font-size:12px;
     color:white;
     padding: 0.3em 0.5em;
@@ -208,6 +331,7 @@ footer
 .intro h1 {
 	border-bottom: 2px solid white;
 	padding-bottom: 20px;
+  width: 80%;;
 }
 
 .btn {
@@ -222,12 +346,39 @@ footer
 .btn:hover {
 	color: aquamarine;
 	border-color: aquamarine;
+  transition: all 1s ease 0s;
 }
 
-@media (min-width: 320px) and (max-width: 900px) {
+button {
+  border: 2px solid #fff;
+  margin-top: 3em;
+  background-color: transparent;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 14em;
+  height: 5em;
+}
+
+.submit {
+  background: white;
+  color: rgb(36,41,67);
+}
+
+.submit:hover {
+  background: aquamarine;
+  transition: all 1s ease 0s;
+}
+.clear:hover {
+  border: 2px solid aquamarine;
+
+}
+
+@media all (min-width: 320px) and (max-width: 900px) {
 	.intro .intro-block {
-	    width: 100%;
-	    color: red;
-        padding-left: 15px;
+      width: 100%;
+      padding-left: 15px;
     	padding-right: 15px;
-	}
+}

@@ -1,4 +1,4 @@
-ul {
+l {
     float: left;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ ul {
 
 .level-2,
 .level-3 {
-    position: absolute;
+    position: fixed;
     list-style: none;
     background: #d1d1d1;
     margin: 0;

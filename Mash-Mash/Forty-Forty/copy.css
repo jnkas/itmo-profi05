@@ -1,0 +1,429 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+	background-color: black;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+body a{
+	text-decoration: none;
+	color:white;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.col-12{
+	width: 100%;
+	float: left;
+}
+.row::after{
+	 clear: both;
+	 content: "";
+	 display: block;
+	 height: 0;
+	 visibility: hidden;
+}
+
+/*-------------------------------------------------------------------------*/
+header .logo{
+	padding: 20px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    letter-spacing: 0.3em; 
+    font-weight: bold;
+}
+
+
+.menu {
+    position: absolute;
+    right: 30px;
+    top: 19px;
+    float: left;
+}
+i.fa-bars{
+	transform: scale(2.3, 1.25);
+	
+}
+
+.logo a {
+	margin-left: 11px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.3em;
+    font-weight: normal;
+}
+.logo span {
+    padding: 4px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+h1{
+	color: white;
+	text-align: left;
+	text-transform: none;
+	border-bottom: 2px solid #fff;
+    padding-bottom: 35px;
+    font-size: 5vw;
+    margin-right: 0;
+}
+.content p{
+	float: left;
+	line-height: 1.5;
+	font-weight: normal;
+}
+.btn{
+	display: inline-block;
+	border: 2px solid white;
+	padding: 17px 30px;
+	font-size: 15px;
+	font-weight: normal;
+	letter-spacing: 0.3em;
+}
+
+.btn .fa-long-arrow-right{
+	transform: scale(3,2);
+	padding-left: 10px;
+}
+.intro{
+	background: #000;
+    color: #fff;
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    padding: 8em 0 8em 0;
+    text-align: left;
+    margin:auto;
+}
+.intro .text{
+	margin: auto;
+	width: 87vw;
+}
+
+.text p{
+	font-size: 15px;
+	letter-spacing: 0.2em;
+	margin-top: 0;
+	padding-right: 40px;
+}	
+/*------------------------------------------------------------------------------------*/
+
+section .text p{
+	margin-left: 5vw;
+}
+.text{
+	z-index: 10;
+	position: relative;
+	font-weight: bold;	
+}
+
+.text h2{
+	text-transform: none; 
+	border-bottom: 2px solid white;
+	width: 212px;
+	margin-left: 5vw;
+	padding-bottom: 0.7em;
+	display: block;
+}
+.aliquam{
+	background: url("images/pic01.jpg") no-repeat; 
+	background-position: top;
+	width: 40%;
+	position: relative;
+	background-size: 100%;
+}
+.tempus{
+	background: url("images/pic02.jpg") no-repeat;
+	width: 60%;	
+	position: relative;
+	background-position: center;
+}
+.magna{
+	background: url("images/pic03.jpg") no-repeat;
+	width: 60%;
+	background-position: center;
+	position: relative;
+	
+}
+.ipsum{
+	background: url("images/pic04.jpg") no-repeat;
+	background-position: top;
+	width: 40%;
+	background-size: cover; 
+	position: relative;
+
+}
+.consequat{
+	background: url("images/pic05.jpg") no-repeat;
+	background-position: top;
+	width: 40%;
+	position: relative;
+}
+.etiam{
+	background: url("images/pic06.jpg") no-repeat;
+	width: 60%;
+	background-position: center;
+	position: relative;
+
+}
+.commonBg {
+	padding: 22vh 0 22vh 0;
+	min-height: 40vh;
+	background-size: cover; 
+	display: inline-block;	
+	background-position:center; 
+	float: left;
+}
+
+.commonBg .overlay::before{
+	content: " ";
+	position: absolute;
+	width: 100%; 
+	height: 100%;
+	top:0;
+	background: rgba(30, 37, 67, 0.8);
+}
+
+.first .overlay::before{
+	content: " ";
+	position: absolute;
+	width: 100%; 
+	height: 100%;
+	top:0;
+	background: rgba(30, 37, 67, 0.8);
+}
+
+.aliquam .overlay::before{
+	background: rgba(122, 192, 216, 0.8);
+}
+
+.tempus .overlay::before{
+	background: rgba(143, 135, 194, 0.8);
+}
+.magna .overlay::before{
+	background: rgba(228, 145, 136, 0.8);
+}
+.ipsum .overlay::before{
+	background: rgba(223, 182, 144, 0.8);
+}
+.consequat .overlay::before{
+	background: rgba(143, 166, 221, 0.8);
+}
+.etiam .overlay::before{
+	background: rgba(137, 189, 162, 0.8);
+}
+
+section:hover .overlay:before {
+	background: transparent;
+	position: relative;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+
+.massa{
+	background-color: rgba(42, 47, 74, 1);
+	padding-top: 3em;
+	padding-bottom: 3em;
+	position: relative;
+}
+.massa .text{
+
+	margin: auto;
+	max-width: 87vw;
+	
+}
+.massa .text h2{
+	margin-left: 0;
+}
+.massa .text p{
+	text-transform: none;
+	font-size: 19px;
+	font-weight: lighter;
+	margin-top: 2.5em;
+	line-height: 2;
+	text-align: left;
+	margin-left: 0;
+	letter-spacing: normal;
+}
+.btn2{
+	margin-left: 0;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+.footer-form{
+	height: 130vh;
+	background-color: #242943;
+
+}
+
+.form
+{
+	padding-left: 5vw;
+	padding-top: 10vh;
+	width: 60%;
+	float: left;
+	background-color: #242943;
+
+}
+.form-tip{
+	margin:auto;
+}
+input {
+	width: 25vw;
+	height: 8vh;
+}
+label {
+	display: block;
+	padding-bottom: 3vh
+}
+.name{
+	float: left;
+}
+.email{
+	margin-left: 27.5vw;
+}
+
+.message{
+	clear: both;
+	margin-top: 10vh;
+}
+input, textarea{
+	background: rgba(42, 47, 74, 1);
+	border: none;
+}
+input[type="submit"]{
+	background: white;
+    color: #242943;
+    width: 260px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    float: left;
+
+}
+input[type="reset"]{
+	display: block;
+    color: white;
+    width: 160px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    border: 2px solid white;
+    margin-left: 20vw;
+}
+.buttons{
+	padding-top: 4vh;
+	padding-bottom: 9vh;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------*/
+.left-form{
+	width: 40%;
+	border-left: 2px solid rgba(52, 57, 84, 1);
+	position: relative;
+	background-color: #242943;
+}
+.left-form a{
+	border-bottom: 1px dotted white;
+
+}
+.emm{
+	margin-left:0;
+	margin-top: 4vh;
+	text-transform: none;
+	border-bottom: 2px solid rgba(52, 57, 84, 1);
+	padding-bottom: 7vh;
+}
+	
+.emm h2{
+	margin-left: 10vw;
+	margin-top: 0;
+}
+.emm p {
+	margin-left: 10vw;
+	font-size: 17px;
+}
+.fa-circle:before {
+    content: "\f111";
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 7px;
+}
+.fa-envelope:before{
+	position: absolute;
+    margin-left: 77.5px;
+    margin-top: 15px;
+    color: black;
+}
+.fa-phone:before{
+	position: absolute;
+	color: black;
+	 margin-left: 80.5px;
+    margin-top: 17px;  
+}
+.fa-home:before{
+	position: absolute;
+	color: black;
+	 margin-left: 78px;
+    margin-top: 16px;
+  
+}
+
+@media (max-width: 1024px) {
+	header, .logo a, .logo a span,.intro,.aliquam, .tempus, .magna, .ipsum, .consequat, .etiam, .massa,.form,.left-form,.footer-form,
+	.col-12, .row{
+	    width: 100%;
+	    
+	}
+	.fa-circle{
+		margin-left:150px;
+	}
+	input[type="submit"]{
+		margin-bottom: 5vh;
+		margin-right: 5vw
+	}
+	input[type="reset"]{
+	margin-left: 0;
+	}
+	textarea{
+		width: 90%;
+	}
+
+	.intro{
+			padding: 4em 0 4em 0;
+		}
+
+	@media (max-width: 425px){
+		h1{
+			font-size: 40px;
+		}
+	}
+
+	@media (max-width: 375px){
+
+	h1{
+		font-size: 31px;
+	}
+	.menu, .logo a{
+		color: transparent;
+	}
+	i{
+		color: white;
+	}
+
+}
+
+	}

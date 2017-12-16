@@ -61,22 +61,20 @@
     clear: both;
 }
 */
-.modal {
-    background: yellow;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50vh;
-    padding: 15px;
-    transform: translate(0, -50px);
+/
+@media (max-width:900px) {
+    .col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    width: 100%;
 }
-.fade{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.3)
-    
-    
 }

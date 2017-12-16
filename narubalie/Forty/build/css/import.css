@@ -1,0 +1,30 @@
+/* COMPONENT:
+   ==========================================================================
+   Import all less files in one CSS
+   ========================================================================== */
+.body {
+  font-family: "Source Sans Pro";
+}
+header {
+  height: 50px;
+  background-color: #2a2f4a;
+}
+header a:hover {
+  color: #9bf1ff;
+}
+h1 {
+  font-size: 3em;
+  border-bottom: 2px solid white;
+}
+h3 {
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+button {
+  border: 2px solid white;
+}
+.banner {
+  background-size: cover;
+}
