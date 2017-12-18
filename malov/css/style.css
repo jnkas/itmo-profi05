@@ -36,6 +36,11 @@ header{
 .byhtml:hover,.intro-block>a:hover, .byhtml a:hover{
     color:aquamarine;
     border-color: aquamarine;
+    
+}
+
+.byhtml:hover span{
+    background-color: aquamarine;
 }
 .menu>a{
     position: absolute;
@@ -72,7 +77,7 @@ header{
 }
 .intro-block>a{
     border: 2px solid white;
-    padding: 7px;
+    padding: 7px;    
     text-transform: uppercase;
     text-decoration: none;
     color:white;
@@ -107,11 +112,19 @@ header{
     font-size: 0.7em;
     letter-spacing: 0.25em
 }
-.col-5{
+.first-line>.col-5{
     background-image: url(../images/pic01.jpg);
     height: 400px;
+    flex-basis: 40%;
 }
-.col-7{
+.first-line>.col-5::before{
+    content: '';
+    background: #6fc3df;
+    display: block;
+    position: absolute;
+    transition: opacity 500ms ease 0s;
+}
+.first-line>.col-7{
     background-image: url(../images/pic02.jpg);
     height: 400px;
 }
@@ -119,18 +132,22 @@ header{
 .second-line>.col-7{
     color:white;
     background-image: url(../images/pic03.jpg);
+    height: 400px;
 }
 .second-line>.col-5{
     color:white;
     background-image: url(../images/pic04.jpg);
+    height: 400px;
 }
 .third-line>.col-5{
     color: white;
     background-image: url(../images/pic05.jpg);
+    height: 400px;
 }
 .third-line>.col-7{
     color: white;
     background-image: url(../images/pic06.jpg);
+    height: 400px;
 }
 .col-12{
     background-color: #2a2f4a;
@@ -168,6 +185,6 @@ header{
     margin-top: 20px;
 }
 .contacts>.col-7{
-    background-color:#242943; 
-    height: 500px;
+     background-color: #242943;
+    height: 400px;
 }
