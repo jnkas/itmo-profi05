@@ -1,0 +1,87 @@
+.intro{
+    /* margin: auto; */
+    width: 100%;
+ 
+   height: 100%;
+
+background:blue;
+
+display: flex;
+padding: 6em 0 2em 0 ;
+min-height: 90vh;
+}
+
+
+.intro-block{
+    margin: auto;
+    width: 75%;
+    
+}
+.intro-block .content{
+    
+  
+   
+}
+.intro-block  h1{
+    
+  
+    border: 0;
+    border-bottom: 1px solid white;
+    
+}
+
+.intro-block .content p{
+    color: white;
+    
+  
+    
+    
+}
+
+.intro-block .button{
+   
+    border: 1px solid white;
+    margin-top: 23px
+   
+} 
+
+
+.intromain{
+    background: red;
+    padding-left:40px; 
+    color: white;
+    margin: auto;
+    margin-top: -20px;
+}
+.intro-blockmain h2{
+    border: 0;
+    border-bottom: 1px solid white;
+    width: max-content;
+}
+
+
+.inner{
+    color: white;
+    width: 100%;
+    margin: auto;
+    background: rebeccapurple;
+    overflow: hidden;
+   padding-top: 22px; 
+    padding-left: 36px;
+}
+.userdata{
+   
+    padding-bottom: 25px;
+}
+.usermessage{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.label{
+    width: 100%;
+}
+.message{
+    width: 95%;
+    padding-top: 30vh;
+}

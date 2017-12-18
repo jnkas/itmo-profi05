@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    while (true) {
+        var number = prompt("введите число от 1 до 5");
+        if (!number) {
+            break;
+        }
+        if (number == 1) {
+            alert("плохо");
+        }
+        if (number == 2) {
+            alert("неудовлетворительно");
+        }
+        if (number == 3) {
+            alert("удовлетворительно");
+        }
+        if (number == 4) {
+            alert("хорошо");
+        }
+        if (number == 5) {
+            alert("отлично");
+        }
+        if ((number < 1) || (number > 5)) {
+            alert("вы выбрали неверное число");
+        }
+        if (number.match(/^[-\+]?\d+/) === null) {
+            alert("вы ввели не число");
+        }
+    }
+</script>
+</body>
+</html>

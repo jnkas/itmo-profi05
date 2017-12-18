@@ -1,0 +1,27 @@
+#tubmler {
+    display: none;
+}
+.modal-body {
+    display: none;
+}
+.menu__item > label{
+    padding: 2em 2em;
+    display: block;
+    cursor: pointer;
+}
+#tubmler:checked + .modal-body {
+    display: block;
+}
+.modal-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    border: 1px solid;
+}

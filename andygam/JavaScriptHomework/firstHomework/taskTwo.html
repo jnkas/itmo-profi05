@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+     while (true) {
+         var number = prompt("введите число в диапазоне от -999 до 999");
+         if (!number) {
+             break;
+         }
+         if ((number > 999) || (number < -999)) {
+             alert("число не находится в диапазоне от -999 до 999");
+         }
+         if (number == 0) {
+             alert("нулевое число");
+         }
+         if ((number < -99) && (number >= -999)) {
+             alert("отрицательное трехзначное число");
+         }
+         if ((number <= -10) && (number >= -99 )) {
+             alert("отрицательное двузначное число");
+         }
+         if ((number < 0) && (number >= -9 )) {
+             alert("отрицательное однозначное число");
+         }
+         if ((number > 0) && (number <= 9 )) {
+             alert("положительное однозначное число");
+         }
+         if ((number > 9) && (number <= 99 )) {
+             alert("положительное двузначное число");
+         }
+         if ((number > 99) && (number <= 999 )) {
+             alert("положительное трехзначное число");
+         }
+         if (number.match(/^[-\+]?\d+/) === null) {
+             alert("вы ввели не число");
+         }
+     }
+</script>
+</body>
+</html>

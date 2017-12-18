@@ -48,7 +48,7 @@
 }
 
 .row::after {
-	content: ".";
+	content: "";
 	display: block;
 	clear: both;
 	visibility: hidden; 

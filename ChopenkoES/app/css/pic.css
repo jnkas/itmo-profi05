@@ -1,0 +1,173 @@
+.major{
+    align-content: center;
+}
+.pic01 ,.pic02,.pic03,.pic04,.pic05,.pic06{
+    cursor: pointer;
+   text-align: left;
+    color: white;
+    position: relative;
+  
+}
+.pic01 a ,.pic02 a,.pic03 a,.pic04 a,.pic05 a,.pic06 a{
+    text-decoration: none;
+    margin: auto;
+    color: white;
+}
+
+
+.pic01 h3 ,.pic02 h3,.pic03 h3,.pic04 h3,.pic05 h3,.pic06 h3{
+margin: 0;
+padding-top: 200px;
+
+
+
+}
+
+.pic01 p ,.pic02 p,.pic03 p,.pic04 p,.pic05 p,.pic06 p{
+    margin: 0;
+    padding-left: 3em;
+    
+    
+    
+    }
+.link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+   
+display: block;
+font-size: 0.8em;
+font-weight: 600;
+letter-spacing: 0.25em;
+line-height: 4em;
+text-transform: uppercase;
+
+}
+h3 span{
+   
+    border-bottom: 1px solid white;
+    margin: auto;
+    margin-left: 3em;
+    margin-top: 10em;
+}
+
+
+.pic01{
+    background-image:  url(../images/pic01.jpg);
+    overflow: hidden;
+   margin: auto;
+   background-size: cover;
+   height: 500px;
+   
+}
+.pic01 .major{
+    background: rgba(40, 182, 248, 0.3);
+width: 100%;
+height: 100%;
+padding: 1px;
+border: 0;
+
+}
+
+.pic01 .major:hover,.pic02 .major:hover,.pic03 .major:hover,.pic04 .major:hover,.pic05 .major:hover,.pic06 .major:hover{
+background: transparent;
+}
+
+.pic02{
+    background-image:  url(../images/pic02.jpg) ;
+    overflow: hidden;
+   
+    margin: auto;
+  
+   background-size: cover;
+   z-index: 35;
+  
+   height: 500px;
+  
+}
+
+.pic02 .major{
+    background: rgba(137, 40, 248, 0.377);
+width: 100%;
+height: 100%;
+padding: 1px;
+border: 0;
+
+}
+
+
+.pic03{
+    background-image:  url(../images/pic03.jpg);
+    overflow: hidden;
+   margin: auto;
+   background-size: cover;
+   
+   height: 500px;
+
+}
+
+.pic03 .major{
+    background: rgba(248, 40, 40, 0.377);
+width: 100%;
+height: 100%;
+padding: 1px;
+border: 0;
+
+}
+
+.pic04{
+    background-image:  url(../images/pic04.jpg);
+    overflow: hidden;
+   margin: auto;
+   background-size: cover;
+   height: 500px;
+}
+
+.pic04 .major{
+    background: rgba(248, 245, 40, 0.377);
+width: 100%;
+height: 100%;
+padding: 1px;
+border: 0;
+
+}
+
+.pic05{
+    background-image:  url(../images/pic05.jpg);
+    overflow: hidden;
+   margin:auto;
+   background-size: cover;
+   
+   height: 500px;
+}
+
+
+.pic05 .major{
+    background: rgba(40, 54, 248, 0.377);
+width: 100%;
+height: 100%;
+padding: 1px;
+border: 0;
+
+}
+
+.pic06{
+    background-image:  url(../images/pic06.jpg);
+    overflow: hidden;
+   margin: auto;
+   background-size: cover;
+   
+   height: 500px;
+}
+
+.pic06 .major{
+    background: rgba(57, 248, 40, 0.377);
+width: 100%;
+height: 100%;
+padding: 1px;
+border: 0;
+
+}
+
+
