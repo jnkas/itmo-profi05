@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>Programming on the JavaScript</title>
+    <!-- <script src="js/script.js"></script>  -->
+</head>
+<body>
+<!-- 	<p>начало страницы</p>
+	<script type="text/javascript">
+		// alert("Привет мир!!!");
+	</script>
+	<p>конец страницы</p> -->
+	<script type="text/javascript">
+			// var o = +prompt("Ваш оклад", 10000);
+			// var r = +prompt("Раб дней в месяце", 24);
+			// var s = +prompt("Отработанных дней", 12);
+
+			// var result = o/r*s*0.87;
+			// result = parseFloat(result.toFixed(2));
+			// alert("Твоя з/п " + result);
+
+			// var = menu prompt("Выберите язык меню:" +
+			// "\n1 - Русский;\n2 - Английский;" +
+			// "\n3 - Немецкий.");
+			// switch(menu){
+			// 	case '1':
+			// 		alert ('Привет');
+			// 		break;
+			// 	default
+
+			// }
+			
+			// var str = prompt("Введите дату:", "");
+			// var reg = /[0-3][0-9]\.[0-1][0-9]\.\d{4}/;
+			// alert(reg.test(str));
+
+			// var str = prompt("Введите телефон по формату " + "X (XXX) XXX-XX-XX", "7(123)-12-23");
+			// var str = prompt("Введите адрес почты ", "");
+
+			// var reg = /^([a-z0-9_-]+\.)*[] $/;
+			// var reg = /\+?\d\(\d{3}\)\d{3}-\d{2}-\d{2}/;
+			// var reg = new RegExp(template);
+
+			// var str = prompt("Введите дату:", "");
+			// var reg = /[0-3][0-9]\.[0-1][0-9]\.\d{4}/;
+			// alert(reg.test(str));
+
+			// var i = 0;
+			// var sum = 0;
+			// while (i <= 100) {
+			// 	// sum +=i;
+			// 	sum = sum + i;
+			// 	i = i + 1;
+			// 	}
+			// alert(sum);
+
+			// var str = "<table>";
+			// var i = 0;
+			// while (i < 4) {
+			// 	if (i%2) 
+			// 		str += '<tr style="background-color:green;">';
+			// 	else
+			// 		str += '<tr style="background-color:orange;">';
+
+			// 	str += "<tr><td>" + i + "</td>" + "<td>" + i*2 +  "</td></tr>";
+			// 	i++;
+			// }
+			// str += "</table>";
+			// document.write(str);
+
+			var text = prompt("текст для шифрования");
+			var key = prompt( "ключ для одного символа");
+			var locktext = "";
+			var i = 0;
+			var codeKey = key.charCodeAt(0);
+			var codeSymbolFromText, lockSymbolCode;
+
+			while(i < text.length) {
+
+				codeSymbolFromText = text.charCodeAt(i);
+				codeSymbolCode = codeKey ^ codeSymbolFromText;
+				locktext += String.FromCharCode(lockSymbolCode);
+				i++;
+			}
+			alert(locktext);
+			console.log(locktext);
+	</script>
+			
+</body>
+</html>
