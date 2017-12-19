@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 1.1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n1 = prompt("Введите первое число", '');
+		var n2 = prompt("Введите второе число", '');
+		var n3 = prompt("Введите третье число", '');
+		if ((n1 < n2) && (n1 < n3)) {
+			n_min = n1;
+				}
+			else if ((n2 < n1) && (n2 < n3)) {
+					n_min = n2; 
+				}
+				else if ((n3 < n1) && (n3 < n2)) {
+					n_min = n3;
+				}
+		alert("Наименьшее число " + n_min);
+	</script>
+</body>
+</html>
