@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 3.2</title>
+</head>
+<body>
+	<script type="text/javascript">
+			var n= prompt("Введите целое число", '');
+			if (Number.isInteger(+n)) {
+				var i = 0;
+				var k = 0;
+				while (i < n.length) {
+						k = k + +n[i];
+						i++;
+					}
+				document.write("Сумма цифр числа "+n+" равна "+k);
+			}
+			else alert("Это не целое число");
+	</script>
+</body>
+</html>
