@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 1.2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n = prompt("Введите число в диапазоне от '-999' до '999'", '');
+		if ((n >= -999)  && (n <= 999)) 
+			{
+			var units = ['',' один',' два',' три',' четыре',' пять',' шесть',' семь',' восемь',' девять'];
+			var tens = ['',' десять',' двадцать',' тридцать',' сорок',' пятьдесят',' шестьдесят',' семьдесят',' восемьдесят',' девяносто'];
+			var secondtens = ['',' одиннадцать',' двенадцать',' тринадцать',' четырнадцать',' пятнадцать',' шестнадцать',' семнадцать',' восемнадцать',' девятнадцать'];
+			var hundreds = ['',' сто',' двести',' триста',' четыреста',' пятьсот',' шестьсот',' семьсот',' восемьсот',' девятьсот'];
+
+			if (n > 0) {
+				var plus_minus = 'положительное ';
+				var minus = '';
+				var minus_n = '';
+				}
+				else if (n < 0) {
+					var plus_minus = 'отрицательное ';
+					var minus = 'минус ';
+					var minus_n = '-';
+					n = -n;
+				}
+				else  if (n == 0) {
+					var plus_minus = '';
+					var minus = '';
+					var minus_n = '';
+				}
+
+			var u = parseInt(n % 10);			//--единицы
+			var t = parseInt((n / 10) % 10);	//--десятки
+			var h = parseInt(n / 100);			//--сотни
+
+			var num_str = hundreds[h] + tens[t]+ units[u];
+
+			if ((t == 1) && (u != 0)) {
+				var num_str = hundreds[h] + secondtens[u];
+			}
+
+			if ((h == 0) && (t != 0)) {
+				var descr = 'двузначное';
+				} 
+				else if ((h == 0) && (t == 0)) {
+					var descr = 'однозначное';
+					}
+					else var descr = 'трёхзначное';	
+  
+			num_str = (n == 0) ? 'ноль' : num_str;
+			descr = (n == 0) ? 'нулевое' : descr;
+
+			alert("Число: "+minus_n+n+" ("+minus+num_str+") - это "+plus_minus+descr+" число.");
+		}
+		else
+			alert("Число вне диапазона!");
+	</script>
+</body>
+</html>
