@@ -12,79 +12,146 @@
 	</script>
 	<p>конец страницы</p> -->
 	<script type="text/javascript">
-			// var o = +prompt("Ваш оклад", 10000);
-			// var r = +prompt("Раб дней в месяце", 24);
-			// var s = +prompt("Отработанных дней", 12);
+		// var o = +prompt("Ваш оклад", 10000);
+		// var r = +prompt("Раб дней в месяце", 24);
+		// var s = +prompt("Отработанных дней", 12);
 
-			// var result = o/r*s*0.87;
-			// result = parseFloat(result.toFixed(2));
-			// alert("Твоя з/п " + result);
+		// var result = o/r*s*0.87;
+		// result = parseFloat(result.toFixed(2));
+		// alert("Твоя з/п " + result);
 
-			// var = menu prompt("Выберите язык меню:" +
-			// "\n1 - Русский;\n2 - Английский;" +
-			// "\n3 - Немецкий.");
-			// switch(menu){
-			// 	case '1':
-			// 		alert ('Привет');
-			// 		break;
-			// 	default
+		// var = menu prompt("Выберите язык меню:" +
+		// "\n1 - Русский;\n2 - Английский;" +
+		// "\n3 - Немецкий.");
+		// switch(menu){
+		// 	case '1':
+		// 		alert ('Привет');
+		// 		break;
+		// 	default
 
-			// }
-			
-			// var str = prompt("Введите дату:", "");
-			// var reg = /[0-3][0-9]\.[0-1][0-9]\.\d{4}/;
-			// alert(reg.test(str));
+		// }
+		
+		// var str = prompt("Введите дату:", "");
+		// var reg = /[0-3][0-9]\.[0-1][0-9]\.\d{4}/;
+		// alert(reg.test(str));
 
-			// var str = prompt("Введите телефон по формату " + "X (XXX) XXX-XX-XX", "7(123)-12-23");
-			// var str = prompt("Введите адрес почты ", "");
+		// var str = prompt("Введите телефон по формату " + "X (XXX) XXX-XX-XX", "7(123)-12-23");
+		// var str = prompt("Введите адрес почты ", "");
 
-			// var reg = /^([a-z0-9_-]+\.)*[] $/;
-			// var reg = /\+?\d\(\d{3}\)\d{3}-\d{2}-\d{2}/;
-			// var reg = new RegExp(template);
+		// var reg = /^([a-z0-9_-]+\.)*[] $/;
+		// var reg = /\+?\d\(\d{3}\)\d{3}-\d{2}-\d{2}/;
+		// var reg = new RegExp(template);
 
-			// var str = prompt("Введите дату:", "");
-			// var reg = /[0-3][0-9]\.[0-1][0-9]\.\d{4}/;
-			// alert(reg.test(str));
+		// var str = prompt("Введите дату:", "");
+		// var reg = /[0-3][0-9]\.[0-1][0-9]\.\d{4}/;
+		// alert(reg.test(str));
 
-			// var i = 0;
-			// var sum = 0;
-			// while (i <= 100) {
-			// 	// sum +=i;
-			// 	sum = sum + i;
-			// 	i = i + 1;
-			// 	}
-			// alert(sum);
+		// var i = 0;
+		// var sum = 0;
+		// while (i <= 100) {
+		// 	// sum +=i;
+		// 	sum = sum + i;
+		// 	i = i + 1;
+		// 	}
+		// alert(sum);
 
-			// var str = "<table>";
-			// var i = 0;
-			// while (i < 4) {
-			// 	if (i%2) 
-			// 		str += '<tr style="background-color:green;">';
-			// 	else
-			// 		str += '<tr style="background-color:orange;">';
+		// var str = "<table>";
+		// var i = 0;
+		// while (i < 4) {
+		// 	if (i%2) 
+		// 		str += '<tr style="background-color:green;">';
+		// 	else
+		// 		str += '<tr style="background-color:orange;">';
 
-			// 	str += "<tr><td>" + i + "</td>" + "<td>" + i*2 +  "</td></tr>";
-			// 	i++;
-			// }
-			// str += "</table>";
-			// document.write(str);
+		// 	str += "<tr><td>" + i + "</td>" + "<td>" + i*2 +  "</td></tr>";
+		// 	i++;
+		// }
+		// str += "</table>";
+		// document.write(str);
 
-			var text = prompt("текст для шифрования");
-			var key = prompt( "ключ для одного символа");
-			var locktext = "";
-			var i = 0;
-			var codeKey = key.charCodeAt(0);
-			var codeSymbolFromText, lockSymbolCode;
+		// var text = prompt("текст для шифрования");
+		// var key = prompt( "ключ для одного символа");
+		// var locktext = "";
+		// var i = 0;
+		// var codeKey = key.charCodeAt(0);
+		// var codeSymbolFromText, lockSymbolCode;
 
-			while(i < text.length) {
+		// while(i < text.length) {
 
-				codeSymbolFromText = text.charCodeAt(i);
-				codeSymbolCode = codeKey ^ codeSymbolFromText;
-				locktext += String.FromCharCode(lockSymbolCode);
-				i++;
+		// 	codeSymbolFromText = text.charCodeAt(i);
+		// 	codeSymbolCode = codeKey ^ codeSymbolFromText;
+		// 	locktext += String.FromCharCode(lockSymbolCode);
+		// 	i++;
+		// }
+		// alert(locktext);
+		// console.log(locktext);
+
+		// var arr = [2,3,7,13,5,0,20];
+		// var min = arr[0], max = arr[0];
+		// for (var i = 1, l = arr.length; i < l; i++) {
+		// 	if(arr[i] <= min) min = arr[i];
+		// 	else if(arr[i] > max) max = arr[i];
+		// 	}
+		// alert("min: "+min+" max: "+max);
+
+		// var str = prompt("Введите текст");			//Ищем часть текста в строке, даже если одна буква введена неправильно
+		// var pie = prompt("Введите часть текста");
+		// var reg;
+		// var piereg = '';
+		// for (var i = 0; i < pie.length; i++) {
+		// 	for (var j = 0; j < pie.length; j++) {
+		// 		if(i === j) {
+		// 			piereg += ".";
+		// 			} else {
+		// 				piereg += pie[j];
+		// 			}
+		// 		}
+		// 		if(i !== pie.length - 1) {
+		// 			piereg += '|';
+		// 			}
+		// 	reg += piereg;
+		// 	}
+		// 	var regExp = new RegExp(reg, "i");
+		// 	if(regExp.test(str)) {
+		// 		alert(str.match(regExp));
+		// 		}
+		// 		else {
+		// 			alert("Нет совпадений");
+		// 		}
+
+		// var arr = [];						//измеряем время выполнения массивов LIFO и FIFO
+		// console.time("1M push и pop");
+		// for (var i = 0; i < 10000000; i++) {
+		// 	arr.push(i);
+		// }
+		// for (var i = 0; i < 10000000; i++) {
+		// 	arr.pop();
+		// }
+		// console.timeEnd("1M push и pop");
+
+		// console.time("1M shift и unshift");
+		// for (var i = 0; i < 10000; i++) {
+		// 	arr.unshift(i);
+		// }
+		// for (var i = 0; i < 10000; i++) {
+		// 	arr.shift();
+		// }
+		// console.timeEnd("1M shift и unshift");
+
+		var arr = [5,3,4,1,2,6,7,9,8];					//реализация сортировки
+		console.log(arr.toString());
+		for (var i = 0; i < arr.length; i++) {
+			for (var j = 1; j < arr.length - i; j++) {
+				if(arr[j-1] > arr[j]) {
+					var temp = arr[j-1];
+					arr[j-1] = arr[j];
+					arr[j] = temp;
+					console.log(arr.toString());
+				}
 			}
-			alert(locktext);
-			console.log(locktext);
+		}
+		console.log(arr.toString());
+
 	</script>
 			
 </body>
