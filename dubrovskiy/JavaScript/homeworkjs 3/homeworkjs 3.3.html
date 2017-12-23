@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 3.3</title>
+</head>
+<body>
+	<script type="text/javascript">
+			var l = prompt("Введите строку любых символов",'');
+			if (l.length > 0) {
+				var s = prompt("Выберите любой символ из ЭТОЙ строки, который хотите удвоить",l);
+				while ((s.length > 1) || (s.length == 0) || (l.indexOf(s)) == -1) {
+					var s = prompt("Оставьте только ОДИН символ в ЭТОЙ строке, который хотите удвоить",l);
+				}
+				var ll = '';
+				var pos;
+				while (l.indexOf(s, pos) !== -1) {
+					var foundPos = l.indexOf(s, pos);
+					var ll = ll + l.substring(pos,foundPos)+s+s;
+					pos = foundPos + 1;
+				}
+				ll = ll + l.substring(pos);
+				document.write("Вначале была введена строка: "+l+"<br>");
+				document.write("После удвоения символа \'"+s+"\' получилась строка : "+ll);
+			} 
+			else alert("Введена пустая строка");
+
+	</script>
+</body>
+</html>
