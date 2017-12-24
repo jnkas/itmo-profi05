@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 3.4</title>
+</head>
+<body>
+	<script type="text/javascript">
+			var pass = prompt("Введите пароль согласно следующим требованиям:\n- длина от 9 символов\n- содержит обязательно английские буквы верхнего и нижнего регистра\n- содержит более двух цифр\n- содержит обязательно один из неалфавитных символов (например, !, $, #, %). ");
+			var arr = pass.match(/\d/g);
+			if ((pass.length >= 9) && (/[a-zA-Z]/.test(pass) == true) && (/\W/.test(pass) == true) && (arr.length >= 2)) {
+			alert("Пароль надёжный!");
+			} 
+			else alert("Пароль не соответствует требованиям безопасности");
+	</script>
+</body>
+</html>
