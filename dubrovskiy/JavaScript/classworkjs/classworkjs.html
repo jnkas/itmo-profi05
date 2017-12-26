@@ -11,6 +11,7 @@
 		// alert("Привет мир!!!");
 	</script>
 	<p>конец страницы</p> -->
+	<script script src="js/MyFirstLib.js"></script>
 	<script type="text/javascript">
 		// var o = +prompt("Ваш оклад", 10000);
 		// var r = +prompt("Раб дней в месяце", 24);
@@ -138,19 +139,130 @@
 		// }
 		// console.timeEnd("1M shift и unshift");
 
-		var arr = [5,3,4,1,2,6,7,9,8];					//реализация сортировки
-		console.log(arr.toString());
-		for (var i = 0; i < arr.length; i++) {
-			for (var j = 1; j < arr.length - i; j++) {
-				if(arr[j-1] > arr[j]) {
-					var temp = arr[j-1];
-					arr[j-1] = arr[j];
-					arr[j] = temp;
-					console.log(arr.toString());
-				}
-			}
-		}
-		console.log(arr.toString());
+		// var arr = [5,3,4,1,2,6,7,9,8];					//реализация сортировки
+		// console.log(arr.toString());
+		// for (var i = 0; i < arr.length; i++) {
+		// 	for (var j = 1; j < arr.length - i; j++) {
+		// 		if(arr[j-1] > arr[j]) {
+		// 			var temp = arr[j-1];
+		// 			arr[j-1] = arr[j];
+		// 			arr[j] = temp;
+		// 			console.log(arr.toString());
+		// 		}
+		// 	}
+		// }
+		// console.log(arr.toString());
+
+		// var gamePlace = [1, null, 0, null, 1, null, null, null, null];
+		// var arr = [];
+		// for(var i=0; i<gamePlace.length; i++) {
+		// 	if((gamePlace[i]) === null) {
+		// 		arr.push('');
+		// 	}
+		// 	else if((gamePlace[i] === 1) {
+		// 		arr.push('X');
+		// 	}
+		// 	else if((gamePlace[i] === 0) {
+		// 		arr.push('0');
+		// 	}
+		// }
+		// var strHTML = "<table>"
+
+		// //продолжение в файле .zip в группе
+
+		// var obj = {												//генерируем случайное слово
+		// 	g: ["A","Е","Ё","И","О","У","Ы","0","Ю","Я"],
+		// 	s: ["Б","В","Г","Д","Ж","З","Й","К","Л","М","Н","П","Р","С","Т","Ф","Х","Ц","Ч","Ш","Щ"]
+		// };
+		// var numCh = Math.floor(Math.random()*3 + 3);
+		// var typeFCh = Math.floor(Math.random()*2);
+		// var newWord = '';
+		// for(var i=0; i<numCh; i++) {
+		// 	if(typeFCh) {
+		// 		temp = Math.floor(Math.random()*obj.g.length);
+		// 		newWord += obj.g[temp];
+		// 	} else {
+		// 		temp = Math.floor(Math.random()*obj.s.length);
+		// 		newWord += obj.s[temp];
+		// 	}
+		// 	typeFCh = !typeFCh;
+		// }
+		// console.log(newWord);
+
+		// function pow(x, n) {		//возведение числа X в степень N с использованием рекурсии
+		// 	if(n ==== 0){
+		// 		return 1;
+		// 	} else if (n === 1) {
+		// 		return x;
+		// 	} else {
+		// 		return x*pow(x,n-1);
+		// 	}
+		// }
+		// console.log(pow(2,3));
+
+		// function pow(x, n) {		//возведение числа X в степень N без использования рекурсии
+		// 	if(n ==== 0){
+		// 		return 1;
+		// 	} else if (n === 1) {
+		// 		return x;
+		// 	} else {
+		// 		res = x;
+		// 		for(var i=2;i<=n;i++) {
+		// 			res=res*x;
+		// 		}
+		// 		return res;
+		// 	}
+		// }
+		// console.log(pow(2,3));
+
+		// function createrCounterov() {		//счётчик, который считает число вызовов функции (с использованием замыкания)
+		// 	var count=0;
+		// 	return function(){
+		// 		return ++count;
+		// 	}
+		// }
+		// var generator = createrCounterov();
+		// console.log(generator());
+		// console.log(generator());
+		// console.log(generator());
+		// console.log(generator());
+		// console.log(generator());
+		// var generator2 = createrCounterov();
+		// console.log(generator2());
+		// console.log(generator2());
+
+		// console.dir(generator);
+		// console.dir(generator2);
+
+		// var cat = {				//использование ключевого слова this
+		// 	name: "Барсик",
+		// 	age: 3,
+		// 	keyword: "Мяу!"
+		// };
+		// var dog = {
+		// 	name: "Балбес",
+		// 	age: 3,
+		// 	keyword: "Гав!"
+		// };
+		// function logHello() {
+		// 	console.log(this.keyword + "Меня зовут " + this.name);
+		// }
+		// cat.hello = logHello;
+		// dog.hello = logHello;
+		// cat.hello();
+		// dog.hello();
+
+		// var arr = [1,2,3];
+		// MyFirstLib.remove
+
+		// function f(x) {				//кусок кода для использования внешней библиотеки
+		// 	if(x<0)
+		// 		return 2*x+1;
+		// 	else if (0<=x && x<2)
+		// 		return -1.5*x + 1;
+		// 	else
+		// 		return x-4;
+		// }
 
 	</script>
 			
