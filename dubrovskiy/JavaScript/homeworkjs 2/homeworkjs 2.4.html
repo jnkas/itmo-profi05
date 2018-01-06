@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 2.4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var u = prompt("В каких единицах будем задавать длину отрезка?\nВведите цифру:\n1 - дециметр\n2 - километр\n3 - метр\n4 - миллиметр\n5 - сантиметр",'');
+			var unit = ["1", "2", "3", "4", "5"];
+		if (unit.indexOf(u) != -1) { 
+			var l = prompt("Введите длину отрезка через точку",'');
+			if (!isNaN(parseFloat(l))) {
+				if (u == 1) {
+					var lm = +l/10;
+				}
+				else if (u == 2) {
+					var lm = +l*1000;
+				}
+				else if (u == 3) {
+					var lm = +l;
+				}
+				else if (u == 4) {
+					var lm = +l/1000;
+				}
+				else if (u == 5) {
+					var lm = +l/100;
+				}
+				alert("Длина отрезка в метрах: "+lm.toFixed(3));
+			}
+			else alert("Длина отрезка должна быть задана числом");
+		}
+		else alert("Единица измерения задана неверно");
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 4.2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		alert("Сформируем поле '3x3' для игры 'Крестики-нолики'");
+		var arrXO = [null,null,null,null,null,null,null,null,null];
+		var i = -1; 
+		while (i <= arrXO.length - 2) {
+			i++;
+			var s = prompt("Введите цифру '1' для каждой новой ячейки, если в ней 'крестик'\nи '0', если в ней 'нолик' \nили не вводите ничего",'');
+			if (s =="1" || s == "0" || s == ""){
+				arrXO[i] = (s != "") ? s : null;
+			}
+			else {
+				--i;
+				alert("Необходимо ввести цифру '1', цифру '0' или не вводить ничего");
+				continue;
+			}
+		}
+		var arrOX =[null,null,null,null,null,null,null,null,null];
+		for (var i = 0; i < arrXO.length; i++) {
+			if (arrXO[i] == "1") {
+				arrOX[i] = "X";
+				}	
+			else if	(arrXO[i] == "0") {
+				arrOX[i] = "0";	
+			}
+			else if	(arrXO[i] == null) {
+				arrOX[i] = "";	
+			}
+		}
+		var str = "<table>";
+		document.write("Крестики-нолики");
+		for (var k = 0; k < arrOX.length; k=k+3) {
+				str += "<tr> <td>" + arrOX[k] + "</td>" + "<td>" + arrOX[k+1] + "</td>" + "<td> " + arrOX[k+2] +  "</td> </tr>";
+			}
+		str += "</table>";
+		document.write(str);
+	</script>
+</body>
+</html>

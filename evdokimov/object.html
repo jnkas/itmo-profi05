@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	 <title>obj</title> 
+</head>
+<body>
+	<script>
+
+/* person = {
+	age:'2',
+	name:'Вася',
+}
+window = {
+	width:'',
+	height:'',
+}
+
+
+console.log(person.name); */
+
+
+
+var obj = {
+
+	g: ["а", "о", "у", "ы", "и", "я", "ю", "е", "ё", "э"], 
+	s: ["с", "ф", "ч", "ц", "к", "д", "л", "м", "н", "х", "ж", "з", "ш", "щ", "п", "р", "с", "г"]
+
+};
+
+//math.floor(math.random() * (max - min + 1) + min);
+
+var numCh = Math.floor (Math.random() * 3 + 3);
+var typeFCh = Math.floor (Math.random() * 2);
+var newWord = '';
+var temp;
+
+for (i = 0; i < numCh ; i++) {
+	if (typeFCh) {
+		temp = Math.floor(Math.random() * obj.g.length);
+		newWord += obj.g[temp];
+	} else {
+		temp = Math.floor(Math.random() * obj.s.length);
+		newWord += obj.s[temp];
+	}
+	typeFCh = !typeFCh;
+}
+
+console.log(newWord);
+
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 4.1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arrA = [12,4,3,10,1,20];
+		var arrB = [-3,-7,-100,-33];
+		var arrC = [];
+		var i = -1; 
+		alert("Задан массив 'А': "+arrA.toString()+"\nи массив 'B': "+arrB.toString());
+		while (i <= arrA.length - 2) {
+				i++;
+				arrC.push(arrA[i]);
+			}
+		if (confirm("Добавить массив 'B' в конец массива 'A'?\nЕсли 'Да' - нажмите 'OK',\nЕсли нажать 'Cancel', то массив 'B' добавится в начало массива 'A'") == true) {
+			var j = -1; 
+			while (j <= arrB.length - 2) {
+					j++;
+					arrC.push(arrB[j]);
+				}
+		}
+		else {
+			var j = -1;
+			arrB.reverse();
+			while (j <= arrB.length - 2) {
+					j++;
+					arrC.unshift(arrB[j]);
+				}
+			arrB.reverse();	
+		}
+		alert("Результат:\nМассив 'A': "+arrA+"\nМассив 'B': "+arrB+"\nМассив 'C': "+arrC);
+	</script>
+</body>
+</html>

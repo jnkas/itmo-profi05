@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <body>
+    <head>
+      <meta charset="utf-8">
+      <title>js4</title>
+    </head>
+    <script>
+  var units = parseInt(prompt('Выберите ед. измерения: \n1 - дц \n2 - км \n3 - м \n4 - мм \n5 - см'));
+  var length = parseInt(prompt('Введите длину в выбранных ед.измерения'));
+  var meter = "";
+
+  switch (units) {
+    case 1:
+      meter = length * 0.1;
+      alert("Длина отрезка в метрах: " + meter);
+      break;
+    case 2:
+      meter = length*1000;
+      alert("Длина отрезка в метрах: " + meter);
+      break;
+    case 3:
+      meter = length;
+      alert("Длина отрезка в метрах: " + meter);
+      break;
+    case 4:
+      meter = length/1000;
+      alert("Длина отрезка в метрах: " + meter);
+      break;
+    case 5:
+      meter = length/100;
+      alert("Длина отрезка в метрах: " + meter);
+      break;
+    default:
+      alert("Выберите единицу измерения");
+      break;
+}
+
+
+    </script>
+  </body>
+</html>

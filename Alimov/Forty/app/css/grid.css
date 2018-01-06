@@ -53,10 +53,9 @@
 
 .row:after {
  clear: both;
- content: ".";
+ content: "";
  display: block;
-  visibility: hidden;
-}
+ }
 
 *, *:before, *:after {
 	box-sizing: border-box;

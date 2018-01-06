@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 2.1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x = prompt("Введите значение переменной 'X'",'');
+		var y = prompt("Введите значение переменной 'Y'",'');
+		var x1 = x;
+		var y1 = y;
+		if (x > y) {
+			var tt = x;
+			x = y;
+			y = tt;
+		}
+		else
+			x = x;
+			y = y;
+
+		alert("Введены значения: X = "+x1+", Y = "+y1+"\nX принимает наименьшее значение: X = "+x+"\n Наибольшее значение: Y= "+y);
+	</script>
+</body>
+</html>
