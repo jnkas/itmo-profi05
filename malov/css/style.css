@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-@media all and (min-width:320px) and (max-width:900px) {
-    .intro .intro-block{
-    width: 100%;
-    color: 
-}
-}
+/*@media all and (min-width:320px) and (max-width:900px) {*/
+    /*.intro .intro-block{*/
+    /*width: 100%;*/
+    /*color: */
+/*}*/
+/*}*/
 
 body{
     font-family: "PT Sans";

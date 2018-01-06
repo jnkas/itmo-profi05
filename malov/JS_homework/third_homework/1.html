@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+
+            height: 400px;
+            width: 400px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            color: royalblue;
+
+        }
+    </style>
+</head>
+<body>
+<script>
+    var str ="<table>";
+    var tr = 1;
+    var td = 1;
+    var res = 1;
+    while (tr<=9){
+        str+="<tr>";
+        // console.log(str);
+
+        while (td<=9){
+            // console.log(td);
+            str+=  "<td>" + td*tr + "</td>";
+            td++;
+            // console.log(str);
+        }
+
+        str+="</tr>"
+        // console.log(str);
+        tr++;
+        td=1;
+    }
+
+    str += "</table>";
+     document.write(str);
+    console.log(str);
+
+    </script>
+</body>
+</html>
