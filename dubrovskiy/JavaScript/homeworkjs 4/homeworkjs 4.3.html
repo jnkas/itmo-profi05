@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 4.3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr = [12,4,3,10,1,20];
+		alert("Задан массив "+arr+"\nУдалим из него минимальный и максимальный элементы.");
+		function compare(x, y) {
+ 			return x - y;
+		}
+		arr.sort(compare);		//отсортируем массив
+		var min = arr[0];
+		var max = arr[5];
+		arr.pop();		//удаляем последний элемент (максимальный)
+		arr.shift();	//удаляем первый элемент (минимальный)
+		alert("Из массива после сортировки удалены элементы '"+min+"' и '"+max+"'\nВ результате получили массив "+arr);
+	</script>
+</body>
+</html>
