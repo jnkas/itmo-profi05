@@ -2,19 +2,79 @@
 <html lang="RU">
 	<meta charset="UTF-8">
 <head>
-    <!-- <title>Programming on the JavaScript</title> -->
+    <title>Programming on the JavaScript</title>
     <!--<script src="js/script.js"></script> -->
     
     <style type="text/css">
-     td {
-    		border: 1px;
+															/*начало калькулятор*/
+   		input {										
+    		width: 180px;							
+    		height: 30px;
+    	}
+    	td {
+    		width: 40px;
+    		height: 30px;
+    		border: 1px solid red;
+    		text-align: center;
+    		cursor: pointer;
     	}
     </style>
 </head>
+
 <body>
-	<table id="gP"></table>
+	<div id = "calc">
+		<input id="outview" type="text" disabled>
+
+		<table>
+			<tr>
+				<td>C</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>/</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>*</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>.</td>
+				<td>=</td>
+				<td>+</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		function calc(e){
+			if(this.innerText ===  'C'){
+				outview.value = "";
+			} else if (this.innerText ===  '='){
+				outview.value = eval(outview.value);
+			} else {
+				outview.value += this.innerText;
+			}
+		}
+		var tds = document.getElementsByTagName('td');
+		for(var i=0; i<tds.length; i++){
+			tds[i].addEventListener('click',calc, false);
+		}
+	</script>																				
+																<!-- конец калькулятор -->
+
+<!-- 	<table id="gP"></table>
 	<script src="js/temp1.js"></script> 
-<!-- 	<p>начало страницы</p>
+ --><!-- 	<p>начало страницы</p>
 	<script type="text/javascript">
 		// alert("Привет мир!!!");
 	</script>
