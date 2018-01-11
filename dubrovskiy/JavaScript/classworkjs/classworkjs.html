@@ -3,11 +3,11 @@
 	<meta charset="UTF-8">
 <head>
     <title>Programming on the JavaScript</title>
-    <!--<script src="js/script.js"></script> -->
+    <script src="js/temp1.js"></script> 
     
     <style type="text/css">
 															/*начало калькулятор*/
-   		input {										
+   	/*	input {										
     		width: 180px;							
     		height: 30px;
     	}
@@ -17,12 +17,12 @@
     		border: 1px solid red;
     		text-align: center;
     		cursor: pointer;
-    	}
+    	}*/
     </style>
 </head>
 
 <body>
-	<div id = "calc">
+	<!-- <div id = "calc">
 		<input id="outview" type="text" disabled>
 
 		<table>
@@ -54,21 +54,52 @@
 				<td>+</td>
 			</tr>
 		</table>
-	</div>
+	</div> -->
 	<script type="text/javascript">
-		function calc(e){
-			if(this.innerText ===  'C'){
-				outview.value = "";
-			} else if (this.innerText ===  '='){
-				outview.value = eval(outview.value);
-			} else {
-				outview.value += this.innerText;
-			}
-		}
-		var tds = document.getElementsByTagName('td');
-		for(var i=0; i<tds.length; i++){
-			tds[i].addEventListener('click',calc, false);
-		}
+	// var iterator = new Iterator(95,90);					//иттерация начало
+	// document.write(iterator.get()+"</br>");
+	// document.write(iterator.get()+"</br>");
+	// document.write(iterator.get()+"</br>");
+	// document.write(iterator.get()+"</br>");
+	// document.write(iterator.get()+"</br>");
+	// document.write(iterator.get()+"</br>");
+	// document.write(iterator.get()+"</br>");
+	// document.write(iterator.get()+"</br>");
+	// document.write(iterator.get()+"</br>");
+
+	// var iterator = new IteratorChild(95,90);
+	// document.write(iterator.next()+"</br>");
+	// document.write(iterator.next()+"</br>");
+	// document.write(iterator.next()+"</br>");
+	// document.write(iterator.next()+"</br>");
+	// document.write(iterator.next()+"</br>");
+	// document.write(iterator.next()+"</br>");
+	// document.write(iterator.next()+"</br>");
+	// document.write(iterator.next()+"</br>");
+	// document.write(iterator.next()+"</br>");			//иттерация конец
+
+	var user1 = new User();
+	var user2 = new User("Олег");
+	alert(user1);
+	alert(user2);
+
+	var animal = ("");
+	var dog1 = Animal.dog("Good",40);
+	var cat1 = Animal.cat("Bad",20);
+
+		// function calc(e){
+		// 	if(this.innerText ===  'C'){
+		// 		outview.value = "";
+		// 	} else if (this.innerText ===  '='){
+		// 		outview.value = eval(outview.value);
+		// 	} else {
+		// 		outview.value += this.innerText;
+		// 	}
+		// }
+		// var tds = document.getElementsByTagName('td');
+		// for(var i=0; i<tds.length; i++){
+		// 	tds[i].addEventListener('click',calc, false);
+		// }
 	</script>																				
 																<!-- конец калькулятор -->
 
