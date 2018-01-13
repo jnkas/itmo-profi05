@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 5.1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var stu = {};
+		stu.Fname = prompt("Введите Ваше Имя",'Олег');
+		stu.Sname = prompt("Введите Вашу Фамилию",'Дубровский');
+		stu.age = prompt("Введите Ваш Возраст (лет)", '42');
+		alert("Введите Ваши увлечения (не более 5)");
+		stu.prop = [
+			prompt("Первое ", 'JS, HTML, CSS'),
+			prompt("Второе", 'skiing'),
+			prompt("Третье", 'racing'),
+			prompt("Четвёртое", 'travel'),
+			prompt("Пятое", 'shooting')
+		];
+		stu.place = prompt("Введите место обучения", 'ИТМО');
+		function list() {
+		var wr = "<h3>Студент</h3>"+
+			"Имя: "+ stu.Fname + "<br/>"+
+			"Фамилия: "+ stu.Sname + "<br/>"+
+			"Возраст: "+ stu.age + "<br/>"+
+			"Место обучения: "+ stu.place + "<br/>"+
+			"Увлечения: <ul>";
+			for(var i=0; i < stu.prop.length; i++){
+	   		wr += stu.prop[i] == "" ? "" : "<li>"+ stu.prop[i] + "</li>";
+			}
+			wr += "</ul>";
+			return wr;
+		}
+		document.write(list(stu));
+	</script>
+</body>
+</html>
