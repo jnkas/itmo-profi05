@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 5.2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var A = prompt("Введите одну строку элементов через запятую",'1,2,3,17,45,184');
+		var arrA = A.split(',');
+		var B = prompt("Введите другую строку элементов через запятую",'1,3,15,3,47,74,42,184,42');
+		var arrB = B.split(',');
+		var arrC = arrA.concat(arrB);
+		document.write("Массив A: "+arrA+"<br/>");	
+		document.write("Массив B: "+arrB+"<br/>");
+		arrC = arrC.filter(function (elem, pos, arr) {
+		    return pos == arr.indexOf(elem) ;  				
+		});
+		document.write("Массив C: "+arrC);
+	</script>
+</body>
+</html>
