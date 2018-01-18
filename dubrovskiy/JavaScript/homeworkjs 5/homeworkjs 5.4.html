@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="RU">
+	<meta charset="UTF-8">
+<head>
+    <title>JavaScript Homework 5.4</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var number = prompt("Введите количество дней",'');
+		function num_to_str(number) {
+	        var arr_num = [];
+	        arr_num[1] = ['', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять', 'десять', 'одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать'];
+	        arr_num[2] = ['', '', 'двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто'];
+	        arr_num[3] = ['', 'сто', 'двести', 'триста', 'четыреста', 'пятьсот', 'шестьсот', 'семьсот', 'восемьсот', 'девятьсот'];
+
+	        function number_parser(num, desc) {
+	                var str = '';
+	                var num_sto = '';
+	                if (num.length == 3) {
+	                        num_sto = num.substr(0, 1);
+	                        num = num.substr(1, 3);
+	                        str = arr_num[3][num_sto] + ' ';
+	                }
+	                if (num < 20) str += arr_num[1][parseFloat(num)] + ' ';
+	                else {
+	                        var first_num = num.substr(0, 1);
+	                        var second_num = num.substr(1, 2);
+	                        str += arr_num[2][first_num] + ' ' + arr_num[1][second_num] + ' ';
+	                }             
+	                switch (desc){
+	                        case 0:
+	                                var last = num.length - 1;
+	                                var last_num = parseFloat(num.charAt(last));
+	                                var slice_num = num.slice(0, -1);
+	                                var pre_last_num = parseFloat(slice_num);
+	                                if (last_num == 1 && 1 != pre_last_num) str += 'день';
+	                                else if (last_num > 1 && last_num < 5 && 1 != pre_last_num)  str += 'дня';
+	                                else if ("" !=  slice_num) str += 'дней';
+	                                else if (1 == pre_last_num) str += 'дней';
+	                                else if ("" !=  slice_num && last_num  > 4) str += 'дней';
+	                                else if ("" ==  slice_num && last_num  > 4) str += 'дней';
+	                                else if ("" == slice_num && 0 == last_num) str += 'Ноль дней';
+	                                else str += 'день';
+	                                break;
+	                        case 1:
+	                                var last_num = parseFloat(num.substr(-1));
+	                                var last = num.length - 1;
+	                                var last_num = parseFloat(num.charAt(last));
+	                                var slice_num = num.slice(0, -1);
+	                                var pre_last_num = parseFloat(slice_num);
+	                                if (last_num == 1 && 1 != pre_last_num) str += 'тысяча ';
+	                                else if (last_num == 1 && 1 == pre_last_num.toString().length) str += 'тысяча ';
+	                                else if (last_num > 1 && last_num < 5 && 1 != pre_last_num) str += 'тысячи ';
+	                                else str += 'тысяч ';
+	                                str = str.replace('один ', 'одна ');
+	                                str = str.replace('два ', 'две ');
+	                                break;
+	                        case 2:
+	                                var last_num = parseFloat(num.substr(-1));
+	                                var last = num.length - 1;
+	                                var last_num = parseFloat(num.charAt(last));
+	                                var slice_num = num.slice(0, -1);
+	                                var pre_last_num = parseFloat(slice_num);
+	                                if (last_num == 1 && 1 != pre_last_num) str += 'миллион ';
+	                                else if (last_num == 1 && 1 == pre_last_num.toString().length) str += 'миллион ';
+	                                else if (last_num > 1 && last_num < 5 && 1 != pre_last_num) str += 'миллиона ';
+	                                else str += 'миллионов ';
+	                                break;
+	                        case 3:
+	                                var last_num = parseFloat(num.substr(-1));
+	                                var last = num.length - 1;
+	                                var last_num = parseFloat(num.charAt(last));
+	                                var slice_num = num.slice(0, -1);
+	                                var pre_last_num = parseFloat(slice_num);
+	                                if (last_num == 1 && 1 != pre_last_num) str += 'миллиард ';
+	                                else if (last_num == 1 && 1 == pre_last_num.toString().length) str += 'миллиард ';
+	                                else if (last_num > 1 && last_num < 5 && 1 != pre_last_num) str += 'миллиарда ';
+	                                else str += 'миллиардов ';
+	                                break;
+	                }
+	                str = str.replace('  ', ' ');
+	                return str;
+	        }
+
+	        if (!number) return 'Не указано количество дней';
+	        if (number == 0) return 'Ноль дней';
+	        if (typeof number !== 'number') {
+	                number = number.replace(',', '.');
+	                number = parseFloat(number);
+	                if (isNaN(number))  return 'Это не число! \nКоличество дней должно быть указано числом';
+	        }
+	        number = number.toFixed(2);
+	        if(number.indexOf('.') != -1) {
+	                var num_arr = number.split('.');
+	                var number = num_arr[0];
+	                var number_decimals = num_arr[1];
+	        }
+	        var number_length = number.length;
+	        var str = '';
+	        var num_parser = '';
+	        var count = 0;
+	        for (var _p = (number_length - 1); _p >= 0; _p--) {
+	                var num_digit = number.substr(_p, 1);
+	                num_parser = num_digit +  num_parser;
+	                if ((num_parser.length == 3 || _p == 0) && !isNaN(parseFloat(num_parser))) {
+	                        str = number_parser(num_parser, count) + str;
+	                        num_parser = '';
+	                        count++;
+	                }
+	        }
+	        return str;
+	}
+	document.write(number+" - "+num_to_str(number));
+	</script>
+</body>
+</html>
