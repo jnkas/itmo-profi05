@@ -3,9 +3,34 @@
 	<meta charset="UTF-8">
 <head>
     <title>Programming on the JavaScript</title>
-    <script src="js/temp1.js"></script> 
-    
     <style type="text/css">
+    
+    /*пересекающиеся прямоугольники начало*/
+/*    #field {											
+    	height: 400px;
+    	width: 400px;
+    	background-color:lightblue;
+    	position: relative; 
+    }
+    #red {
+    	height: 20px;
+    	width: 20px;
+    	background-color:red;
+    	position: absolute;
+    }
+    #green {
+    	height: 20px;
+    	width: 20px;
+    	background-color:green;
+    	position: absolute;
+    	left:250px;
+    	top:250px;
+    }*/
+    /*пересекающиеся прямоугольники конец*/
+
+
+    
+    
 															/*начало калькулятор*/
    	/*	input {										
     		width: 180px;							
@@ -18,10 +43,115 @@
     		text-align: center;
     		cursor: pointer;
     	}*/
+
+    	
+    		#divFirst {
+    			background-color: red;
+    	}
+    	    #divSecond {
+    			background-color: green;
+    	}
+
+
     </style>
+    <script src = "jquery-3.2.1.min.js"></script> 
+    <!-- // <script src = "/js/temp1.js"></script>      -->
 </head>
 
 <body>
+<!-- 	<canvas id="canva" width=200 height=200 style="height:200px;width:200px">
+	</canvas> -->
+
+	<div id="divFirst">
+		<button> Кнопка 1</button>
+		<button> Кнопка 2</button>
+		<button> Кнопка 3</button>
+	</div>
+
+	<div id="divSecond"></div>
+
+
+	<p>Печать</p>
+	<p>Печать</p>
+	<p>Печать</p>
+	<p>Печать</p>
+	<p>Печать</p>
+	<p>Печать</p>
+	<p>Lorem ipsum dolor <span>sit amet, consectetur adipisicing elit</span>s, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<a href="#">Печать</p>
+
+	<script>
+	// 	var flag - false;
+	// 	canva.onmousedown = function(e) {
+	// 		flag = true;
+	// 	}
+	// 	canva.onmousemove 
+	
+	// var obj = {						
+	// 	value:0,
+	// 	increment: function() {
+	// 		this.value++;
+	// 		return this;
+	// 	},
+	// 	add: function(num){
+	// 		this.value+=num;
+	// 		return this;
+	// 	},
+	// 	outAlert:function(){
+	// 		alert(this.value);
+	// 		return this;	
+	// 	}
+	// }
+	// obj.add(30).increment().outAlert();
+
+												
+
+		// $('p').on('click',function(e){			// jquery example 1
+		// 	window.print();
+		// });
+
+		// $('p')									// jquery example 2
+		// .eq(1)
+		// .on('contextmenu',function(e){
+		// 	return false;
+		// });
+		
+		$('a').on('click',function(e){				// jquery example 3
+			$('html').scrollTop(50);
+			return false;
+		});
+
+		function animate(){							// jquery example 4
+			$('span').slideDown(1000);
+			$('span').slideUp(1000);
+		}
+
+		setInterval(animate,2000);
+
+		$('button').on('click',function(e){				// jquery example 5
+			if($(this).parent().attr('id')==='divFirst') {
+				$(this).detach().appendTo($('#divSecond'));
+			} else {
+				$(this).detach().appendTo($('#divFirst'));
+			}
+				});
+
+	</script>
+
+
+
+<!-- <div id="field">
+	<div id="red" style="top:0;left:0;"> </div>
+	<div id="green" style=""> </div>	
+</div> -->
+
+
 	<!-- <div id = "calc">
 		<input id="outview" type="text" disabled>
 
@@ -55,7 +185,7 @@
 			</tr>
 		</table>
 	</div> -->
-	<script type="text/javascript">
+<!--	<script type="text/javascript">
 	// var iterator = new Iterator(95,90);					//иттерация начало
 	// document.write(iterator.get()+"</br>");
 	// document.write(iterator.get()+"</br>");
@@ -78,14 +208,14 @@
 	// document.write(iterator.next()+"</br>");
 	// document.write(iterator.next()+"</br>");			//иттерация конец
 
-	var user1 = new User();
-	var user2 = new User("Олег");
-	alert(user1);
-	alert(user2);
+	// var user1 = new User();
+	// var user2 = new User("Олег");
+	// alert(user1);
+	// alert(user2);
 
-	var animal = ("");
-	var dog1 = Animal.dog("Good",40);
-	var cat1 = Animal.cat("Bad",20);
+	// var animal = ("");
+	// var dog1 = Animal.dog("Good",40);
+	// var cat1 = Animal.cat("Bad",20);
 
 		// function calc(e){
 		// 	if(this.innerText ===  'C'){
@@ -100,7 +230,7 @@
 		// for(var i=0; i<tds.length; i++){
 		// 	tds[i].addEventListener('click',calc, false);
 		// }
-	</script>																				
+	</script>													-->							
 																<!-- конец калькулятор -->
 
 <!-- 	<table id="gP"></table>
@@ -373,6 +503,9 @@
 		// }
 
 	</script> -->
+	<!-- // <script type="text/javascript"> -->
+		<!-- // new SimulatorBattle(); -->
+	<!-- // </script> -->
 			
 </body>
 </html>
