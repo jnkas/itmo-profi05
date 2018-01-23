@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="RU">
+  <meta charset="UTF-8">
+ <head>
+  <title>Игра Пятнашки</title>
+  <style type = "text/css">
+   td {
+    text-indent: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    color: black;
+   }
+   .dv {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: white;
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+   }
+   p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 12pt;
+   }
+   .btn {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Times New Roman", serif;
+    width: 80px;
+    height: 25px;
+    margin-right: 4px;
+   }
+  </style>
+
+ </head>
+ <body>
+  <script src="move.js"></script>
+  <div class = "dv">
+   <p><b>Пятнашки</b></p>
+   <p>Расположите числа в порядке возрастания,</p>
+   <p>слева направо и сверху вниз</p>
+   <p>Перемещайте числа кликом мыши.</p>
+   <br>
+   <p>
+    <input type = "button" class = "btn" value = "Новая игра" onclick = "nGmFftngs()" title = "Начать сначала"> 
+    <input type = "button" class = "btn" value = "Завершить" onclick = "bldFftngs()" title = "Получить решение"> 
+   </p>
+  </div>
+  <script>
+   mkTbl("50px", 4);
+   tbl = document.getElementById("tbl");
+   nGmFftngs();
+  </script>
+ </body>
+</html>
