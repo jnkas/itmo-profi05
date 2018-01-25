@@ -7,9 +7,9 @@ nFftngs = 0;
 //
 function mkTbl(tdSz, n) {
  mT = n;
- td = "<td style = 'background-color:#f0f0f0; width:" + tdSz + "; height:" + tdSz + "'";
+ td = "<td style = 'background-color:lightyellow; width:" + tdSz + "; height:" + tdSz + "'";
  td += " onmouseover = 'mkCrsr(this)' onclick = 'mvFg(this)'></td>";
- tHdr = "<table id = 'tbl' style = 'background-color:#ccccaa; cursor:pointer'; border = 1px";
+ tHdr = "<table id = 'tbl' style = 'background-color:red; cursor:pointer'; border = 1px";
  document.write(tHdr);
  for (i = 0; i < mT; i++) {
   document.write("<tr>");
@@ -142,7 +142,7 @@ function chkC(r2, c2, cll) {
   return true;
  }
 }
-// Выстраивает кости в надлежащем порядке
+// Выстраивает цыфры в правильном порядке
 function bldFftngs() {
  if (dn) return;
  k = 0;
