@@ -34,14 +34,39 @@
     font-size: 14pt;
     text-shadow: 0 0 0.5em green; /* Параметры тени */
    }
-   .btn {
+   .btnstart {
     font-size: 15px;
     font-weight: 600;
     font-family: "Times New Roman", serif;
     width: 100px;
     height: 30px;
     margin-right: 4px;
+    border-radius: 5px;
+    background-color: lightyellow;
    }
+    .btnfinish {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Times New Roman", serif;
+    width: 100px;
+    height: 30px;
+    margin-right: 4px;
+    border-radius: 5px;
+    background-color: lightyellow;
+   }
+    .btnstart:hover {
+    background-color:rgba(0, 128, 0, 0.7);
+    color:lightyellow;
+    font-size: 17px;
+   }
+    .btnfinish:hover {
+    background-color:rgba(165, 42, 42, 0.7);
+    color:lightyellow;
+    font-size: 17px;
+   }
+/*   table {
+    background: url(img/motorbike.jpg) center no-repeat;
+   }*/
   </style>
 
  </head>
@@ -49,19 +74,30 @@
   <script src="move.js"></script>
   <div class = "dv">
    <p><h1>Пятнашки</h1></p>
-   <p>Расположите числа в порядке возрастания,</p>
-   <p>слева направо и сверху вниз</p>
-   <p>Перемещайте числа кликом мыши.</p>
+   <div id = "ds">
+     <p>Расположите числа в порядке возрастания,</p>
+     <p>слева направо и сверху вниз</p>
+     <p>Перемещайте числа кликом мыши.</p>
+    </div>
    <br>
    <p>
-    <input type = "button" class = "btn" value = "Новая игра" onclick = "nGmFftngs()" title = "Начать сначала"> 
-    <input type = "button" class = "btn" value = "Завершить" onclick = "bldFftngs()" title = "Получить решение"> 
+    <input type = "button" class = "btnstart" value = "Новая игра" onclick = "GameStart()" title = "Начать сначала"> 
+    <input type = "button" class = "btnfinish" value = "Завершить" onclick = "GameFinish()" title = "Показать решение"> 
    </p>
   </div>
   <script>
    mkTbl("50px", 4);
    tbl = document.getElementById("tbl");
-   nGmFftngs();
+   ds = document.getElementById("ds");
+   //описание 7 чудес света
+   // 1.Висячие сады Семирамиды
+   // 2.Пирамида фараона Хеопса
+   // 3.Храм Артемиды в Эфесе
+   // 4.Статуя Зевса в Олимпии
+   // 5.Мавзолей в Галикарнасе
+   // 6.Александрийский маяк
+   // 7.Колосс Родосский
+   GameStart();
   </script>
  </body>
 </html>
