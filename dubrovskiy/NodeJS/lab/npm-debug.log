@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'i', 'express' ]
+2 info using npm@1.4.21
+3 info using node@v4.6.1
+4 verbose cache add [ 'express', null ]
+5 verbose cache add name=undefined spec="express" args=["express",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'express',
+6 verbose parsed url   path: 'express',
+6 verbose parsed url   href: 'express' }
+7 silly lockFile f3c62de4-express express
+8 verbose lock express /home/user/.npm/f3c62de4-express.lock
+9 silly lockFile f3c62de4-express express
+10 silly lockFile f3c62de4-express express
+11 verbose addNamed [ 'express', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 64a534c1-express express@
+14 verbose lock express@ /home/user/.npm/64a534c1-express.lock
+15 silly addNameRange { name: 'express', range: '*', hasData: false }
+16 verbose request where is /express
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id af3ff3dd39b9c296
+19 verbose url raw /express
+20 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+21 verbose url resolved https://registry.npmjs.org/express
+22 verbose request where is https://registry.npmjs.org/express
+23 info trying registry request attempt 1 at 21:34:28
+24 http GET https://registry.npmjs.org/express
+25 error TypeError: Request path contains unescaped characters.
+25 error     at new ClientRequest (_http_client.js:50:11)
+25 error     at TunnelingAgent.exports.request (http.js:31:10)
+25 error     at TunnelingAgent.createSocket (/usr/lib/nodejs/tunnel-agent/index.js:117:25)
+25 error     at TunnelingAgent.createSecureSocket [as createSocket] (/usr/lib/nodejs/tunnel-agent/index.js:184:41)
+25 error     at TunnelingAgent.addRequest (/usr/lib/nodejs/tunnel-agent/index.js:80:8)
+25 error     at new ClientRequest (_http_client.js:142:16)
+25 error     at Object.exports.request (http.js:31:10)
+25 error     at Object.socket.once.exports.request (https.js:182:15)
+25 error     at Request.start (/usr/lib/nodejs/request/index.js:607:30)
+25 error     at Request.end (/usr/lib/nodejs/request/index.js:1235:28)
+26 error If you need help, you may report this *entire* log,
+26 error including the npm and node versions, at:
+26 error     <http://github.com/npm/npm/issues>
+27 error System Linux 4.6.0-1-amd64
+28 error command "/usr/bin/nodejs" "/usr/bin/npm" "i" "express"
+29 error cwd /home/user/project/Repository/dubrovskiy/NodeJS/lab
+30 error node -v v4.6.1
+31 error npm -v 1.4.21
+32 verbose exit [ 1, true ]
