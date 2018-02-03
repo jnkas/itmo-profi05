@@ -5,6 +5,7 @@ dn = false;     //статус выполнения
 tmS = 0;        //время в игре
 nMove = 0;    //число ходов
 
+<<<<<<< HEAD
 var a = Math.round(Math.random()*7);
 var image = new Array();
   image[0] = "img/7chudes1.jpg";
@@ -24,6 +25,12 @@ var chudo = {
 function mkTbl(tdSizeH, tdSizeW, n) {
   mT = n;
   td = "<td style = 'background-color:lightyellow; width:" + tdSizeW + "; height:" + tdSizeH + "'";
+=======
+// Рисуем таблицу 4 х 4
+function mkTbl(tdSz, n) {
+  mT = n;
+  td = "<td style = 'background-color:lightyellow; width:" + tdSz + "; height:" + tdSz + "'";
+>>>>>>> fbf642837e311e8801cb4f109a2d2ce5ddc5b124
   td += " onmouseover = 'mkCrsr(this)' onclick = 'mvFg(this)'></td>";
   tHdr = "<table id = 'tbl' style = 'background-color:red; cursor:pointer'; border = 1px";
   document.write(tHdr);
@@ -39,12 +46,15 @@ function mkTbl(tdSizeH, tdSizeW, n) {
 
 // Начало игры и заполнение таблицы числами в случайном порядке
 function GameStart() {
+<<<<<<< HEAD
   var tblCell = document.getElementsByTagName('td');
   for (var i = 0; i < tblCell.length; i++) {
     tblCell[i].style.background = 'lightyellow';
     tblCell[i].style.opacity = 1;
     tblCell[i].style.color = 'black';
   }
+=======
+>>>>>>> fbf642837e311e8801cb4f109a2d2ce5ddc5b124
   dn = false;
   nMove = 0;
   dt = new Date();
@@ -73,8 +83,12 @@ function GameStart() {
       rw.cells[j].innerHTML = (k > fL - 1) ? "" : k;
     }
   }
+<<<<<<< HEAD
   
   tbl.style.background = 'url('+image[a]+') no-repeat center';
+=======
+  tbl.style.background = 'url("img/7chudes2.jpg") no-repeat center center fixed';
+>>>>>>> fbf642837e311e8801cb4f109a2d2ce5ddc5b124
   tbl.style.backgroundSize = 'contain';
 }
 
@@ -109,7 +123,11 @@ function mkCrsr(cll) {
       mvd = false;
     else
       for (kL = 0; kL < 4; kL++) {  //если соседняя ячейка пустая, то курсор на текущей поменяется
+<<<<<<< HEAD
         switch (kL) {               //и её можно будет переместить
+=======
+        switch (kL) {
+>>>>>>> fbf642837e311e8801cb4f109a2d2ce5ddc5b124
           case 0 : mvd = chkC2(r - 1, c, cll); break;
           case 1 : mvd = chkC2(r, c - 1, cll); break;
           case 2 : mvd = chkC2(r + 1, c, cll); break;
@@ -121,7 +139,11 @@ function mkCrsr(cll) {
   tbl.style.cursor = (mvd) ? 'pointer' : 'crosshair';
 }
 
+<<<<<<< HEAD
 // Меняет текущую ячейку с пустой местами
+=======
+// Перемещает текущую ячейку на место пустой
+>>>>>>> fbf642837e311e8801cb4f109a2d2ce5ddc5b124
 function chkC(r2, c2, cll) {
   if (r2 == -1 || c2 == -1 || r2 == mT || c2 == mT) return false;
   cll2 = tbl.rows[r2].cells[c2];
@@ -134,6 +156,7 @@ function chkC(r2, c2, cll) {
     cll.style.background = '';
     return true;
   }
+<<<<<<< HEAD
 }
 
 // Показывает потраченные время и число ходов, делает ячейки прозрачными, добавляет описание чуда света
@@ -152,6 +175,17 @@ function Result() {
   alert("Игра завершена за "+ tm + " с. Число ходов - " + nMove +"." );
 }
 
+=======
+}
+
+// Показывает потраченные время и число ходов
+function Result() {
+  dt = new Date();
+  tm = Math.round(0.001 * (dt.getTime() - tmS));
+  alert("Игра завершена. Число ходов " + nMove + ". Затрачено времени " + tm + " с.");
+}
+
+>>>>>>> fbf642837e311e8801cb4f109a2d2ce5ddc5b124
 // Перемещение ячейки и проверка статуса завершения игры
 function mvFg(cll) {
   if (dn) return;
